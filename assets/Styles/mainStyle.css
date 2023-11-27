@@ -151,6 +151,7 @@ p.service{
 @media(max-width: 600px){
     p.service{
         grid-template-columns:repeat(1,1fr) ;
+        width: 100vw;
     }
 }
 
