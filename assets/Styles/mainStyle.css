@@ -148,6 +148,12 @@ p.service{
     }
 }
 
+@media(max-width: 600px){
+    p.service{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+}
+
 @media(max-width:600){
     #Container{
         display: none;
