@@ -39,14 +39,18 @@ body{
 
 
 .Image_Fixed > article > p{
-    display: block;
     color:#08808a;
     box-sizing: border-box;
     transition: .9s;
     cursor: pointer;
     border: 1px solid rgba(255, 0, 0, 0) ;
-    width: 8vw;
-    gap: 250px;
+    width: 6.5vw;
+    margin-top: 6px;
+    padding-top:13px;
+    padding-bottom:5px;
+    height: 38px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .Image_Fixed > article > p:hover{
@@ -57,24 +61,27 @@ body{
     width: 19.5px;
     position: absolute;
     display: block;
+    margin-top: -13px;
+    margin-left: 2em;
 }
 
 .Image_Fixed > article > h1{
     font-family: 'lobster';
     font-size:2.6vw ;
     display: block;
-    background-color: #088080;
     width: 21vw;
     text-align: center;
 
 }
 
 .Image_Fixed > article > img{
+    margin-top: 5px;
     width: 37.5px;
     height: 27.6px;
     transition: .9s;
     cursor: pointer;
     border: 1px solid rgba(251, 255, 0, 0) ;
+    padding: 3px 15px;
 }
 
 .Image_Fixed > article > img:hover{
