@@ -4,11 +4,16 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+    
 }
 body{
-    width: 100%;
+  width: 100vw;
+  overflow-x: hidden; 
+}
+
+#Container{
+    width: 100vw;
+    
 }
 
 .Image_Fixed{
@@ -17,7 +22,7 @@ body{
     background-repeat: no-repeat;
     background-position: 60% 40%;
     background-size:cover;
-    width:100%;
+    width:100vw;
     height: 100vh;
     background-attachment: fixed;
 }
