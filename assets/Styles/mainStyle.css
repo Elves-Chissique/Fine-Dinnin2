@@ -148,6 +148,12 @@ p.service{
     }
 }
 
+@media(max-width:600){
+    #Container{
+        display: none;
+    }
+}
+
 .service-intro{
     margin: auto;
 }
