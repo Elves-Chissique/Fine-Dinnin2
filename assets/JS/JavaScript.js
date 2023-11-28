@@ -1,7 +1,36 @@
+let contactInitial = window.document.getElementById('contacntInitial')
+let chamarContact = window.document.getElementById('chamarContact')
+let closeInitial = window.document.getElementById('closeInitial')
+let contactText = window.document.getElementById('contactText')
 
+chamarContact.addEventListener('click', showInitial)
+closeInitial.addEventListener('click', fecharInicial)
+
+function showInitial(){
+    contactInitial.style.width = "30%"
+    contactInitial.style.marginLeft = '0%'
+    contactInitial.style.height = "100vh"
+    contactInitial.style.transition = '.3s'
+    closeInitial.style.display = 'inline-block'
+    contactText.style.display = 'block'
+}
+
+function fecharInicial(){
+    contactInitial.style.width = "0%"
+    contactInitial.style.marginLeft = '-10%'
+    contactInitial.style.height = "0vh"
+    contactInitial.style.transition = '.3s'
+    closeInitial.style.display = 'none'
+    contactText.style.display = 'none'
+}
+
+/*--------------------------------------------------------------------------------------------------------------------- */
 let catering1 =  window.document.querySelector('span#catering1')
 let catering2 =  window.document.querySelector('span#catering2')
 let catering3 =  window.document.querySelector('span#catering3')
+let catering4 =  window.document.querySelector('span#catering4')
+let catering5 =  window.document.querySelector('span#catering5')
+let catering6 =  window.document.querySelector('span#catering6')
 
 let delivery1 =  window.document.querySelector('span#delivery1')
 let delivery2 =  window.document.querySelector('span#delivery2')
@@ -14,6 +43,12 @@ let cateringFoto2 =  window.document.querySelector('span#cateringFoto2')
 var cateringText2 =  window.document.querySelector('span#cateringText2') //Serviços de catering
 let cateringFoto3 =  window.document.querySelector('span#cateringFoto3')
 var cateringText3 =  window.document.querySelector('span#cateringText3')
+let cateringFoto4 =  window.document.querySelector('span#cateringFoto4')
+var cateringText4 =  window.document.querySelector('span#cateringText4')
+let cateringFoto5 =  window.document.querySelector('span#cateringFoto5')
+var cateringText5 =  window.document.querySelector('span#cateringText5') //Serviços de catering
+let cateringFoto6 =  window.document.querySelector('span#cateringFoto6')
+var cateringText6 =  window.document.querySelector('span#cateringText6')
 
 let deliveryFoto1 =  window.document.querySelector('span#deliveryFoto1')
 var deliveryText1 =  window.document.querySelector('span#deliveryText1')
@@ -28,6 +63,9 @@ var deliveryText3 =  window.document.querySelector('span#deliveryText3')
 let cateringH1 = window.document.querySelector('span#cateringH1')
 let cateringH2 = window.document.querySelector('span#cateringH2') //Serviços de catering
 let cateringH3 = window.document.querySelector('span#cateringH3')
+let cateringH4 = window.document.querySelector('span#cateringH4')
+let cateringH5 = window.document.querySelector('span#cateringH5') //Serviços de catering
+let cateringH6 = window.document.querySelector('span#cateringH6')
 
 let deliveryH1 = window.document.querySelector('span#deliveryH1')
 let deliveryH2 = window.document.querySelector('span#deliveryH2')  //serviços de delivery
@@ -148,6 +186,120 @@ function mudarParaFoto3(){
     cateringH3.style.color = "#000"
     cateringH3.style.transition = '0.5s'
 }
+
+
+/*Adicionando o Eventos e funções para a quarta div*/
+catering4.addEventListener('mouseover',mudarParaTexto4)
+catering4.addEventListener('mouseout',mudarParaFoto4)
+
+function mudarParaTexto4(){
+    cateringFoto4.style.width = '0px'
+    cateringFoto4.style.hight = '0px'
+    cateringFoto4.style.opacity = '0'
+    cateringFoto4.style.transition = '0.5s'
+
+
+    cateringText4.style.fontSize = '13.1pt'
+    cateringText4.style.transition = '0.3s'
+    cateringText4.style.width = '290px'
+    cateringText4.style.hight = '300px'
+    cateringText4.style.opacity = '1'
+
+    cateringH4.style.color = "#fff"
+    cateringH4.style.transition = '0.5s'
+
+}
+
+function mudarParaFoto4(){
+    cateringFoto4.style.width = '290px'
+    cateringFoto4.style.opacity = '1'
+    cateringFoto4.style.transition = '0.7s'
+    cateringFoto4.style.hight = '200px'
+
+    cateringText4.style.transition = '.3s'
+    cateringText4.style.width = '290'
+    cateringText4.style.hight = '0'
+    cateringText4.style.fontSize = '0px'
+
+    cateringH4.style.color = "#000"
+    cateringH4.style.transition = '0.5s'
+}
+
+
+/*Adicionando o Eventos e funções para a quinta div*/
+catering5.addEventListener('mouseover',mudarParaTexto5)
+catering5.addEventListener('mouseout',mudarParaFoto5)
+
+function mudarParaTexto5(){
+    cateringFoto5.style.width = '0px'
+    cateringFoto5.style.hight = '0px'
+    cateringFoto5.style.opacity = '0'
+    cateringFoto5.style.transition = '0.5s'
+
+
+    cateringText5.style.fontSize = '13.1pt'
+    cateringText5.style.transition = '0.3s'
+    cateringText5.style.width = '290px'
+    cateringText5.style.hight = '300px'
+    cateringText5.style.opacity = '1'
+
+    cateringH5.style.color = "#fff"
+    cateringH5.style.transition = '0.5s'
+
+}
+
+function mudarParaFoto5(){
+    cateringFoto5.style.width = '290px'
+    cateringFoto5.style.opacity = '1'
+    cateringFoto5.style.transition = '0.7s'
+    cateringFoto5.style.hight = '200px'
+
+    cateringText5.style.transition = '.3s'
+    cateringText5.style.width = '290'
+    cateringText5.style.hight = '0'
+    cateringText5.style.fontSize = '0px'
+
+    cateringH5.style.color = "#000"
+    cateringH5.style.transition = '0.5s'
+}
+
+/*Adicionando o Eventos e funções para a sext6 div*/
+catering6.addEventListener('mouseover',mudarParaTexto6)
+catering6.addEventListener('mouseout',mudarParaFoto6)
+
+function mudarParaTexto6(){
+    cateringFoto6.style.width = '0px'
+    cateringFoto6.style.hight = '0px'
+    cateringFoto6.style.opacity = '0'
+    cateringFoto6.style.transition = '0.5s'
+
+
+    cateringText6.style.fontSize = '13.1pt'
+    cateringText6.style.transition = '0.3s'
+    cateringText6.style.width = '290px'
+    cateringText6.style.hight = '300px'
+    cateringText6.style.opacity = '1'
+
+    cateringH6.style.color = "#fff"
+    cateringH6.style.transition = '0.5s'
+
+}
+
+function mudarParaFoto6(){
+    cateringFoto6.style.width = '290px'
+    cateringFoto6.style.opacity = '1'
+    cateringFoto6.style.transition = '0.7s'
+    cateringFoto6.style.hight = '200px'
+
+    cateringText6.style.transition = '.3s'
+    cateringText6.style.width = '290'
+    cateringText6.style.hight = '0'
+    cateringText6.style.fontSize = '0px'
+
+    cateringH6.style.color = "#000"
+    cateringH6.style.transition = '0.5s'
+}
+
 
 /* ---------------------------------Aqui começa a configuração das funçoes dos serviços de Delivery------------------------------ */
 
