@@ -29,7 +29,7 @@ body{
 }
 .Image_Fixed > article{
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.9;
     color:white;
     position: fixed;
     width: 100%;
@@ -40,6 +40,7 @@ body{
     justify-content:end;
     justify-items:center;
     gap: 250px;
+    z-index: 1;
 
 }
 
@@ -169,15 +170,15 @@ p.service{
     }
 }
 
-.service-intro{
-    margin: auto;
-}
-
 .Event_content > article.service-intro > h2{
     margin-left: 3em;
     border-bottom: 2px solid black;
     width: 14em;
     color:#088080;
+}
+
+.service-intro{
+    margin: auto;
 }
 
 .service-intro > p{
@@ -193,13 +194,13 @@ p.service{
 span.catering{
     display:block;
     width: 90%;
-    font-family: 'Exo 2', sans-serif;
+    font-family:  sans-serif;
     cursor: pointer;
     height: 15em;
     padding: .2em;
     overflow: hidden;
     position: relative;
-    background-color:#686565;
+    background-color:#d6d1d1;
     margin: 1em;
     align-items: center;
     line-height: 50,50;
@@ -208,28 +209,32 @@ span.catering{
     
 }
 span.catering-foto img{
-    text-align: center;
     width: 290px;
     height: 200px;
-    text-align: center;
     margin: auto;
     transition: 2s ease;
-    border: 2px solid #088080;
     display: block;
+    border-radius: 5px;
+    box-shadow: rgba(0, 128, 0, 0.450) -2px -2px 5px;
 }
 
 .catering-text{
     display:table;
     width: 290px;
     height: 0px;
-    opacity: 0;
     text-align: left;
+    opacity: 0;
     margin: auto;
-    color: rgb(235, 203, 25);
+    color: #000;
     font-size: 0px;
     padding: .3em;
     line-height: 1.5em;
+    background-color:#f1eeee;
+    border-radius: 5px;
+    box-shadow: rgba(0, 128, 0, 0.349) -2px -2px 5px;
+    font-style: italic;
 }
+
 
 
 
@@ -237,7 +242,7 @@ span.h3{
     font-weight: bolder;
     font-family: 'Ephesis', cursive;
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     color: black;
     transition: .3s;
 }
@@ -247,13 +252,13 @@ span.h3{
 span.delivery{
     display:block;
     width: 90%;
-    font-family: 'Exo 2', sans-serif;
+    font-family: sans-serif;
     cursor: pointer;
     height: 15em;
     padding: .2em;
     overflow: hidden;
     position: relative;
-    background-color:#686565;
+    background-color:#d6d1d1;
     margin: 1em;
     align-items: center;
     line-height: 50,50;
@@ -267,10 +272,14 @@ span.delivery{
     opacity: 0;
     text-align: left;
     margin: auto;
-    color: rgb(235, 203, 25);
+    color: #000;
     font-size: 0px;
     padding: .3em;
     line-height: 1.5em;
+    border-radius: 5px;
+    background-color: #f1eeee;
+    box-shadow: rgba(0, 128, 0, 0.500) -2px -2px 5px;
+    font-style: italic;
 }
 
 .delivery-foto img{
@@ -280,8 +289,8 @@ span.delivery{
     text-align: center;
     margin: auto;
     transition: 2s ease;
-    border: 2px solid #088080;
-    display: block;
+    border-radius: 5px;
+    box-shadow: rgba(0, 128, 0, 0.500) -2px -2px 5px;
 }
 
 .beverages{
