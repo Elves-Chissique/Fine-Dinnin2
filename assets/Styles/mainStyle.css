@@ -129,15 +129,88 @@ body{
     width: 32px;
 }
 
+.about-us-t{
+    display: block;
+    color:#07b7c4;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    font-style: italic;
+    font-weight:bolder ;
+    border-bottom: 1px solid #027981 ;
+    width: 60%;
+    margin: auto;
+
+}
+
+.about-us-c{
+    display: block;
+    color:#76eaf5;
+    padding: 0em 1.5em;
+    text-align:justify; 
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 18px;
+    
+
+}
+
+.vision-t{
+    display: block;
+    color:#8c07a7;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    font-style: italic;
+    font-weight:bolder ;
+    border-bottom: 1px solid #8c07a7 ;
+    width: 60%;
+    margin: auto;
+
+}
+
+.vision-c{
+    display: block;
+    color:#ae44c4;
+    padding: 0em 1.5em;
+    text-align:justify;  
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 18px;
+
+    .what-t{
+        display: block;
+        color:#c2c508;
+        text-align: center;
+        font-size: xx-large;
+        font-family: cursive;
+        font-style: italic;
+        font-weight:bolder ;
+        border-bottom: 1px solid #044f81 ;
+        width: 60%;
+        margin: auto;
+    
+    }
+    
+    .what-c{
+        display: block;
+        color:#ae44c4;
+        padding: 0em 1.5em;
+        text-align:justify;  
+        letter-spacing: 1px;
+        font-style: italic;
+        font-size: 18px;
+    
+
+}
+
+a
+
 /*----------- 
 
 
 
-
 Aqui termina a configuaração de offcanva-Lateral ---------------*/
-
-
-
 
 
 
