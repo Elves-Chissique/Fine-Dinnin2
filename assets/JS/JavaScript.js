@@ -1,3 +1,5 @@
+
+/*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
 let chamarContact = window.document.getElementById('chamarContact')
 let closeInitial = window.document.getElementById('closeInitial')
@@ -13,6 +15,7 @@ function showInitial(){
     contactInitial.style.transition = '.3s'
     closeInitial.style.display = 'inline-block'
     contactText.style.display = 'block'
+    contactText.style.transition = '.5s'
 }
 
 function fecharInicial(){

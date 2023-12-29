@@ -111,6 +111,7 @@ body{
     text-align: justify;
     margin-left: -10%;
 }
+  
 
 .contact > p{
     padding: 1em;
@@ -131,13 +132,13 @@ body{
 
 .about-us-t{
     display: block;
-    color:#07b7c4;
+    color:#c2c508;
     text-align: center;
     font-size: xx-large;
     font-family: cursive;
     font-style: italic;
     font-weight:bolder ;
-    border-bottom: 1px solid #027981 ;
+    border-bottom: 1px solid #c2c508 ;
     width: 60%;
     margin: auto;
 
@@ -145,7 +146,7 @@ body{
 
 .about-us-c{
     display: block;
-    color:#76eaf5;
+    color:#c2c508;
     padding: 0em 1.5em;
     text-align:justify; 
     letter-spacing: 1px;
@@ -177,16 +178,17 @@ body{
     letter-spacing: 1px;
     font-style: italic;
     font-size: 18px;
+}
 
     .what-t{
         display: block;
-        color:#c2c508;
+        color:#07b7c4;
         text-align: center;
         font-size: xx-large;
         font-family: cursive;
         font-style: italic;
         font-weight:bolder ;
-        border-bottom: 1px solid #044f81 ;
+        border-bottom: 1px solid #07b7c4 ;
         width: 60%;
         margin: auto;
     
@@ -194,8 +196,8 @@ body{
     
     .what-c{
         display: block;
-        color:#ae44c4;
-        padding: 0em 1.5em;
+        color:#07b7c4;
+        padding: 0em 1.5em 2em 0em;
         text-align:justify;  
         letter-spacing: 1px;
         font-style: italic;
@@ -203,8 +205,6 @@ body{
     
 
 }
-
-a
 
 /*----------- 
 
