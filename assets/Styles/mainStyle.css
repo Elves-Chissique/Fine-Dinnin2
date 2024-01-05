@@ -27,44 +27,26 @@ body{
     height: 100vh;
     background-attachment: fixed;
 }
-.Image_Fixed > article{
+.Image_Fixed > article#cabecalho{
+    display: flex;
     background-color: black;
     opacity: 0.9;
     color:white;
     position: fixed;                /*----Configuração de header------*/
     width: 100%;
     font-family: cursive;
-    padding-left: 1em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content:end;
+    justify-content:space-between;
     justify-items:center;
-    gap: 250px;
     z-index: 1;
 
 }
 
 
-.Image_Fixed > article > p{
-    color:#08808a;
-    box-sizing: border-box;
-    transition: .9s;
-    cursor: pointer;
-    border: 1px solid rgba(255, 0, 0, 0) ;  /*----Configuração de header------*/
-    width: 6.5vw;
-    margin-top: 6px;
-    padding-top:13px;
-    padding-bottom:5px;
-    height: 38px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.Image_Fixed > article > p:hover{
+.Image_Fixed > article#cabecalho > p:hover{
     border: 1px solid rgba(251, 255, 0, 0.568) ;  /*----Configuração de header------*/
 }
 
-.Image_Fixed > article > p > img{
+.Image_Fixed > article#cabecalho > p > img{
     width: 19.5px;
     position: absolute;
     display: block;             /*----Configuração de header------*/
@@ -72,18 +54,17 @@ body{
     margin-left: 2em;
 }
 
-.Image_Fixed > article > h1{
+.Image_Fixed > article#cabecalho > h1{
     font-family: 'lobster';
-    font-size:2.6vw ;
+    font-size:2em;
     display: block;    /*----Configuração de header------*/
-    width: 21vw;
     text-align: center;
 
 }
 
-.Image_Fixed > article > img{
+.Image_Fixed > article#cabecalho > img{
     margin-top: 5px;
-    width: 37.5px;
+    width: 31.5px;
     height: 27.6px;
     transition: .9s;          /*----Configuração de header------*/
     cursor: pointer;
@@ -91,13 +72,53 @@ body{
     padding: 3px 15px;
 }
 
-.Image_Fixed > article > img:hover{
+.Image_Fixed > article#cabecalho > img:hover{
     border: 1px solid rgba(251, 255, 0, 0.568) ;  /*----Configuração de header------*/
 }
 
+.Image_Fixed > article#central{
+    background-color: rgba(0, 0, 0, 0.199);
+    opacity: 1;
+    color:white;
+    position: relative;                /*----Configuração de header------*/
+    width: 100%;
+    font-family: cursive;
+    padding: .5em;
+    margin-top: 6em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  
+}
+
+.Image_Fixed > article#central > p{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 5em;
+}
+
+.Image_Fixed > article#central > p > img{
+    width: 110px;
+    border: #00000000 solid 2px;
+    border-radius: 50%;
+    transition: .5s;
+    
+}
+
+.Image_Fixed > article#central > p > img.clicavel:hover{
+    border: green solid 2px;
+    cursor: pointer;
+}
+
+.i{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 .contact{
-    margin-top: 45px;
+    
     background-color:red;
+    margin-top: -185px;
     display: block;
     position:fixed;
     width: 0%;
@@ -110,7 +131,7 @@ body{
     color: white;
     text-align: justify;
     margin-left: -10%;
-}a
+}
   
 
 .contact > p{
@@ -152,6 +173,7 @@ body{
 
 .all img{
     width: 150px;
+    border-radius: 50%;
 }
 
 .about-us-c{
