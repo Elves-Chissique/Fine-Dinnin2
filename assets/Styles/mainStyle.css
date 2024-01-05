@@ -285,10 +285,22 @@ p.service{
 
 @media(max-width: 600px){
     #Cell{
-        display: block;
+        display: flex;
         text-align: center;
-        font-size: medium;
+        align-items: center;
+        justify-content: center;
         color: red;
+        height: 100vh;
+        font-weight: bolder;
+        font-size: large;
+        font-family: 'Bungee Spice', sans-serif;
+        font-family: 'Rubik Maps', system-ui;
+        font-family: 'Rubik Scribble', system-ui;
+    }
+
+    #Cell > p > em{
+        color: green;
+        font-weight: 100;
     }
     #Container{
         display: none;
