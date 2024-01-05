@@ -96,7 +96,7 @@ body{
     padding: 0em 5em;
 }
 
-.Image_Fixed > article#central > p > img{
+.Image_Fixed > article#central img{
     width: 110px;
     border: #00000000 solid 2px;
     border-radius: 50%;
@@ -104,7 +104,7 @@ body{
     
 }
 
-.Image_Fixed > article#central > p > img.clicavel:hover{
+.Image_Fixed > article#central img.clicavel:hover{
     border: green solid 2px;
     cursor: pointer;
 }
@@ -453,37 +453,20 @@ div.Event_content{
    
 }
 
-div.Event_content1{
-    width: 100%;
-    text-align: justify;
-    padding-right:30px;
-    padding-top: -5em;
-    margin-bottom: 1.5em;
-    background-color: #383636;
-}
-
-div.Event_content2{
-    width: 100%;
-    text-align: justify;
-    padding-right:30px;
-    padding-top: -5em;
-    margin-bottom: 1.5em;
-}
-
 .Event_Title{
     color: green;
     text-align: center;
     font-family: 'Rubik Maps', system-ui;
-font-family: 'Rubik Scribble', system-ui;
-    font-size: 62px;
+    font-family: 'Rubik Scribble', system-ui;
+    font-size: 42px;
     font-style: italic;
-    background-color: #f4f8f8;
+    background-color: #def0f0;
 }
 
 .Event_Title > p{
-    width: 70%;
+    width: 50%;
     margin: auto;
-    background-color: #f4f8f8;
+    background-color: #def0f0;
     border-radius: 20px;
 }
 
@@ -493,30 +476,31 @@ font-family: 'Rubik Scribble', system-ui;
     text-align: center;
     letter-spacing: 0.5em;
     font-size: 256%;
-    
     width: 60vw;
     margin: auto;
     margin-bottom: .8em;
 }
 
 .Paragraph_image{
-   /* background-image:url('../Restaurants/MObileBar/Logo.jpg') ;*/
+
     width: 55vw;
     height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display:inline-block;
+    display: flex;
     float: right;
     text-align: center;
-    border-left: 2px solid red;
+    justify-content: center;
+    align-items: center;
 }
+
 .Paragraph_image > img{
-    width: 28vw;
+    border-radius: 50%;
+    width: 27vw;
 }
 
 .Paragraph_image2{
-    /* background-image:url('../Restaurants/MObileBar/Logo.jpg') ;*/
      width: 55vw;
      height: 60vh;
      background-position: center;
@@ -525,32 +509,26 @@ font-family: 'Rubik Scribble', system-ui;
      display:inline-block;
      float: right;
      text-align: center;
-     border-left: 1px solid red;
  }
  .Paragraph_image2 > img{
      width: 28vw;
  }
 
 .beverages{
-    width: 35vw;
+    width: 40vw;
     text-align: center;
-    display: inline-block;
+    display: block;
     float: left;
-    padding:1em 2em 1em 3em;
     color: brown;
     font-size: 19px;
     font-style: italic;
+    margin-left: 1.6em;
+    background-image: url('../Images/Background-flower.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.beverages1{
-    width: 35vw;
-    text-align: center;
-    display: inline-block;
-    float: left;
-    padding:1em 2em 1em 3em;
-    color: brown;
-    font-size: 19px;
-    font-style: italic;
-}
+
 .beverages > strong#champane{
     font-size: 25pt;
     margin-bottom: 6em;
@@ -559,6 +537,25 @@ font-family: 'Rubik Scribble', system-ui;
     width: 40vw;
     text-align: center;
     font-family: cursive;
+}
+
+.BTN{
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    background-color: brown;
+    color: #fff;
+    font-size: 20px;
+    font-family: cursive;
+    padding: .3em;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.BTN:hover{
+   color: brown;
+   background-color: #fff;
 }
 
 

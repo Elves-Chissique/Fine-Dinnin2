@@ -1,12 +1,19 @@
 
 /*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
+let RestButton = window.document.getElementById('RestButton')
 let chamarContact = window.document.getElementById('chamarContact')
 let closeInitial = window.document.getElementById('closeInitial')
 let contactText = window.document.getElementById('contactText')
 
 chamarContact.addEventListener('click', showInitial)
 closeInitial.addEventListener('click', fecharInicial)
+RestButton.addEventListener('click', irpara)
+
+function irpara(){
+    window.location = '#Restaurants'
+    RestButton.style.transition = '3s'
+}
 
 function showInitial(){
     contactInitial.style.width = "30%"
