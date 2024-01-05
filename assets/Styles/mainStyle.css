@@ -256,32 +256,7 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
     background-attachment: fixed;
 }
 
-div.Event_content{
-    width: 100%;
-    padding: 1em;
-    text-align: justify;
-}
 
-.Event_content  > h1{
-    text-align: center;
-    letter-spacing: 0.5em;
-    font-size: 256%;
-    border-bottom: 1px solid rgb(223, 217, 217);
-    width: 60vw;
-    margin: auto;
-    margin-bottom: .8em;
-}
-
-.Paragraph_image{
-    background-image:url('../Images/vista-frontal-de-garrafas-de-vinho-com-taca-de-vinho-na-superficie-escura.jpg') ;
-    width: 55vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    display:inline-block;
-    float: right;
-}
 
 
 p.service{
@@ -443,13 +418,113 @@ span.delivery{
     box-shadow: rgba(0, 128, 0, 0.500) -2px -2px 5px;
 }
 
-.beverages{
-    width: 40vw;
+
+div.Event_content{
+    width: 100%;
     text-align: justify;
+    padding-right:30px;
+    padding-top: -5em;
+    margin-bottom: 1.5em;
+   
+}
+
+div.Event_content1{
+    width: 100%;
+    text-align: justify;
+    padding-right:30px;
+    padding-top: -5em;
+    margin-bottom: 1.5em;
+    background-color: #383636;
+}
+
+div.Event_content2{
+    width: 100%;
+    text-align: justify;
+    padding-right:30px;
+    padding-top: -5em;
+    margin-bottom: 1.5em;
+}
+
+.Event_Title{
+    color: green;
+    text-align: center;
+    font-family: 'Rubik Maps', system-ui;
+font-family: 'Rubik Scribble', system-ui;
+    font-size: 62px;
+    font-style: italic;
+    background-color: #f4f8f8;
+}
+
+.Event_Title > p{
+    width: 70%;
+    margin: auto;
+    background-color: #f4f8f8;
+    border-radius: 20px;
+}
+
+
+
+.Event_content  > h1{
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 256%;
+    
+    width: 60vw;
+    margin: auto;
+    margin-bottom: .8em;
+}
+
+.Paragraph_image{
+   /* background-image:url('../Restaurants/MObileBar/Logo.jpg') ;*/
+    width: 55vw;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    float: right;
+    text-align: center;
+    border-left: 2px solid red;
+}
+.Paragraph_image > img{
+    width: 28vw;
+}
+
+.Paragraph_image2{
+    /* background-image:url('../Restaurants/MObileBar/Logo.jpg') ;*/
+     width: 55vw;
+     height: 60vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display:inline-block;
+     float: right;
+     text-align: center;
+     border-left: 1px solid red;
+ }
+ .Paragraph_image2 > img{
+     width: 28vw;
+ }
+
+.beverages{
+    width: 35vw;
+    text-align: center;
     display: inline-block;
     float: left;
-    padding-left: 1em;
+    padding:1em 2em 1em 3em;
     color: brown;
+    font-size: 19px;
+    font-style: italic;
+}
+.beverages1{
+    width: 35vw;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    padding:1em 2em 1em 3em;
+    color: brown;
+    font-size: 19px;
+    font-style: italic;
 }
 .beverages > strong#champane{
     font-size: 25pt;
