@@ -12,7 +12,6 @@ RestButton.addEventListener('click', irpara)
 
 function irpara(){
     window.location = '#Restaurants'
-    RestButton.style.transition = '3s'
 }
 
 function showInitial(){
