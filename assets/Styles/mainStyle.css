@@ -129,7 +129,6 @@ body{
     box-shadow: red 1px -1px 4px;
     padding: 5px;
     color: white;
-    text-align: justify;
     margin-left: -10%;
 }
   
@@ -216,7 +215,6 @@ body{
 .what-t{
     display: block;
     color:#07b7c4;
-    text-align: center;
     font-size: xx-large;
     font-family: cursive;
     font-style: italic;
@@ -224,6 +222,7 @@ body{
     border-bottom: 1px solid #07b7c4 ;
     width: 60%;
     margin: auto;
+    text-align: left;
 
 }
 
@@ -231,8 +230,6 @@ body{
     display: block;
     color:#07b7c4;
     padding: 0em 1.5em 2em 1em;
-    text-align:justify;  
-    letter-spacing: 1px;
     font-style: italic;
     font-size: 18px;
 }
@@ -242,7 +239,6 @@ body{
 
 
 Aqui termina a configuaração de offcanva-Lateral ---------------*/
-
 
 
 .Image_Fixed-2{
@@ -272,53 +268,6 @@ p.service{
     justify-items: center;
     text-align: center;
     
-}
-#Cell{
-    display: none;
-}
-
-@media(max-width: 1200px){
-    p.service{
-        grid-template-columns:repeat(2,1fr) ;
-    }
-}
-
-@media(max-width: 600px){
-    #Cell{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color: red;
-        height: 100vh;
-        font-weight: bolder;
-        font-size: large;
-        font-family: 'Bungee Spice', sans-serif;
-        font-family: 'Rubik Maps', system-ui;
-        font-family: 'Rubik Scribble', system-ui;
-    }
-
-    #Cell > p > em{
-        color: green;
-        font-weight: 100;
-        font-size: small;
-    }
-    #Container{
-        display: none;
-    }
-    p.service{
-        grid-template-columns:repeat(1,1fr) ;
-        width: 100vw;
-        
-    }
-
-    .Image_Fixed > article{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .Image_Fixed > article > img{
-        display: none;
-    }
 }
 
 .Event_content > article.service-intro > h2{
@@ -398,74 +347,48 @@ span.h3{
     transition: .3s;
 }
 
-/*Entrada de configuração para serviços de Delivery*/
 
-span.delivery{
-    display:block;
-    width: 90%;
-    font-family: sans-serif;
-    cursor: pointer;
-    height: 15em;
-    padding: .2em;
-    overflow: hidden;
-    position: relative;
-    background-color:#d6d1d1;
-    margin: 1em;
-    align-items: center;
-    line-height: 50,50;
-    border-radius: 1em;
-}
-
-.delivery-text{
-    display:table;
-    width: 290px;
-    height: 0px;
-    opacity: 0;
-    text-align: left;
-    margin: auto;
-    color: #000;
-    font-size: 0px;
-    padding: .3em;
-    line-height: 1.5em;
-    border-radius: 5px;
-    background-color: #f1eeee;
-    box-shadow: rgba(0, 128, 0, 0.500) -2px -2px 5px;
-    font-style: italic;
-}
-
-.delivery-foto img{
-    text-align: center;
-    width: 290px;
-    height: 200px;
-    text-align: center;
-    margin: auto;
-    transition: 2s ease;
-    border-radius: 5px;
-    box-shadow: rgba(0, 128, 0, 0.500) -2px -2px 5px;
-}
-
-
-div.Event_content{
-    width: 100%;
-    text-align: justify;
-    padding-right:30px;
-    padding-top: -5em;
-    margin-bottom: 1.5em;
-   
-}
+/*.black{
+    background-image: url('../Images/for-black.jpg');
+    background-size: contain;
+    margin-bottom: 1em;
+}*/
 
 .Event_Title{
     color: green;
-    text-align: center;
     font-family: 'Rubik Maps', system-ui;
     font-family: 'Rubik Scribble', system-ui;
     font-size: 42px;
     font-style: italic;
     background-color: #def0f0;
+    display: flex;
+    justify-content: space-between;
+    padding:.2em 1em;
 }
 
-.Event_Title > p{
-    width: 50%;
+.Event_Title > p.input-btn{
+    width: 10%;
+    text-align: center;  /*div atrás do botão*/
+    margin-top: -12px;
+
+}
+
+.Event_Title > p.input-btn >input{
+    background-color: rgb(133, 15, 15);
+    padding: 0.5em 1em;          /*O própio botão*/
+    border-radius: 15px;
+    color:#fff;
+    font-family: cursive;
+}
+
+
+.Event_Title > p.input-btn >input:hover{
+   color: brown;
+   background-color: #fff;
+}
+
+.Event_Title > p#Restaurants{
+    width: 80%;
     margin: auto;
     background-color: #def0f0;
     border-radius: 20px;
@@ -483,17 +406,15 @@ div.Event_content{
 }
 
 .Paragraph_image{
-
-    width: 55vw;
+    width: 30vw;
     height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    float: right;
+    display: inline;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    margin-left: 3em;
 }
 
 .Paragraph_image > img{
@@ -501,22 +422,8 @@ div.Event_content{
     width: 27vw;
 }
 
-.Paragraph_image2{
-     width: 55vw;
-     height: 60vh;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     display:inline-block;
-     float: right;
-     text-align: center;
- }
- .Paragraph_image2 > img{
-     width: 28vw;
- }
-
 .beverages{
-    width: 40vw;
+    width: 55vw;
     text-align: center;
     display: block;
     float: left;
@@ -528,6 +435,8 @@ div.Event_content{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 1em;
+    margin-bottom: 2em;
 }
 
 .beverages > strong#champane{
@@ -545,7 +454,7 @@ div.Event_content{
     margin-top: 2em;
     margin-bottom: 1em;
     border-radius: 20px;
-    background-color: brown;
+    background-color:  rgb(133, 15, 15);
     color: #fff;
     font-size: 20px;
     font-family: cursive;
@@ -567,4 +476,58 @@ footer{
     height: 4vh;
 }
 
+
+
+
+
+
+/*-------------Configuração de Media queries-----------------------*/
+#Cell{
+    display: none;
+}
+
+@media(max-width: 1200px){
+    p.service{
+        grid-template-columns:repeat(2,1fr) ;
+    }
+}
+
+@media(max-width: 600px){
+    #Cell{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        height: 100vh;
+        font-weight: bolder;
+        font-size: large;
+        font-family: 'Bungee Spice', sans-serif;
+        font-family: 'Rubik Maps', system-ui;
+        font-family: 'Rubik Scribble', system-ui;
+    }
+
+    #Cell > p > em{
+        color:green;
+        font-weight: 100;
+        font-size: small;
+        font-family: cursive;
+    }
+    #Container{
+        display: none;
+    }
+    p.service{
+        grid-template-columns:repeat(1,1fr) ;
+        width: 100vw;
+        
+    }
+
+    .Image_Fixed > article{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .Image_Fixed > article > img{
+        display: none;
+    }
+}
 
