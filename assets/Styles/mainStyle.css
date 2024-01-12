@@ -1,6 +1,7 @@
 @charset "utf8";
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -354,12 +355,21 @@ span.h3{
     margin-bottom: 1em;
 }*/
 
+#Venues{
+    background-color: #ffffffd8;
+}
+.x{
+    color:red;
+    background-color: rgb(255, 255, 255);
+}
+
 .Event_Title{
     color: green;
-    font-family: 'Rubik Maps', system-ui;
-    font-family: 'Rubik Scribble', system-ui;
-    font-size: 42px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
     font-style: italic;
+    font-size: 52px;
     background-color: #def0f0;
     display: flex;
     justify-content: space-between;
@@ -367,7 +377,7 @@ span.h3{
 }
 
 .Event_Title > p.input-btn{
-    width: 10%;
+    width:20;
     text-align: center;  /*div atrás do botão*/
     margin-top: -12px;
 
@@ -388,11 +398,156 @@ span.h3{
    background-color: #fff;
 }
 
-.Event_Title > p#Restaurants{
+.Event_Title > p#be-Member{
     width: 80%;
     margin: auto;
     background-color: #def0f0;
     border-radius: 20px;
+    text-align: center;
+}
+
+#formBusinessRegist{
+    display: none;
+    position: fixed;
+    background-color: #0000006e;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding:1em;
+    border-radius: 10px;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#formBusinessRegist > p{
+    background-color: black;
+    width: 50%;
+    height: 79%;
+    border-radius: 20px;
+    padding: 1.2em;
+    text-align: center;
+    
+}
+#formBusinessRegist > p > span{
+    border-bottom: 1px solid #ffffff77;
+    font-size: 1.6em;
+}
+
+.Form{
+    position: inherit;
+    width: 40em;
+    margin-top: 50px;
+    padding: 1em;
+    text-align: center;
+}
+
+.Form input{
+    width: 70%;
+    height: 1em;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0);
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:#fff;
+    padding: .6em;
+    margin-bottom: 2em;
+    text-align: center;
+    
+}
+
+.Form input:hover{
+    background-color:rgba(255, 255, 255, 0.123);
+    line-height: none;
+}
+
+.Form textarea{
+    height: 5em;
+    padding: 1em;
+    margin-right: -150px;
+    width: 21.5em;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0);
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.Form textarea:hover{
+    background-color:rgba(255, 255, 255, 0.123);
+}
+
+
+.Form label{
+    color: red;
+}
+
+.Form ::placeholder{
+    color: #ffffffad;
+}
+
+
+.Form select{
+    padding: .3em;
+    width: 10em;
+    position: absolute;
+    margin-left: -130px;
+    outline: none;
+    background-color:rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: #fff;
+}
+#SecondFormBTN, #SecondFormBtn{
+    width: 5vw;
+    height: 3em;
+    border: 1px solid #fff;
+}
+
+.Form fieldset{
+    margin: auto;
+    width: 30em;
+}
+
+
+/*----------------------- termina aqui----------------------*/
+
+.Form select:hover{
+    background-color: #ffffff2c;
+}
+
+.category-Selection{
+    background-color: #15d6d6;
+    height: 3em;
+    position: relative;
+    padding: .5em 15.5em .5em 2.5em;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.category-Selection > label{
+    margin-top: 15px;
+    margin-left: 150px;
+    color: #fff;
+    font-weight: bolder;
+}
+.category{
+    background-color: red;
+    color:red;
+    width: 40px;
+}
+
+
+#titleInfo{
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-family: cursive;
+    height: 1.5em;
+    font-style: italic;
 }
 
 
@@ -437,15 +592,19 @@ span.h3{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1em;
+    padding: 0em 2em;
     margin-bottom: 2em;
 }
 
+
+
 .beverages > strong#champane{
+    border-bottom: 1px solid brown;
     font-size: 25pt;
     margin-bottom: 6em;
     margin: auto;
     display: inline-block;
-    width: 40vw;
+    width: 30vw;
     text-align: center;
     font-family: cursive;
 }

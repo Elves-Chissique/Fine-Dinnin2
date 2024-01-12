@@ -1,3 +1,17 @@
+let formBusinessRegist = window.document.getElementById("formBusinessRegist")
+let SecondButton = window.document.getElementById("SecondFormBtn")
+let btnRegister = window.document.getElementById('btnRegister')
+
+SecondButton.addEventListener('click', modalNotShow)
+btnRegister.addEventListener('click', modalShow)
+
+function modalShow(){
+    formBusinessRegist.style.display = "flex"
+}
+
+function modalNotShow(){
+    formBusinessRegist.style.display = "none"
+}
 
 /*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
@@ -11,7 +25,7 @@ closeInitial.addEventListener('click', fecharInicial)
 RestButton.addEventListener('click', irpara)
 
 function irpara(){
-    window.location = '#Restaurants'
+    window.location = '#Venues'
 }
 
 function showInitial(){
@@ -310,119 +324,50 @@ function mudarParaFoto6(){
 }
 
 
-/* ---------------------------------Aqui começa a configuração das funçoes dos serviços de Delivery------------------------------ */
+/*----------Selecionamento de categoria de restaurantes, caterings e tableBookings------*/
 
-/*Adicionando o Eventos e funções para a primeira div de serviços de delivery*/
-delivery1.addEventListener('mouseover',mudarParaTextoDelivery)
-delivery1.addEventListener('mouseout',mudarParaFotoDelivery)
+function escutar(){
+    var titleInfo = window.document.getElementById('titleInfo')
+    var restaurantes = window.document.getElementById('restaurantes')
+    var tableBookings = window.document.getElementById('tableBookings')
+    var caterings = window.document.getElementById('caterings')
 
-function mudarParaTextoDelivery(){
-    deliveryFoto1.style.width = '0px'
-    deliveryFoto1.style.hight = '0px'
-    deliveryFoto1.style.opacity = '0'
-    deliveryFoto1.style.transition = '0.5s'
-
-
-    deliveryText1.style.fontSize = '13.1pt'
-    deliveryText1.style.transition = '0.3s'
-    deliveryText1.style.width = '290px'
-    deliveryText1.style.hight = '300px'
-    deliveryText1.style.opacity = '1'
-
-    deliveryH1.style.color = "#fff"
-    deliveryH1.style.transition = '0.5s'
-
-}
-
-function mudarParaFotoDelivery(){
-    deliveryFoto1.style.width = '290px'
-    deliveryFoto1.style.opacity = '1'
-    deliveryFoto1.style.transition = '0.7s'
-    deliveryFoto1.style.hight = '200px'
-
-    deliveryText1.style.transition = '.3s'
-    deliveryText1.style.width = '290'
-    deliveryText1.style.hight = '0'
-    deliveryText1.style.fontSize = '0px'
-
-    deliveryH1.style.color = "#000"
-    deliveryH1.style.transition = '0.5s'
-}
+    let RadioRest = window.document.getElementById('Rrestaurants')
+    let RadioTableB = window.document.getElementById('RtableB')
+    let RadioCaterings = window.document.getElementById('Rcaterings')
+    let RadioAll = window.document.getElementById('Rall')
 
 
+    if(RadioAll.checked){
+        titleInfo.innerHTML = 'you can make a table reservation here'
+        restaurantes.style.display = "block"
+        tableBookings.style.display = "block"
+        caterings.style.display = "block"
+    }
+    
+    if(RadioCaterings.checked){
+        titleInfo.innerHTML = 'find below all venues that provide catering services'
+        restaurantes.style.display = "none"
+        tableBookings.style.display = "none"
+        caterings.style.display = "block"
+        
+    }
 
-/*Adicionando o Eventos e funções para a segunda div de serviços de delivery*/
-delivery2.addEventListener('mouseover',mudarParaTextoDelivery2)
-delivery2.addEventListener('mouseout',mudarParaFotoDelivery2)
+    if(RadioRest.checked){
+        titleInfo.innerHTML = 'find below all Restaurants, choose one and make your order'
+        restaurantes.style.display = "block"
+        tableBookings.style.display = "none"
+        caterings.style.display = "none"
+    }
 
-function mudarParaTextoDelivery2(){
-    deliveryFoto2.style.width = '0px'
-    deliveryFoto2.style.hight = '0px'
-    deliveryFoto2.style.opacity = '0'
-    deliveryFoto2.style.transition = '0.5s'
-
-
-    deliveryText2.style.fontSize = '13.1pt'
-    deliveryText2.style.transition = '0.3s'
-    deliveryText2.style.width = '290px'
-    deliveryText2.style.hight = '300px'
-    deliveryText2.style.opacity = '1'
-
-    deliveryH2.style.color = "#fff"
-    deliveryH2.style.transition = '0.5s'
-
-}
-
-function mudarParaFotoDelivery2(){
-    deliveryFoto2.style.width = '290px'
-    deliveryFoto2.style.opacity = '1'
-    deliveryFoto2.style.transition = '0.7s'
-    deliveryFoto2.style.hight = '200px'
-
-    deliveryText2.style.transition = '.3s'
-    deliveryText2.style.width = '290'
-    deliveryText2.style.hight = '0'
-    deliveryText2.style.fontSize = '0px'
-
-    deliveryH2.style.color = "#000"
-    deliveryH2.style.transition = '0.5s'
-}
+    if(RadioTableB.checked){
+        titleInfo.innerHTML = 'you can make a table reservation here'
+        restaurantes.style.display = "none"
+        tableBookings.style.display = "block"
+        caterings.style.display = "none"
+    }
+};
 
 
+/* --------------configuração de modal for business registration---------------------- */
 
-/*Adicionando o Eventos e funções para a terceira div de serviços de delivery*/
-delivery3.addEventListener('mouseover',mudarParaTextoDelivery3)
-delivery3.addEventListener('mouseout',mudarParaFotoDelivery3)
-
-function mudarParaTextoDelivery3(){
-    deliveryFoto3.style.width = '0px'
-    deliveryFoto3.style.hight = '0px'
-    deliveryFoto3.style.opacity = '0'
-    deliveryFoto3.style.transition = '0.5s'
-
-
-    deliveryText3.style.fontSize = '13.1pt'
-    deliveryText3.style.transition = '0.3s'
-    deliveryText3.style.width = '290px'
-    deliveryText3.style.hight = '300px'
-    deliveryText3.style.opacity = '1'
-
-    deliveryH3.style.color = "#fff"
-    deliveryH3.style.transition = '0.5s'
-
-}
-
-function mudarParaFotoDelivery3(){
-    deliveryFoto3.style.width = '290px'
-    deliveryFoto3.style.opacity = '1'
-    deliveryFoto3.style.transition = '0.7s'
-    deliveryFoto3.style.hight = '200px'
-
-    deliveryText3.style.transition = '.3s'
-    deliveryText3.style.width = '290'
-    deliveryText3.style.hight = '0'
-    deliveryText3.style.fontSize = '0px'
-
-    deliveryH3.style.color = "#000"
-    deliveryH3.style.transition = '0.5s'
-}

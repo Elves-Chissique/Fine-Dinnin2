@@ -14,8 +14,61 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+
+    <div id="formBusinessRegist">
+        <p>
+            <span>Register your business with us and take it to  another level</span>   
+        </p>
+        <form  class="Form" action="">
+            <label for="SecondFormEmail">*</label>
+            <input type="text" id="SecondFormEmail" placeholder="Email"> <br>
+
+            <label for="SecondFormNumber">*</label>
+            <input type="number" id="SecondFormNumber" placeholder="Number"> <br>
+
+            <label for="SecondFormBname">* </label>
+            <input type="text" id="SecondFormBname" placeholder="Business Name"> <br>
+
+            <label for="SecondFormName">* </label>
+            <input type="text" id="SecondFormName" placeholder="Your Name here"> 
+            <br>
+
+            <fieldset><legend>Business Description</legend>
+
+                <label for="SecondFormSelect">.</label>
+                <select name="" id="SecondFormSelect">
+                    <option value="">Cabo Delgado</option>
+                    <option value="">Gaza</option>
+                    <option value="">Inhambane</option>
+                    <option value="">Manica</option>
+                    <option value="">Maputo (cidade)</option>
+                    <option value="">Maputo (província)</option>
+                    <option value="">Nampula</option>
+                    <option value="">Niassa</option>
+                    <option value="">Sofala</option>
+                    <option value="">Tete</option>
+                    <option value="">Zambézia</option>
+                    <option value="">out Mozambique</option>
+                </select>
+                <label for="SecondFormTarea">.</label>
+                <textarea name="textarea" id="SecondFormTarea" cols="30" rows="10" placeholder="Describe your business your location and stuff"></textarea>
+            </fieldset> 
+
+            <fieldset> <legend>done!</legend>
+                <input id="SecondFormBTN" type="submit" value="submit"/>
+                &nbsp;
+                <input id="SecondFormBtn" type="button" value="close"  />
+            </fieldset>
+
+            
+        </form>
+    </div>
+
+
     <div id="Cell">
         <P>
             Not Available For Mobile Phone yet
@@ -101,9 +154,9 @@
                                     <br>
                                     &clubs; Outsource <br>
 
-                                    &clubs; Collecta customer feedback <br>
+                                    &clubs; Collect customer feedback <br>
 
-                                    &clubs; customer experience advisor <br>
+                                    &clubs; Customer experience advisor <br>
 
                                     &clubs; Direct bookings from the website <br>
 
@@ -151,7 +204,7 @@
                             We understand that every event is different. Choose from our range of flexible packages, each designed to accommodate various preferences and budgets, ensuring a perfect fit for your unique celebration.
                         </span>
                         <span class="catering-foto" id="cateringFoto3">
-                            <img src="assets/Images/package.jpg" alt="">
+                            <img src="assets/Images/Dilivery-3.jpg" alt="">
                         </span>
                     </span>
 
@@ -169,80 +222,102 @@
                     <!--Aqui Entra os serviços de Dilivery-->
                 </p>
             </div>
-            <div class="Image_Fixed-2">
+            <div  class="Image_Fixed-2">
                 
-                
+               
             </div>
-            <div class="Event_content black">
+            <article class="x" id="Venues">
+                .
+            </article>
+            <article >
                 <article class="Event_Title">
-                    <p class="input-btn"><input type="button" value="Be a member"></p>
-                    <p id="Restaurants">
-                        Order From Any restaurant Around the World
+                    <p class="input-btn">
+                        <input id="btnRegister" type="button" value="Regist your business"/>
                     </p>
-                    <p class="input-btn"><input type="button" value="Do your Order"></p>
+                    <p id="be-Member">
+                        Our Registed Members
+                    </p>
                 </article>
-                <br>
-                <p class="beverages">
-                    <strong id="champane">Juls Bar Movel</strong> <br/>
-                    ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
-                    <br>
-                    <br>
+                
+                <p class="category-Selection">
+                
+                    <label for="Rall">All</label>
+                    <input onclick="escutar()" class="category" type="radio" name="CategoryChosing" id="Rall" checked>
 
-                    ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
+                    <label for="Rcaterings">Catering</label>
+                    <input onclick="escutar()" class="category" type="radio" name="CategoryChosing" id="Rcaterings">
 
-                    <br>
-                    <br>
-                    ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
+                    <label for="Rrestaurants">Restaurants</label>
+                    <input  onclick="escutar()" class="category" type="radio" name="CategoryChosing" id="Rrestaurants">
 
-                    <input class="BTN" type="button" value="More Details">
+                    <label for="RtableB">Table bookings</label>
+                    <input  onclick="escutar()" class="category" type="radio" name="CategoryChosing" id="RtableB">
                 </p>
-                <P class="Paragraph_image" id="Imagem-rest-1">
-                    <img src="assets/Restaurants/MObileBar/Logo.jpg" alt="">
-                </P>
-            </div>
-
-            <div class="Event_content black">
-                <br>
-                <br>
-                <p class="beverages">
-                    <strong id="champane">Bar + 1</strong> <br/>
-                    ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
-                    <br>
-                    <br>
-
-                    ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
-
-                    <br>
-                    <br>
-                    ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
-
-                    <input class="BTN" type="button" value="More Details">
+                <p id="titleInfo">
+                
                 </p>
-                <P  class="Paragraph_image" id="Imagem-rest-2">
-                    <img src="assets/Restaurants/Bar+1/Logo.jpg" alt="">
-                </P>
-            </div>
+            </article>
 
-            <div class="Event_content black">
-                <br><br>
-                <p class="beverages">
-                    <strong id="champane">Poporos Iguarias</strong> <br/>
-                    ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
+            <article id="restaurantes">
+                <div class="Event_content">
                     <br>
-                    <br>
+                        <p class="beverages">
+                            <strong id="champane">Juls Bar Movel</strong> <br/>
+                            ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
+                            <br>
+                            <br>
+                            ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
+                            <br>
+                            <br>
+                            ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
+                            <input class="BTN" type="button" value="More Details">
+                        </p>
+                        <P class="Paragraph_image" id="Imagem-rest-1">
+                            <img src="assets/Restaurants/MObileBar/Logo.jpg" alt="">
+                        </P>
+                </div>
+            </article>
 
-                    ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
-
+            <article id="caterings">
+                <div class="Event_content black">
                     <br>
-                    <br>
-                    ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
+                        <p class="beverages">
+                            <strong id="champane">Bar + 1</strong> <br/>
+                            ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
+                            <br>
+                            <br>
+                            ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
+                            <br>
+                            <br>
+                            ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
+                            <input class="BTN" type="button" value="More Details">
+                        </p>
+                        <P  class="Paragraph_image" id="Imagem-rest-2">
+                            <img src="assets/Restaurants/Bar+1/Logo.jpg" alt="">
+                        </P>
+                </div>
+            </article>
 
-                    <input class="BTN" type="button" value="More Details">
-                </p>
-                <P class="Paragraph_image" id="Imagem-rest-3">
-                    <img src="assets/Restaurants/Poporos Iguarias/Logo.jpg" alt="">
-                </P>
-            </div>
+            <araticle id="tableBookings">
+                <div class="Event_content black">
+                    <br>
+                    
+                        <p class="beverages">
+                            <strong id="champane">Poporos Iguarias</strong> <br/>
+                            ✨ Crafted to Perfection: Each cocktail is a masterpiece, carefully concocted by our skilled mixologists who are passionate about delivering excellence in every sip.
+                            <br>
+                            <br>
+                            ✨ Premium Ingredients: We source only the finest spirits and freshest ingredients, ensuring that every drink is a celebration of quality and flavor.
+                            <br>
+                            <br>
+                            ✨ Innovative Mixes: From timeless classics to bold and creative concoctions, our menu is a fusion of tradition and innovation. Explore a world of taste like never before.
+                            <input class="BTN" type="button" value="More Details">
+                        </p>
+                        <P class="Paragraph_image" id="Imagem-rest-3">
+                            <img src="assets/Restaurants/Poporos Iguarias/Logo.jpg" alt="">
+                        </P>
+                </div>
+            </araticle>
         </section>
         <footer>
             &copy;copyright_Fine Dining Moz LDA
