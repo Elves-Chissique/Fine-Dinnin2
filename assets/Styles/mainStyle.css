@@ -504,6 +504,7 @@ span.h3{
     width: 5vw;
     height: 3em;
     border: 1px solid #fff;
+    font-style: italic;
 }
 
 .Form fieldset{
@@ -576,10 +577,11 @@ span.h3{
 .Paragraph_image > img{
     border-radius: 50%;
     width: 27vw;
+    border: 3px solid #0729299f;
 }
 
 .beverages{
-    width: 55vw;
+    width: 45vw;
     text-align: center;
     display: block;
     float: left;
@@ -592,40 +594,74 @@ span.h3{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1em;
-    padding: 0em 2em;
+    padding: 0em 5em;
     margin-bottom: 2em;
+    border: 2px solid #0729299f;
+}
+
+.beverages > .span-left{
+    display: inline-block;
+    padding: 1em;
+    border: 2px solid #fff;
+    margin-top: 1.5em;
+    font-size: 15px;
+    background-color: #0729299f;
+    text-align: left;
+    color: #fff;
+    width: 35%;
+
+}
+
+.beverages > .span-right{
+    display: inline-block;
+    width: 45%;
+    padding: 1em;
+    height: 170px;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 14px;
+    border: 2px solid #fff;
+    background-color: #0729299f;
+    color: #fff;
+}
+
+.beverages > span > svg{
+    color:#fff;
 }
 
 
 
 .beverages > strong#champane{
-    border-bottom: 1px solid brown;
+    border-bottom: 1px solid #0729299f;
     font-size: 25pt;
     margin-bottom: 6em;
     margin: auto;
     display: inline-block;
-    width: 30vw;
+    width: 92%;
     text-align: center;
     font-family: cursive;
+    color: #0729299f;
 }
 
 .BTN{
-    width: 90%;
+    width: 92%;
     margin-top: 2em;
     margin-bottom: 1em;
     border-radius: 20px;
-    background-color:  rgb(133, 15, 15);
+    background-color: #0729299f;
     color: #fff;
     font-size: 20px;
     font-family: cursive;
     padding: .3em;
     transition: .4s;
     cursor: pointer;
+    border: 2px solid #fff;
 }
 
 .BTN:hover{
    color: brown;
    background-color: #fff;
+   border: 2px solid #0729299f;
 }
 
 
