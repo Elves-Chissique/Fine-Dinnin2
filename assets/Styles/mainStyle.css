@@ -609,6 +609,7 @@ span.h3{
     text-align: left;
     color: #fff;
     width: 35%;
+    border-radius: 15px;
 
 }
 
@@ -623,6 +624,7 @@ span.h3{
     border: 2px solid #fff;
     background-color: #0729299f;
     color: #fff;
+    border-radius: 15px;
 }
 
 .beverages > span > svg{
