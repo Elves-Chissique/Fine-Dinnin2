@@ -604,7 +604,7 @@ span.h3{
     padding: 1em;
     border-right: 2px solid #fff;
     margin-top: 1.5em;
-    font-size: 19px;
+    font-size: 1.1vw;
     color:#0729299f;
     background-color: #07292900;
     text-align: left;
@@ -619,7 +619,7 @@ span.h3{
     height: 170px;
     text-align: justify;
     font-family: cursive;
-    font-size: 19px;
+    font-size: 1.2vw;
     color:#0729299f;
     background-color: #07292900;
 }
