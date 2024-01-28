@@ -85,7 +85,6 @@
     border-right: 2px solid #fff;
     font-size: .8vw;
     align-content: space-between;
-    z-index: 999;
 }
 
 @media screen and (max-width: 1600px) {
