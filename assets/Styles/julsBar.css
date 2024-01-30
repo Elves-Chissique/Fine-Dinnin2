@@ -3,7 +3,7 @@
 .Image_Fixed{
     position: fixed;
     text-align: center;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #juls{
@@ -512,20 +512,42 @@ Div#photo{
 
 #ReviewsFrame{
     display: flex;
+    gap: 1em;
     justify-content: center;
     background-color: red;
-    background-image: url('../Images/brooke-.jpg');
+   background-image: url('../Images/brooke-.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 86%;
+    height: 42vw;
     margin: auto;
-    padding: 3em 0em;
+    padding: 2em 0em;
+    flex-wrap: wrap;
 }
 
 #ReviewsFrame > div{
-    height: 35vw;
-    background-color: #069f886b;
-    width: 45%;
-    border: 1px solid white;
+    margin: 1.5em;
+    color:#000;
+    height:10vw;
+    background-color: rgba(255, 255, 255, 0.651);
+    width: 35%;
+    border: 1px solid #0000007e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+#nomeOfComment{
+    font-size: medium;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+#corpOfComment{
+    font-family: cursive;
+    color: rgb(37, 39, 37);
+    font-size: 1vw;
 }
