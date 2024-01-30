@@ -30,7 +30,7 @@ body{
 }
 .Image_Fixed > article#cabecalho{
     display: flex;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.938);
     opacity: 0.9;
     color:white;
     position: fixed;                /*----Configuração de header------*/
