@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -257,7 +259,6 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
 
 
 p.service{
-    
     width: 80%;
     margin: auto;
     font-size: 13pt;
@@ -271,7 +272,16 @@ p.service{
     
 }
 
-.Event_content > article.service-intro > h2{
+.Event_content2  > h1{
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 256%;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: .8em;
+}
+
+.Event_content2 > article.service-intro > h2{
     margin-left: 3em;
     border-bottom: 2px solid black;
     width: 14em;
@@ -301,7 +311,7 @@ span.catering{
     padding: .2em;
     overflow: hidden;
     position: relative;
-    background-color:#d6d1d1;
+    background-color:#d6d1d16e;
     margin: 1em;
     align-items: center;
     line-height: 50,50;
@@ -344,23 +354,19 @@ span.h3{
     font-family: 'Ephesis', cursive;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.6aem;
-    color: black;
+    color: #4b4848;
     transition: .3s;
+    margin-bottom: 1em;
 }
 
-
-/*.black{
-    background-image: url('../Images/for-black.jpg');
-    background-size: contain;
-    margin-bottom: 1em;
-}*/
 
 #Venues{
-    background-color: #ffffffd8;
+    
 }
 .x{
-    color:red;
-    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(21, 214, 214);
 }
 
 .Event_Title{
@@ -496,7 +502,7 @@ span.h3{
     position: absolute;
     margin-left: -130px;
     outline: none;
-    background-color:rgba(255, 255, 255, 0);
+    background-color: rgb(14, 13, 13);
     border-radius: 10px;
     color: #fff;
 }
@@ -516,7 +522,9 @@ span.h3{
 /*----------------------- termina aqui----------------------*/
 
 .Form select:hover{
-    background-color: #ffffff2c;
+    background-color: rgba(14, 13, 13, 1);
+    color:rgb(6, 141, 6);
+    
 }
 
 .category-Selection{
@@ -536,11 +544,42 @@ span.h3{
     font-weight: bolder;
 }
 .category{
-    background-color: red;
+    background-color: rgba(167, 27, 27, 0.932);
     color:red;
     width: 40px;
 }
 
+
+.paragraph-gif{
+    padding: 1.2em 2em 1.2em 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+span.imgGif img{
+    height: 60vh;
+    width: 60vw;
+}
+
+span.infoGif{
+    width: 38vw;
+    display: flex;
+    font-size: 2.5vw;
+    font-weight: 900;
+    height: 59.7vh;
+    background-color: #00000015;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 2em;
+    font-family: 'Bilbo Swash Caps', cursive;
+    transition: .5s;
+}
+
+span.infoGif:hover{
+    cursor: default;
+    color: #fff;
+}
 
 #titleInfo{
     text-align: center;
@@ -551,70 +590,90 @@ span.h3{
     font-style: italic;
 }
 
-
-
-.Event_content  > h1{
-    text-align: center;
-    letter-spacing: 0.5em;
-    font-size: 256%;
-    width: 60vw;
-    margin: auto;
-    margin-bottom: .8em;
+.Event_content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
+
 .Paragraph_image{
-    width: 30vw;
-    height: 60vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    width: 23vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline;
-    text-align: center;
     align-items: center;
-    margin-left: 3em;
+    z-index: 0;
+    margin-top: 1em;
+    padding: 1.5em;
 }
 
 .Paragraph_image > img{
+    z-index: 0;
     border-radius: 50%;
-    width: 400px;
-    border: 3px solid #0729299f;
+    width: 18vw;
+    box-shadow: 1px 1px 8px black;
+}
+
+#restaurantes{
+    position: relative;
 }
 
 .beverages{
-    width: 45vw;
-    text-align: center;
+    z-index: -1;
+    box-shadow: -1px -1px 8px black;
+    background-color: #fff;
     display: block;
-    float: left;
+    position: relative;
+    width: 40vw;
+    text-align: center;
     color: brown;
     font-size: 19px;
     font-style: italic;
     margin-left: 1.6em;
-    background-image: url('../Images/Background-flower.jpg');
+    margin-top:1em ;
+    backface-visibility: hidden;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1em;
     padding: 0em 5em;
     margin-bottom: 2em;
-    /*border: 2px solid #0729299f;*/
+    height: 86vh;
+    overflow: hidden;
 }
 
 .beverages > .span-left{
-    display: inline-block;
+    display: block;
     padding: 1em;
     border-right: 2px solid #fff;
     margin-top: 1.5em;
     font-size: 1.1vw;
     color:#0729299f;
-    background-color: #07292900;
+    background-color: #072929de;
     text-align: left;
     width: 35%;
 
 }
 
+.linha_suspenca{
+    margin-left: 4em;
+    display: block;
+    position: absolute;
+    color: red;
+    width: 42vw;
+    margin-top: 19em;
+}
+
 .beverages > .span-right{
-    display: inline-block;
-    width: 45%;
+    margin-top: 17.6em;
+    display: block;
+    width: 100%;
     padding: 1em;
     height: 170px;
     text-align: justify;
@@ -628,39 +687,54 @@ span.h3{
     color:#fff;
 }
 
-
+.span-titulo-strong{
+    background-color: #0000003d;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    font-size: 3vw;
+    letter-spacing: .2em;
+}
 
 .beverages > strong#champane{
     /*border-bottom: 1px solid #0729299f;*/
-    font-size: 25pt;
-    margin-bottom: 6em;
     margin: auto;
     display: inline-block;
-    width: 92%;
+    width: 100%;
     text-align: center;
     font-family: cursive;
     color: #0729299f;
+    writing-mode: vertical-rl;
 }
 
-.BTN{
-    width: 92%;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    border-radius: 20px;
-    background-color: #0729299f;
-    color: #fff;
-    font-size: 20px;
+#Abtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 6em;
+    margin: auto;
+}
+
+#BTN,#BTNII,#BTNIII{
     font-family: cursive;
-    padding: .3em;
-    transition: .4s;
-    cursor: pointer;
-    border: 2px solid #fff;
+   outline: none;
+   width: 100%; 
+   border: 2px solid #0000003d; 
+   padding: .4em 2em;
+   border-radius: 15px;
+   transition: .5s;
+  
+
 }
 
-.BTN:hover{
+#BTN,#BTNII,#BTNIII:hover{
+   outline: none;
    color: brown;
    background-color: #fff;
-   border: 2px solid #0729299f;
+   border: 2px solid #15d6d6;
 }
 
 
@@ -668,7 +742,17 @@ footer{
     background-color: #000;
     color:white;
     text-align: center;
-    height: 4vh;
+    height: 25vh;
+}
+
+.link-fooat{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+.linha-foot{
+    border: 1px solid #ffffff34;
+    margin-bottom: .5em;
 }
 
 

@@ -339,7 +339,7 @@ function escutar(){
 
 
     if(RadioAll.checked){
-        titleInfo.innerHTML = 'you can make a table reservation here'
+        titleInfo.innerHTML = ' '
         restaurantes.style.display = "block"
         tableBookings.style.display = "block"
         caterings.style.display = "block"

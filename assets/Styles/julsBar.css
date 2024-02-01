@@ -528,11 +528,11 @@ Div#photo{
 
 #ReviewsFrame > div{
     margin: 1.5em;
-    color:#000;
+    color:#fff;
     height:17.5vw;
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 35%;
-    border: 1px solid #0000007e;
+    border: 1px solid #00000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -549,11 +549,11 @@ Div#photo{
 
 #corpOfComment{
     font-family: cursive;
-    color: rgb(37, 39, 37);
+    color: rgba(255, 255, 255, 0.856);
     font-size: 1vw;
 }
 svg.perfil-of-comment{
-    color: rgba(37, 39, 37, 0.795);
+    color: rgba(255, 255, 255, 0.795);
     width: 3.5em;
     height: 3.5em;
 }
