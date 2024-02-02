@@ -343,3 +343,20 @@ function showPhoto14(){
 function closePhotos(){
     photoShowMainFrame.style.display = 'none' /* configuração para fechar toda a ABA de phot show */
 }
+
+/*----------------------- Configuração para ABA de Reviews--------------------------- */
+
+var fundoComentario = window.document.getElementById('fundoComentario')
+var abrirComentarios = window.document.getElementById('abrirComentarios')
+var cancelBtnF2 = window.document.getElementById('cancelBtnF2')
+
+abrirComentarios.addEventListener('click', abrirCampoComentario)
+cancelBtnF2.addEventListener('click', fecharCampoComentario)
+
+function abrirCampoComentario(){
+    fundoComentario.style.display = 'flex'
+}
+
+function fecharCampoComentario(){
+    fundoComentario.style.display = 'none'
+}
