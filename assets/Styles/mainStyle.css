@@ -624,6 +624,14 @@ span.infoGif:hover{
     position: relative;
 }
 
+#tableBookings{
+    position: relative;
+}
+
+#caterings{
+    position: relative;
+}
+
 .beverages{
     z-index: -1;
     box-shadow: -1px -1px 8px black;
@@ -709,7 +717,7 @@ span.infoGif:hover{
     writing-mode: vertical-rl;
 }
 
-#Abtn{
+.Abtn{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -718,7 +726,8 @@ span.infoGif:hover{
     margin: auto;
 }
 
-#BTN,#BTNII,#BTNIII{
+
+.BTNII{
     font-family: cursive;
    outline: none;
    width: 100%; 
@@ -730,7 +739,7 @@ span.infoGif:hover{
 
 }
 
-#BTN,#BTNII,#BTNIII:hover{
+.BTNII:hover{
    outline: none;
    color: brown;
    background-color: #fff;
