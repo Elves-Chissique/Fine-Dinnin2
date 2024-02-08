@@ -764,6 +764,26 @@ footer{
     margin-bottom: .5em;
 }
 
+.srceenshort{
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.322);
+    border-top: 5px solid rgba(0, 128, 0, 0.322);
+    border-bottom: 5px solid rgba(0, 128, 0, 0.322);
+}
+
+.srceenshort img{
+    width: 100%;
+}
+
+.srceenshort p{
+    margin-top: -0.5em;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 0.3em;
+    background-color: rgba(0, 128, 0, 0.322);
+}
+
 
 
 
