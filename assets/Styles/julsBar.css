@@ -24,6 +24,7 @@
     display: inline-block;
 }
 
+
 @media screen and (max-width: 1600px){
    
     #julsBar{
@@ -143,6 +144,7 @@
     
 }
 
+
 .escola{
     position: absolute;
     margin: auto;
@@ -153,9 +155,9 @@
 
 
 #mainViewInfo > div.info-leftRigth{
+    height: 73.5vh;
     box-shadow: 1px 1px 3px;
     background-color: #fff;
-    display: inline-block;
     margin-top: .2em;
     border-radius: 5px;
     padding: 5px;
@@ -166,13 +168,151 @@
     width: 55%;
     margin-right: .6em;
     overflow: hidden;
+    display: inline-block;
 }
 
+#leftOther{
+    width: 55%;
+    margin-right: .6em;
+    overflow: hidden;
+    display: none;
+}
+
+#mainOrderPrevision{
+    background-color: rgb(5, 70, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.orderPrevision{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5vw;
+    height: 55vh;
+    background-color: rgb(5, 70, 5);
+    color:#fff;
+}
+
+#previsionComidas{
+    display: none;
+}
+
+#previsionBebidas{
+    display: none;
+}
+
+
+.orderPrevision > div{
+    height: auto;
+    color: #fff;
+    width: 20vw;
+}
+
+#photoOrder, #photoOrderB{
+    background-color: #fff;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#photoOrder > P, #photoOrderB > P{
+    background-color: rgb(133, 129, 129);
+}
+
+#nameOrder, #nameOrderB{
+    background-color:rgba(255, 0, 0, 0.479);
+    border-radius: 0px 0px 15px 15px;
+    font-family: cursive;
+}
+
+#precoOrder, #precoOrderB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    background-color: rgb(5, 70, 5);
+    height: 55vh;
+}
+
+#precoOrder div{
+    box-shadow: 1px 1px 10px #fff;
+    width: 20vw;
+    height: 35vh; 
+    border-radius:15px ;
+    padding: 10px 0px;
+    color: #fff;
+}
+
+#valorTotal{
+    width: 50%;
+    background-color: rgb(56, 1, 1);
+    border-radius: 8px;
+}
+
+#multiplicador{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-size: .9vw;
+    color:#fff;
+    width: 50%;
+    text-align: center;
+    border: none;
+
+}
+
+.p1, .p2{
+    display: block;
+    width: auto;
+    position: absolute;
+    color:#fff;
+    font-size: 1.3vw;
+}
+
+.p2{
+    right: 5px;
+}
+
+.p1{
+    left: 5px;
+}
+
+#multiplicadorResultado{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    z-index: 1;
+    position:absolute;
+    bottom: .8em;
+    background-color: rgba(53, 2, 2, 0.493);
+    color: #000;
+}
+#totalN{
+    font-size: 2vw;
+    font-weight: bolder; 
+}
+
+
+.batnNOne{
+    margin-top: 1em;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.521);
+    color: rgba(255, 0, 0, 0);
+    border: none;
+}
 
 #right{
     width: 30%;
     margin-left: .6em;
     overflow: hidden;
+    display: inline-block;
 }
 #mainViewInfo > div > span.span-view{
     font-size: 4vw;
@@ -409,6 +549,16 @@ p.food-selection select{
 }
 
 /*-------------------------------Estilização da ABA photos*-------------------------------------------------------------*/
+#mensagemPhotos{
+    background-color: #fff;
+    width: 99%;
+    font-family: cursive;
+    font-size: 1.8vw;
+    text-shadow: 2px 2px 5px red;
+    color:#000;
+    
+}
+
 #photosMain{
     width: 100%;
     display: flex;
@@ -463,8 +613,8 @@ Div#photo{
     justify-content: center;
     align-items: center;
     margin-top: -2em;
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.800);
+    width: 86%;
+    background-color: rgba(255, 255, 255, 0.9400);
     color:#fff ;
     height: 100vh;
     z-index: 0;

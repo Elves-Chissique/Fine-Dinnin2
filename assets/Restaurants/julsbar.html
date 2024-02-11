@@ -36,7 +36,7 @@
         <section>
             <div class="Image_Fixed">
                 <article id="cabecalho">
-                    <img src="../Images/home.png" alt="">
+                    <img id="Home" src="../Images/home.png" alt="">
                     <h1>
                         Jusls Bar & Restaurants
                     </h1>
@@ -122,6 +122,83 @@
                                             </p>
                                         </p>
                                     </div>
+                                    <div id="leftOther" class="info-leftRigth">
+                                        <Span class="span-view">
+                                            Order Preview 
+                                        </Span>
+                                        <hr>
+                                        <div id="mainOrderPrevision">
+                                            <div class="orderPrevision" id="previsionComidas"> <!--div photo e preço-->
+                                                <div id="photoOrder">
+                                                    <p>
+                                                        <span id="precoletras">
+                                                            Preço:
+                                                            &nbsp;
+                                                        </span>
+                                                        
+                                                        <output id="precoNumerario">00</output>
+                                                    </p>
+                                                    
+                                                    <img src="../Images/humburger.png" alt="" id="photoForOrder">
+                                                </div>
+                                                <div id="nameOrder">
+                                                    nome Food
+                                                </div>
+                                            </div>
+
+
+                                            <div class="orderPrevision" id="previsionBebidas"> <!--div photo e preço-->
+                                                <div id="photoOrderB">
+                                                    <p>
+                                                        <span id="precoletrasB">
+                                                            Preço:
+                                                            &nbsp;
+                                                        </span>
+                                                        
+                                                        <output id="precoNumerarioB">00</output>
+                                                    </p>
+                                                    <img src="../Images/chá.jpg" alt="" id="photoForOrderB">
+                                                </div>
+                                                <div id="nameOrderB">
+                                                    Nome Bebidas
+                                                </div>
+                                            </div>
+                                            <div id="multiplicadorResultado">
+                                                
+                                                <div id="multiplicador">
+                                                    <p class="p1">
+                                                        <span id="numeroProdutoMultip">
+                                                            <!--Quantidade Multiplicado-->
+                                                        </span>
+                                                        <span id="nomeProdutoMultip">
+                                                            <!--Produto Multiplicado-->
+                                                            Food not selected
+                                                        </span>
+                                                    </p>
+
+                                                    <p id="valorTotal"> <!---------------------------->
+                                                        <sapn id="totalN">
+                                                            0,00
+                        <!--preço total-->              </sapn>
+                                                        <br>
+                                                        <span id="totalT">
+                                                            Total to Pay
+                                                        </span>
+                                                    </p> <!---------------------------------------->
+
+                                                    <p class="p2">
+                                                        <span id="numeroProdutoMultipBebidas">
+                                                            <!--Quantidade Multiplicado-Bebidas -->
+                                                        </span>
+                                                        <span id="nomeProdutoMultipBebidas">
+                                                            <!--Produto Multiplicado-Bebidas -->
+                                                            Drink not selected
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div id="right" class="info-leftRigth">
                                         <span class="span-order">
                                             Make your order
@@ -166,9 +243,9 @@
                                                 <input type="text" name="" id="iOtherWrite" placeholder="Write here your request">
 
                                                 <label for="iFoodSelection">Select Food</Select></label>
-                                                <select id="iFoodSelection">
-                                                    <option value="humburguer">Select your Food</option>
-                                                    <option value="humburguer">humburguer</option>
+                                                <select onchange="valorSeleacionado(), calcular(), exibirValor()" id="iFoodSelection">
+                                                    <option value="selecting">Select your Food</option>
+                                                    <option value="humburguer">Humburguer</option>
                                                     <option value="Sandes">Sandes</option>
                                                     <option value="Pizza Hut">Pizza Hut</option>
                                                     <option value="Burger King">Burger King</option>
@@ -176,10 +253,11 @@
                                                 </select>
 
                                                 <label for="iBeverageSelection">Select Drinks</label>
-                                                <select id="iBeverageSelection">
-                                                    <option value="humburguer">Select your drinks</option>
+                                                <select onchange="visualizarBebida(), calcular()" id="iBeverageSelection">
+                                                    <option value="selecting Drinks">Select your drinks</option>
                                                     <option value="coffee">Coffee</option>
-                                                    <option value="tea">Tea</option>
+                                                    <option value="champagne">Champagne</option>
+                                                    <option value="Chamomile Tea">Chamomile Tea</option>
                                                     <option value="soda">Soda-woter</option>
                                                     <option value="water">still-Water</option>
                                                     <option value="juice">Lemon-Juice</option>
@@ -206,12 +284,12 @@
                                                 </span>
 
                                                 <span class="valor">
-                                                    <button onclick="diminuirNumero()" type="button" name="nSubtrair" id="iFSubtrair">-</button>
+                                                    <button onclick="diminuirNumero(), exibirValor(), calcular()" onclick="exibirValor()" type="button" name="nSubtrair" id="iFSubtrair">-</button>
 
-                                                    <input type="number" name="nQty" id="iFQty" min="0" value="1" readonly>
+                                                    <input oninput="exibirValor()"  type="number" name="nQty" id="iFQty" min="0" value="1"  readonly>
                                                     <!--Hello, World!-->
 
-                                                    <button onclick="aumentarNumero()" type="button" ame="nAdiconar" id="iFAdicionar">+</button>
+                                                    <button onclick="aumentarNumero(), exibirValor(), calcular()" type="button" ame="nAdiconar" id="iFAdicionar">+</button>
                                                 </span>
                                             </p>
 
@@ -221,11 +299,11 @@
                                                 </span>
 
                                                 <span class="valor">
-                                                    <button onclick="diminuirSegundoNumero()"  type="button" name="nSubtrair" id="iBSubtrair">-</button>
+                                                    <button onclick="diminuirSegundoNumero(), exibirValor2(), calcular()"  type="button" name="nSubtrair" id="iBSubtrair">-</button>
 
                                                     <input type="number" name="nQty" id="iBQty" value="1" min="0" readonly>
 
-                                                    <button onclick="aumentarSegundoNumero()" type="button" ame="nAdiconar" id="iBAdicionar">+</button>
+                                                    <button onclick="aumentarSegundoNumero(), exibirValor2(), calcular()" type="button" ame="nAdiconar" id="iBAdicionar">+</button>
                                                 </span>
                                             </p>
 
@@ -268,6 +346,7 @@
                 <article id="photosMain">
                     <div id="photo">
                         <div class="conteiner">
+                            <div id="mensagemPhotos">Explore our gallery of work images and immerse yourself in a visual journey of dedication, expertise and excellence.</div>
                             <p class="imagem-a">
                                 <img id="imgJuls1" src="MObileBar/IMG-20231225-WA0031.jpg" alt="" onclick="showPhoto1()">
                             </p>

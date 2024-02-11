@@ -359,10 +359,6 @@ span.h3{
     margin-bottom: 1em;
 }
 
-
-#Venues{
-    
-}
 .x{
     background-repeat: no-repeat;
     background-size: cover;
@@ -539,9 +535,10 @@ span.h3{
 
 .category-Selection > label{
     margin-top: 15px;
-    margin-left: 150px;
+    margin-left: 11vw;
     color: #fff;
     font-weight: bolder;
+    font-size: 0.9vw;
 }
 .category{
     background-color: rgba(167, 27, 27, 0.932);

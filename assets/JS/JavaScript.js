@@ -12,6 +12,14 @@ function modalShow(){
 function modalNotShow(){
     formBusinessRegist.style.display = "none"
 }
+/*-------------configuração de botão Home----------------------------------*/
+var Home = window.document.getElementById('Home');
+Home.addEventListener('click',backHome)
+
+
+function backHome(){
+    window.location= "index.html"
+}
 
 /*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
@@ -291,6 +299,7 @@ catering6.addEventListener('mouseover',mudarParaTexto6)
 catering6.addEventListener('mouseout',mudarParaFoto6)
 
 function mudarParaTexto6(){
+    
     cateringFoto6.style.width = '0px'
     cateringFoto6.style.hight = '0px'
     cateringFoto6.style.opacity = '0'

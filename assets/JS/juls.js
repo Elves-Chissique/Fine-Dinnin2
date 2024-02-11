@@ -1,3 +1,12 @@
+/*-------------configuração de botão Home----------------------------------*/
+var Home = window.document.getElementById('Home');
+Home.addEventListener('click',backHome)
+
+
+function backHome(){
+    window.location= "../../index.html"
+}
+
 /*-------------- Fução da hora ----------------*/
 var iData = window.document.getElementById('iData')
 var iTime = window.document.getElementById('iTime')
@@ -191,6 +200,8 @@ window.onload = function verificarIFood(){
         iBeverageSelection.style.display = 'block'
     }
     else{
+        var previsionBebidas = window.document.getElementById('previsionBebidas')
+        previsionBebidas.style.display = 'none'
         var iBeverageSelection = window.document.getElementById('iBeverageSelection')
 
         iBeverageSelection.style.display = 'none'
@@ -200,22 +211,31 @@ window.onload = function verificarIFood(){
 
 function verificarIFood2(){
     if(iFood.checked){
+        var previsionComidas = window.document.getElementById('previsionComidas')
+        previsionComidas.style.display = 'flex'
         var iFoodSelection = window.document.getElementById('iFoodSelection')
 
         iFoodSelection.style.display = 'block'
     }
     else{
+        var previsionComidas = window.document.getElementById('previsionComidas')
+        previsionComidas.style.display = 'none'
         var iFoodSelection = window.document.getElementById('iFoodSelection')
 
         iFoodSelection.style.display = 'none'
     }
 
     if(iBeverages.checked){
+        var previsionBebidas = window.document.getElementById('previsionBebidas')
+        previsionBebidas.style.display = 'flex'
+
         var iBeverageSelection = window.document.getElementById('iBeverageSelection')
 
         iBeverageSelection.style.display = 'block'
     }
     else{
+        var previsionBebidas = window.document.getElementById('previsionBebidas')
+        previsionBebidas.style.display = 'none'
         var iBeverageSelection = window.document.getElementById('iBeverageSelection')
 
         iBeverageSelection.style.display = 'none'
@@ -360,3 +380,174 @@ function abrirCampoComentario(){
 function fecharCampoComentario(){
     fundoComentario.style.display = 'none'
 }
+
+
+
+/* Configuração de preços e fotos para de Orders*/
+function valorSeleacionado(){
+    var iFoodSelection = window.document.getElementById('iFoodSelection');
+    var nomeProdutoMultip = window.document.getElementById('nomeProdutoMultip')
+    var nameOrder = window.document.getElementById('nameOrder');
+    var leftOther = window.document.getElementById('leftOther');
+    var left = window.document.getElementById('left');
+
+    var selectedThing = iFoodSelection.value;
+    nameOrder.innerHTML = selectedThing;
+    nomeProdutoMultip.innerHTML = selectedThing;
+
+    var precoNumerario = window.document.getElementById('precoNumerario');
+  
+    if(selectedThing == "humburguer"){
+        precoNumerario.innerHTML = 660;
+        var newPicture = '../Images/humburger.png';
+        window.document.getElementById('photoForOrder').src = newPicture
+    }
+    if(selectedThing == "Sandes"){
+        precoNumerario.innerHTML = 250;
+        var newPicture = '../Images/Sandes.png';
+        window.document.getElementById('photoForOrder').src = newPicture;
+    }
+    if(selectedThing == "Pizza Hut"){
+        precoNumerario.innerHTML = 960;
+        var newPicture = '../Images/pizza.png';
+        window.document.getElementById('photoForOrder').src = newPicture;
+    }
+    if(selectedThing == "Burger King"){
+        precoNumerario.innerHTML = 750;
+        var newPicture = '../Images/SemFoto.png';
+        window.document.getElementById('photoForOrder').src = newPicture;
+    }
+    if(selectedThing == "Panda Expressr"){
+        precoNumerario.innerHTML = 492;
+        var newPicture = '../Images/SemFoto.png';
+        window.document.getElementById('photoForOrder').src = newPicture;
+    }
+   
+
+    if(selectedThing == 'selecting'){
+        var previsionComidas = window.document.getElementById('previsionComidas')
+        previsionComidas.style.display = 'none'
+        left.style.display = 'none'
+    }
+    else{
+        var previsionComidas = window.document.getElementById('previsionComidas')
+        previsionComidas.style.display = 'flex'
+        leftOther.style.display = "inline-block" 
+        left.style.display = 'none' 
+    }
+
+
+}
+
+
+function exibirValor(){
+    var numeroProdutoMultip = window.document.getElementById('numeroProdutoMultip')
+    var iFQtyy = window.document.getElementById('iFQty').value;
+
+    numeroProdutoMultip.innerHTML = iFQtyy + ' x '
+}
+
+
+function calcular(){
+    var iFoodSelection = window.document.getElementById('iFoodSelection').value;
+    var iBeverageSelection = window.document.getElementById('iBeverageSelection').value
+    var precoNumerarioB = window.document.getElementById('precoNumerarioB').value
+    var precoNumerario = window.document.getElementById('precoNumerario').value //Preço de comida
+    var iFQtyy = window.document.getElementById('iFQty').value; // Quantidade de Comida
+
+    var somaComidas;
+    var somaBebidas;
+
+    if(iFoodSelection == 'selecting'){
+        somaComidas = 0;
+    }
+    else{
+        somaComidas = Number(precoNumerario*iFQtyy)
+    }
+
+
+
+
+    var iBQtyy = window.document.getElementById('iBQty').value;
+    if(iBeverageSelection == 'selecting Drinks'){
+       somaBebidas = 0;
+    }
+    else{
+        somaBebidas = Number(precoNumerarioB*iBQtyy)
+    }
+    var somaGeral = (somaComidas+somaBebidas)
+    var totalN = window.document.getElementById('totalN')
+    totalN.innerHTML = somaGeral+',00'
+}
+
+
+//configurar area de bebidas
+function visualizarBebida(){
+    var iBeverageSelection = window.document.getElementById('iBeverageSelection').value
+    var numeroProdutoMultipBebidas = window.document.getElementById('numeroProdutoMultipBebidas')
+    var nomeProdutoMultipBebidas = window.document.getElementById('nomeProdutoMultipBebidas')
+        nomeProdutoMultipBebidas.innerHTML = iBeverageSelection
+    var previsionBebidas = window.document.getElementById('previsionBebidas')
+    var numeroProdutoMultipBebidas = window.document.getElementById('numeroProdutoMultipBebidas')
+    var iBQtyy = window.document.getElementById('iBQty').value;
+
+    numeroProdutoMultipBebidas.innerHTML = iBQtyy + ' x '
+
+    if(iBeverageSelection == 'selecting Drinks'){
+        previsionBebidas.style.display = "none";
+    }
+    else{
+        previsionBebidas.style.display = "flex";
+        leftOther.style.display = "inline-block" ; 
+        left.style.display = 'none';
+    };
+
+
+    var precoNumerarioB = window.document.getElementById('precoNumerarioB')
+
+    if(iBeverageSelection == 'coffee' ){
+        var novaPhoto = '../Images/café.png'
+        window.document.getElementById('photoForOrderB').src = novaPhoto
+        window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
+        precoNumerarioB.innerHTML = 500
+
+    }
+    if(iBeverageSelection == "champagne"){
+        precoNumerarioB.innerHTML = 1492;
+        var newPicture = '../Images/chapanhe.png';
+        window.document.getElementById('photoForOrderB').src = newPicture;
+        window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
+    }
+    if(iBeverageSelection == 'Chamomile Tea'){
+        var novaPhoto = '../Images/chá.jpg'
+        window.document.getElementById('photoForOrderB').src = novaPhoto
+        window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
+        precoNumerarioB.innerHTML = 200
+    }
+    if(iBeverageSelection == 'soda'){
+        var novaPhoto = '../Images/SemFoto.png'
+        window.document.getElementById('photoForOrderB').src = novaPhoto
+        window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
+        precoNumerarioB.innerHTML = 358
+    }
+    if(iBeverageSelection == 'water'){
+        var novaPhoto = '../Images/SemFoto.png'
+        window.document.getElementById('photoForOrderB').src = novaPhoto
+        window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
+        precoNumerarioB.innerHTML = 430
+    }
+    
+
+}
+
+
+
+function exibirValor2(){
+    var numeroProdutoMultip = window.document.getElementById('numeroProdutoMultipBebidas')
+    var iBQtyy = window.document.getElementById('iBQty').value;
+
+    numeroProdutoMultip.innerHTML = iBQtyy + ' x '
+    
+}
+
+
