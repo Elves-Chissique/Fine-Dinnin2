@@ -402,22 +402,22 @@ function valorSeleacionado(){
         var newPicture = '../Images/humburger.png';
         window.document.getElementById('photoForOrder').src = newPicture
     }
-    if(selectedThing == "Sandes"){
+    else if(selectedThing == "Sandes"){
         precoNumerario.innerHTML = 250;
         var newPicture = '../Images/Sandes.png';
         window.document.getElementById('photoForOrder').src = newPicture;
     }
-    if(selectedThing == "Pizza Hut"){
+    else if(selectedThing == "Pizza Hut"){
         precoNumerario.innerHTML = 960;
         var newPicture = '../Images/pizza.png';
         window.document.getElementById('photoForOrder').src = newPicture;
     }
-    if(selectedThing == "Burger King"){
+    else if(selectedThing == "Burger King"){
         precoNumerario.innerHTML = 750;
         var newPicture = '../Images/SemFoto.png';
         window.document.getElementById('photoForOrder').src = newPicture;
     }
-    if(selectedThing == "Panda Expressr"){
+    else if(selectedThing == "Panda Expressr"){
         precoNumerario.innerHTML = 492;
         var newPicture = '../Images/SemFoto.png';
         window.document.getElementById('photoForOrder').src = newPicture;
@@ -512,25 +512,25 @@ function visualizarBebida(){
         precoNumerarioB.innerHTML = 500
 
     }
-    if(iBeverageSelection == "champagne"){
+    else if(iBeverageSelection == "champagne"){
         precoNumerarioB.innerHTML = 1492;
         var newPicture = '../Images/chapanhe.png';
         window.document.getElementById('photoForOrderB').src = newPicture;
         window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
     }
-    if(iBeverageSelection == 'Chamomile Tea'){
+    else if(iBeverageSelection == 'Chamomile Tea'){
         var novaPhoto = '../Images/chá.jpg'
         window.document.getElementById('photoForOrderB').src = novaPhoto
         window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
         precoNumerarioB.innerHTML = 200
     }
-    if(iBeverageSelection == 'soda'){
+    else if(iBeverageSelection == 'soda'){
         var novaPhoto = '../Images/SemFoto.png'
         window.document.getElementById('photoForOrderB').src = novaPhoto
         window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
         precoNumerarioB.innerHTML = 358
     }
-    if(iBeverageSelection == 'water'){
+    else if(iBeverageSelection == 'water'){
         var novaPhoto = '../Images/SemFoto.png'
         window.document.getElementById('photoForOrderB').src = novaPhoto
         window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
@@ -550,4 +550,28 @@ function exibirValor2(){
     
 }
 
+/*---------------Inclued Delivery Service-------------------------- */
 
+var yes = window.document.getElementById('yes')
+var no = window.document.getElementById('no')
+var lab_yes = window.document.getElementById('lab_yes')
+var lab_no = window.document.getElementById('lab_no')
+
+yes.addEventListener('click', incluedService,)
+no.addEventListener('click', notIncluedService,)
+
+function incluedService(){
+    if(yes.checked){
+        lab_yes.style.color = '#0f4380'
+        lab_no.style.color = 'white'
+    }
+    
+}
+
+function notIncluedService(){
+    if(no.checked){
+        lab_no.style.color = '#0f4380'
+        lab_yes.style.color = 'white'
+    }
+    
+}

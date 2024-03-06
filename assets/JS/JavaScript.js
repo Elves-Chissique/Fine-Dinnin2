@@ -1,3 +1,28 @@
+/*Configuração de slides-carossl*/
+let slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  const slidesI = document.getElementsByClassName("slideI");
+  if (slideIndex >= slides.length) {slideIndex = 0}
+  if (slideIndex < 0) {slideIndex = slides.length - 1}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "flex";
+}
+
+setInterval(() => {
+  plusSlides(1);
+}, 5000);
+
+/*termina aqui a configuração de slides-carossol*/
 let formBusinessRegist = window.document.getElementById("formBusinessRegist")
 let SecondButton = window.document.getElementById("SecondFormBtn")
 let btnRegister = window.document.getElementById('btnRegister')
@@ -331,7 +356,6 @@ function mudarParaFoto6(){
     cateringH6.style.color = "#000"
     cateringH6.style.transition = '0.5s'
 }
-
 
 /*----------Selecionamento de categoria de restaurantes, caterings e tableBookings------*/
 

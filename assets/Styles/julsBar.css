@@ -431,6 +431,53 @@ p.food-selection{
     font-size: .8vw;
 }
 
+.beverages-select label, .food-selection label{
+    display: none;
+}
+
+.other-txt{
+    display: none;
+}
+
+
+.food-selection{
+    background-color: rgb(0, 0, 0,.5);
+    display: flex;
+    padding: .3em 0em;
+}
+
+.beverages-select{
+    margin-top: .5em;
+    background-color: rgb(0, 0, 0,.5);
+    display: flex;
+    padding: .3em 0em;
+}
+
+.beverages-select select{
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    margin: .4em 0em;
+    display: none;
+    padding: .4em;
+    font-size: .8vw;
+    color:rgba(0, 0, 0, 0.600);
+    right:0px;
+}
+.food-selection select{
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    margin: .4em 0em;
+    display: none;
+    padding: .4em;
+    font-size: .8vw;
+    color:rgba(0, 0, 0, 0.600);
+    right:0px;
+}
+
 p.food-selection input{
     font-size: .8vw;
     display: none;
@@ -443,25 +490,11 @@ p.food-selection input{
     outline: none;
     color:rgba(0, 0, 0, 0.600);
 }
-p.food-selection label{
-    display: none;
-}
-
-p.food-selection select{
-    width: 99%;
-    background-color: #08d2b43c;
-    border: none;
-    outline: none;
-    box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.500);
-    margin: .5em 0em;
-    display: none;
-    padding: .5em;
-    font-size: .8vw;
-    color:rgba(0, 0, 0, 0.600);
-}
 
 .contact-info{
-    margin-top: .8vw;
+    padding: .8em 0em;
+    background-color: rgb(0, 0, 0,.5); 
+    margin-top: .5vw;
 }
 
 .contact-info label{
@@ -472,7 +505,7 @@ p.food-selection select{
     width: 94%;
     padding: .5em;
     border: none;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.353);
+    border-bottom: 2px solid rgba(255, 0, 0, 0.644);
     outline: none;
     transition: all .5s;
     font-size: .8vw;
@@ -480,11 +513,9 @@ p.food-selection select{
 
 .Qty, .bQty{
     display: flex;
-    margin-top: .8vw;
     justify-content: space-between;
     padding: .3em .8em;
-    background-color:#08d2b42a ;
-    box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.500);
+    /*background-color:#08d2b42a ;*/
 }
 
 .Qty span.valor, .bQty span.valor{
@@ -531,20 +562,43 @@ p.food-selection select{
     border-radius: 5px;
 }
 
+.deliver_options{
+    font-weight: 700;
+    margin-top:1em;
+    background-color: rgb(0, 0, 0,.5) ;
+    padding-bottom: .5em;
+}
+
+.deliver_options label{
+    color: #fff;
+    font-weight: 100;
+}
+
+label#no{
+    color: #07356b;
+}
+
+.deliver_options fieldset{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .3em 0em;
+    margin: auto;
+}
+
 #submit input{
     padding:.2em .5em;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 65%;
     border-radius: 5em;
-    background-color: rgba(255, 0, 0, 0.353);
     transition: all .5s;
     cursor: pointer;
-    border: 2px solid #08d2b49b;
+    border: 2px solid rgba(0, 0, 0, 0.5);
     font-family: cursive;
     font-size: 1.1vw;
 }
 #submit input:hover{
-    background-color: #08d2b43c;
     border: 2px solid rgba(255, 0, 0, 0.585);
 }
 
