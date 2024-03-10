@@ -415,13 +415,14 @@ span.h3{
     margin: auto;
     box-shadow: 1px 1px 6px black;
     color: #000;
-    margin-bottom: -1em;
-    font-size: 1.8vw;
+    margin-bottom: -.85em;
+    padding-bottom:.5em ;
+    font-size: 2.5vw;
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
     text-align: center;
     font-weight: 400;
-    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.329);
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.200);
     font-style: normal;
     border-radius: 0px 0px 20px 20px;
 }
@@ -731,132 +732,131 @@ span.infoGif:hover{
     font-style: italic;
 }
 
-.Event_content{
+
+#restaurantes{
     display: flex;
     justify-content: center;
-    width: 100%;
+    background-color: #def0f0 ;
+}
+
+#tableBookings{
+    display: flex;
+    justify-content: center;
+    background-color: #def0f0 ;
+}
+
+#caterings{
+    display: flex;
+    justify-content: center;
+    background-color: #def0f0 ;
+}
+
+.main-view-venues{
+    width: 80%;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding:0em 2em;
+    margin:2em 0em;
+    padding: 2em 0em;
 }
 
 
-.Paragraph_image{
+.map-julsBar{
+    width: 45%;
+    height: auto;
+    padding-right:2em ;
+}
+
+.map-julsBar iframe{
+    width: 100%;
+    height: 40vh;
+    opacity: .7;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.venues{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 45%;
+    margin-top: 0em;
+    height: auto;
+    border-radius: 1em;
+    background-color: #bacff2;
+}
+
+.venues_logo{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff00;
-    width: 23vw;
+    width: 9vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     z-index: 0;
     margin-top: 1em;
-    padding: 1.5em;
+    padding: .5em;
 }
 
-.Paragraph_image > img{
+.venues_logo > img{
     z-index: 0;
     border-radius: 50%;
-    width: 18vw;
+    width: 100%;
     box-shadow: 1px 1px 8px black;
 }
 
-#restaurantes{
+.venues-title{
+    
     position: relative;
+    top: 0px;
+    left: 0px;
+    height: auto;
 }
 
-#tableBookings{
-    position: relative;
-}
 
-#caterings{
-    position: relative;
-}
-
-.beverages{
-    z-index: -1;
-    box-shadow: -1px -1px 8px black;
-    background-color: #fff;
+.venues-description{
     display: block;
-    position: relative;
-    width: 40vw;
-    text-align: center;
-    color: brown;
-    font-size: 19px;
-    font-style: italic;
-    margin-left: 1.6em;
-    margin-top:1em ;
-    backface-visibility: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 1em;
-    padding: 0em 5em;
-    margin-bottom: 2em;
-    height: 86vh;
-    overflow: hidden;
-}
-
-.beverages > .span-left{
-    display: block;
+    width: 95%;
     padding: 1em;
-    border-right: 2px solid #fff;
-    margin-top: 1.5em;
-    font-size: 1.1vw;
-    color:#0729299f;
-    background-color: #072929de;
-    text-align: left;
-    width: 35%;
-
-}
-
-.linha_suspenca{
-    margin-left: 4em;
-    display: block;
-    position: absolute;
-    color: red;
-    width: 42vw;
-    margin-top: 19em;
-}
-
-.beverages > .span-right{
-    margin-top: 17.6em;
-    display: block;
-    width: 100%;
-    padding: 1em;
-    height: 170px;
+    height: auto;
     text-align: justify;
     font-family: cursive;
-    font-size: 1.2vw;
-    color:#0729299f;
-    background-color: #07292900;
+    font-size: .9vw;
+    color:brown;
+    background-color:rgba(0, 0, 0, 0.239);
+    border-radius: 0px 0px 15px 15px;
+    margin-top: -.5em;
 }
+
+
+.main-venues-title{
+    z-index:1;
+    background-color: rgba(0, 0, 0, 0.239);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 2.4vw;
+    text-align: center;
+    color: brown;
+    font-style: italic;
+    border-radius: .6em 0em 0em .6em;
+    left: 0px;
+    top: 0px;
+    writing-mode: vertical-rl;
+    font-size: 2vw;
+    letter-spacing: .2em;
+}
+
 
 .beverages > span > svg{
     color:#fff;
 }
 
-.span-titulo-strong{
-    background-color: #0000003d;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    writing-mode: vertical-rl;
-    font-size: 3vw;
-    letter-spacing: .2em;
-}
-
-.beverages > strong#champane{
-    /*border-bottom: 1px solid #0729299f;*/
-    margin: auto;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-family: cursive;
-    color: #0729299f;
-    writing-mode: vertical-rl;
-}
 
 .Abtn{
     width: 100%;
