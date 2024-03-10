@@ -26,7 +26,7 @@ function showSlides() {
 
 setInterval(() => {
     plusSlides(1);
-}, 4000);
+}, 4300);
 
 
 
@@ -35,7 +35,7 @@ let slideIndexII = 0;
 showSlidesII();
 
 function plusSlidesII(a) {
-    showSlides(slideIndexII += a);
+    showSlidesII(slideIndexII += a);
 }
 
 function showSlidesII(){
@@ -52,8 +52,8 @@ function showSlidesII(){
 
 
 setInterval(() => {
-    plusSlidesII(1);
-}, 2000);
+    plusSlidesII(0);
+}, 6000);
 
 
 /*termina aqui a configuração de slides-carossol*/

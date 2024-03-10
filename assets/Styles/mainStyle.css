@@ -410,6 +410,20 @@ span.h3{
 }
 
 /*--------Configuração de slides/carossel--*/
+.info-carossel{
+    width: 75%;
+    margin: auto;
+    /*background-color:#223f22;*/
+    color: #223f22;
+    margin-bottom: -.5em;
+    font-size: 1.6vw;
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+}
+
 .fried{
     padding-top: 2em;
     display: flex;
@@ -510,7 +524,7 @@ span.pintada{
     width: 30%;
     background: rgba(0, 0, 0, 0.836);
     border-radius: 10px;
-    border: 1px solid yellow;
+    border: 1px solid red;
     
 }
 
@@ -522,7 +536,7 @@ span.pintada{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Ribeye", serif;
+    a
     font-weight: 400;
     font-size: 15pt;
     font-style: normal;
