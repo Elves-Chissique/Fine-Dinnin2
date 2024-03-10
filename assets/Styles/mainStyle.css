@@ -413,42 +413,32 @@ span.h3{
 .info-carossel{
     width: 75%;
     margin: auto;
-    /*background-color:#223f22;*/
+    box-shadow: 1px 1px 6px black;
     color: #000;
-    margin-bottom: -.5em;
-    font-size: 1.6vw;
+    margin-bottom: -1em;
+    font-size: 1.8vw;
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.329);
     font-style: normal;
+    border-radius: 0px 0px 20px 20px;
 }
 
-.fried{
-    padding-top: 2em;
-    display: flex;
-    justify-content: center;
-    width: 76.8%;
-    margin: auto;
-    border-radius: 20px;
-}
-.fried img{
-    width: 100%;
-    border-radius: 20px;
-}
 .slideshow-container {
     width: 100%;
     position: relative;
     margin: auto;
     padding: 2em 0em;
-    
   }
 
   .sub-container{
     width: 70%;
     margin: auto;
     box-shadow: 1px 1px 6px black;
-    padding:2em 2em;
+    border-radius: 20px;
+    padding:2em 1.90em;
   }
   
   .slide, .slideII{
@@ -524,7 +514,7 @@ span.pintada{
     width: 30%;
     background: rgba(0, 0, 0, 0.836);
     border-radius: 10px;
-    border: 1px solid red;
+    border: 1px solid rgba(0, 0, 255, 0.842);
     
 }
 
@@ -536,7 +526,6 @@ span.pintada{
     display: flex;
     justify-content: center;
     align-items: center;
-    a
     font-weight: 400;
     font-size: 15pt;
     font-style: normal;
@@ -547,6 +536,18 @@ span.pintada{
     width: 100%;
     text-align: center;
    
+}
+
+.fried{
+    margin-top: -1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+}
+.fried img{
+    width: 75%;
+    border-radius: 20px;
 }
 /*--------termina aqui a configuração de slides-corossel----------*/
 
