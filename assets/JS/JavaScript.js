@@ -6,21 +6,48 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+
 function showSlides() {
   let i;
   const slides = document.getElementsByClassName("slide");
-  const slidesI = document.getElementsByClassName("slideI");
+  
   if (slideIndex >= slides.length) {slideIndex = 0}
+
   if (slideIndex < 0) {slideIndex = slides.length - 1}
+
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
+
+
   slides[slideIndex].style.display = "flex";
+  
+}
+setInterval(() => {
+    plusSlides(1);
+  }, 4000);
+
+  
+
+//configuraçãao do segundo carassol
+let slideIndexII = 0;
+showSlidesII();
+
+function plusSlidesII(n) {
+    showSlides(slideIndexII += n);
 }
 
-setInterval(() => {
-  plusSlides(1);
-}, 5000);
+function showSlidesII(){
+    const slidesII = document.getElementsByClassName("slideII");
+    if (slideIndex >= slidesII.length) {slideIndex = 0}
+    if (slideIndex < 0) {slideIndex = slidesII.length - 1}
+
+    for (i = 0; i < slidesII.length; i++) {
+        slidesII[i].style.display = "none";
+    }
+    slidesII[slideIndex].style.display = "flex";
+}
+
 
 /*termina aqui a configuração de slides-carossol*/
 let formBusinessRegist = window.document.getElementById("formBusinessRegist")
