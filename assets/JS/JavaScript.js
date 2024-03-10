@@ -23,30 +23,37 @@ function showSlides() {
   slides[slideIndex].style.display = "flex";
   
 }
+
 setInterval(() => {
     plusSlides(1);
-  }, 4000);
+}, 4000);
 
-  
+
 
 //configuraçãao do segundo carassol
 let slideIndexII = 0;
 showSlidesII();
 
-function plusSlidesII(n) {
-    showSlides(slideIndexII += n);
+function plusSlidesII(a) {
+    showSlides(slideIndexII += a);
 }
 
 function showSlidesII(){
+    let c;
     const slidesII = document.getElementsByClassName("slideII");
     if (slideIndex >= slidesII.length) {slideIndex = 0}
     if (slideIndex < 0) {slideIndex = slidesII.length - 1}
 
-    for (i = 0; i < slidesII.length; i++) {
-        slidesII[i].style.display = "none";
+    for (let c = 0; c < slidesII.length; c++) {
+        slidesII[c].style.display = "none";
     }
     slidesII[slideIndex].style.display = "flex";
 }
+
+
+setInterval(() => {
+    plusSlidesII(1);
+}, 2000);
 
 
 /*termina aqui a configuração de slides-carossol*/
