@@ -407,6 +407,7 @@ span.h3{
     background-color: #def0f0;
     border-radius: 20px;
     text-align: center;
+    color:black;
 }
 
 /*--------Configuração de slides/carossel--*/
@@ -416,15 +417,19 @@ span.h3{
     box-shadow: 1px 1px 6px black;
     color: #000;
     margin-bottom: -.85em;
-    padding-bottom:.5em ;
-    font-size: 2.5vw;
+    margin-top: .85em;
+    padding-top:.5em ;
+    font-size: 1.8vw;
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
     text-align: center;
     font-weight: 400;
     text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.200);
     font-style: normal;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slideshow-container {
