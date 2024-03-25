@@ -414,12 +414,10 @@ span.h3{
 .info-carossel{
     width: 75%;
     margin: auto;
-    box-shadow: 1px 1px 6px black;
+    box-shadow: 0px 0px 2px black;
     color: #000;
-    margin-bottom: -.85em;
     margin-top: .85em;
-    padding-top:.5em ;
-    font-size: 1.8vw;
+    font-size: 3.8vw;
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
     text-align: center;
