@@ -71,13 +71,24 @@ function modalShow(){
 function modalNotShow(){
     formBusinessRegist.style.display = "none"
 }
-/*-------------configuração de botão Home----------------------------------*/
+/*-------------configuração de butões----------------------------------*/
 var Home = window.document.getElementById('Home');
+var phoneA = window.document.getElementById('phoneA');
 Home.addEventListener('click',backHome)
+phoneA.addEventListener('click',goPhoneA)
+RestButton.addEventListener('click', goRestaurant)
 
 
 function backHome(){
     window.location= "index.html"
+}
+
+function goPhoneA(){
+    window.location = '#contactA'
+}
+
+function goRestaurant(){
+    window.location = '#restaurantesIII'
 }
 
 /*---------------- configuração de offcanva lateral-------------------------- */
@@ -89,11 +100,8 @@ let contactText = window.document.getElementById('contactText')
 
 chamarContact.addEventListener('click', showInitial)
 closeInitial.addEventListener('click', fecharInicial)
-RestButton.addEventListener('click', irpara)
 
-function irpara(){
-    window.location = '#Venues'
-}
+
 
 function showInitial(){
     contactInitial.style.width = "30%"
