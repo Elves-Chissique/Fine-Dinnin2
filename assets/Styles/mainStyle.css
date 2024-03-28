@@ -949,20 +949,30 @@ span.infoGif:hover{
 }
 
 
-.phone_foram{
+.phone_form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 2em;
+    gap: 2em;
 }
 
 
 .icon_side{
-    background-color: red;
+   background-color: aquamarine;
+   width:47%;
 }
 
+
 .form_side{
-    background-color: blue;
+   width: 47%;
+}
+
+
+.form_side input{
+    width: 98%;
+    padding: .5em 0em;
 }
 
 footer{
