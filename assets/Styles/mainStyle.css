@@ -50,6 +50,10 @@ body{
     border: 1px solid rgba(251, 255, 0, 0.568) ;  /*----Configuração de header------*/
 }
 
+.esconder{
+    opacity: 0;
+}
+
 .Image_Fixed > article#cabecalho > p > img{
     width: 19.5px;
     position: absolute;
