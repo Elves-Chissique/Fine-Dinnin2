@@ -735,6 +735,10 @@ span.infoGif:hover{
     font-style: italic;
 }
 
+#resttt{
+    opacity: 0;
+}
+
 
 #restaurantes{
     display: flex;
@@ -933,6 +937,7 @@ span.infoGif:hover{
     justify-content:center ;
     align-items: center;
     flex-direction: column;
+    color: #000000a2;
 
 }
 
@@ -940,6 +945,7 @@ span.infoGif:hover{
     text-align: center;
     font-weight: bolder;
     margin-bottom: .5em;
+    color: #000;
 }
 
 .contactArea > div > p svg{
@@ -960,19 +966,44 @@ span.infoGif:hover{
 
 
 .icon_side{
-   background-color: aquamarine;
-   width:47%;
+   box-shadow: 0px 0px 8px #419c41;
+   width:45.5%;
+   height:59vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.icon_side > img{
+    width: 50%;
 }
 
 
 .form_side{
-   width: 47%;
+   width: 45.5%;
+   height: 59vh;
+}
+
+#submit_title{
+    text-align: center;
+    font-size:20pt ;
+    font-weight: bolder;
+}
+
+.form_side > form > p{
+    margin: .5em 0em;
+
 }
 
 
 .form_side input{
     width: 98%;
     padding: .5em 0em;
+    height: 2.5vh;
+}
+
+textarea{
+    width: 98%;
 }
 
 footer{

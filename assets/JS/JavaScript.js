@@ -74,6 +74,7 @@ function modalNotShow(){
 /*-------------configuração de butões----------------------------------*/
 var Home = window.document.getElementById('Home');
 var phoneA = window.document.getElementById('phoneA');
+let RestButton = window.document.getElementById('RestButton')
 Home.addEventListener('click',backHome)
 phoneA.addEventListener('click',goPhoneA)
 RestButton.addEventListener('click', goRestaurant)
@@ -88,12 +89,12 @@ function goPhoneA(){
 }
 
 function goRestaurant(){
-    window.location = '#restaurantesIII'
+    window.location = '#resttt'
+    RestButton.style.transition = '2s'
 }
 
 /*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
-let RestButton = window.document.getElementById('RestButton')
 let chamarContact = window.document.getElementById('chamarContact')
 let closeInitial = window.document.getElementById('closeInitial')
 let contactText = window.document.getElementById('contactText')
