@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Edu+TAS+Beginner:wght@400..700&family=Homenaje&family=Ribeye&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -421,17 +424,20 @@ span.h3{
     box-shadow: 0px 0px 2px black;
     color: #000;
     margin-top: .85em;
-    font-size: 3.8vw;
+    font-size: 3vw;
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
     text-align: center;
-    font-weight: 400;
-    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.200);
-    font-style: normal;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    background-image: url(../Images/inn.png);
 }
 
 .slideshow-container {
