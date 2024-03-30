@@ -13,16 +13,6 @@
     overflow-x: hidden; 
     
 }
-body{
-  width: 100vw;
-  
-}
-
-#Container{
-    width: 100vw;
-    
-}
-
 
 .Image_Fixed{
     background-color:black;
@@ -1106,7 +1096,7 @@ footer{
         display: none;
     }
     .contact{
-        width: 0%;
+        font-size: 3vw;
     }
 
 
