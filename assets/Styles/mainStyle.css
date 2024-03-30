@@ -442,7 +442,7 @@ span.h3{
     height: auto;
     padding:0em 0em 6em 0em;
     width:100%;
-    height: 25vh;
+    height: auto;
    
    
   }
@@ -450,9 +450,6 @@ span.h3{
   .fade, .fadeII{
     animation-name: fade;
     animation-duration: 1.5s;
-
-    
-    
   }
   
   @keyframes fade{
@@ -505,32 +502,43 @@ span.pintada{
 }
 
 .sub-container img{
-    width: 30%;
-    background: rgba(0, 0, 0, 0.836);
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 255, 0.842);
+    
+    background: #223f22;
+    border-radius: 10px 10px 0px 0px;
     
 }
 
-.produtos_descricao{
-    position: absolute;
-    gap: 13em;
-    width: 80%;
-    top: 8.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 15pt;
-    font-style: normal;
-    color: #223f22;
-}
-
-.produtos_descricao p{
-    width: 100%;
+figure{
     text-align: center;
-   
-}
+    display: block;
+    width: 60vw;
+    margin: 2em;
+
+  }
+
+  figure img{
+    width: 100%;
+    height: 42vh;
+    
+    
+  }
+
+  figcaption{
+    font-size: 1.8vw;
+    width:86.5%;
+    margin: auto;
+    padding: 0em 1em;
+    color: #000;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 0px 0px 10px 10px;
+  }
+  figcaption > span{
+    font-size: 1vw;
+    line-height: .2em;
+    text-align: center;
+    
+  }
 
 .fried{
     margin-top: -1em;
@@ -1059,6 +1067,11 @@ footer{
     .Image_Fixed > article#cabecalho > h1{
         font-size: 5vw;
     }
+
+    #Home{
+        display: none;
+    }
+
     #central{
         display: none;
     }
@@ -1066,9 +1079,20 @@ footer{
     #mobileCentral{
         display: block;
         margin-top: 2.5em;
-        margin-left:1em ;
+        margin-left:0em ;
         color: #fff;
         cursor: pointer;
+    }
+
+    #mobileCentral ul{
+        
+        background-color: #223f22b2;
+    }
+
+    #mobileCentral ul li{
+        padding: 1em;
+        background-color: #088080;
+        margin-top: .3em;
     }
 
 
@@ -1080,20 +1104,23 @@ footer{
         height: 100%;
         gap: 2em;
     }
-
-    .slide img, .slideII img{
-        width: 90%;
+    figure{
+        width: 100%;
         height: auto;
-        transition: .5s;
     }
 
-    .slide img:hover, .slideII img:hover{
-        border: 1px solid red;
+    figure img{
+        width: 100%;
+    }
+    figcaption{
+        font-size: 3.8vw;
+        width: 87.8%;
+        height: 15vh;
     }
 
-    .produtos_descricao{
-        display: none;
-    }
+    figcaption > span{
+        font-size: 2.4vw;
+      }
     .contact{
         font-size: 3.3vw;
     }
