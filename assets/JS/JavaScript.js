@@ -30,7 +30,7 @@ setInterval(() => {
 
 
 
-//configuraçãao do segundo carassol
+//configuraçãao do segundo carossel
 let slideIndexII = 0;
 showSlidesII();
 
@@ -54,9 +54,30 @@ function showSlidesII(){
 setInterval(() => {
     plusSlidesII(0);
 }, 6000);
-
-
 /*termina aqui a configuração de slides-carossol*/
+
+/*configuração de botão de menu para mobile phone*/
+let menu_humburguer = window.document.querySelector('#menu-humburguer')
+let mobileCentral = window.document.querySelector('#mobileCentral')
+let menu_fechar = window.document.querySelector('#menu-fechar')
+
+menu_humburguer.addEventListener('click', chamarMenuFechar)
+menu_fechar.addEventListener('click', chamarMenuHumbuguer)
+
+function chamarMenuFechar(){ /*função para Abrir menu*/
+    menu_fechar.style.display = 'block'
+    menu_humburguer.style.display = 'none'
+    mobileCentral.style.marginTop = '2.5em'
+    mobileCentral.style.position = 'fixed'
+    mobileCentral.style.transition = '1s'
+}
+function chamarMenuHumbuguer(){ /*função para fechar menu*/
+    menu_fechar.style.display = 'none'
+    menu_humburguer.style.display = 'block'
+    mobileCentral.style.marginTop = '-100%'
+    mobileCentral.style.transition = '1s'
+}
+
 let formBusinessRegist = window.document.getElementById("formBusinessRegist")
 let SecondButton = window.document.getElementById("SecondFormBtn")
 let btnRegister = window.document.getElementById('btnRegister')
