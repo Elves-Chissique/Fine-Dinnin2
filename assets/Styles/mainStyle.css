@@ -354,27 +354,26 @@ span.h3{
     margin-bottom: 1em;
 }
 
-.Event_Title{
+.Registration_Area{
     color: green;
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
     font-style: italic;
-    font-size: 52px;
+    font-size: 4vw;
     background-color: #def0f0;
     display: flex;
     justify-content: space-between;
     padding:.2em 1em;
 }
 
-.Event_Title > p.input-btn{
-    width:20;
+.Registration_Area > p.input-btn{
+    width:40%;
     text-align: center;  /*div atrás do botão*/
     margin-top: -12px;
-
 }
 
-.Event_Title > p.input-btn >input{
+.Registration_Area > p.input-btn >input{
     background-color: rgb(133, 15, 15);
     padding: 0.5em 1em;          /*O própio botão*/
     border-radius: 15px;
@@ -384,13 +383,13 @@ span.h3{
 }
 
 
-.Event_Title > p.input-btn >input:hover{
+.Registration_Area > p.input-btn >input:hover{
    color: brown;
    background-color: #fff;
 }
 
-.Event_Title > p#be-Member{
-    width: 80%;
+.Registration_Area > p#be-Member{
+    width: 55%;
     margin: auto;
     background-color: #def0f0;
     border-radius: 20px;
@@ -815,8 +814,7 @@ span.infoGif:hover{
     box-shadow: 1px 1px 8px black;
 }
 
-.venues-title{
-    
+.venues-title{ 
     position: relative;
     top: 0px;
     left: 0px;
@@ -1059,6 +1057,7 @@ footer{
 
 #menu-fechar, #menu-humburguer{
     display: none;
+    visibility: hidden;
 }
 
 @media(max-width: 1200px){
@@ -1074,6 +1073,10 @@ footer{
 
     #Home{
         display: none;
+    }
+
+    #menu-fechar, #menu-humburguer{
+        visibility: visible;
     }
 
     #menu-humburguer{
@@ -1101,12 +1104,12 @@ footer{
 
     #mobileCentral ul{
         
-        background-color: #223f22b2;
+        background-color: #000000dc;
     }
 
     #mobileCentral ul li{
         padding: .5em 1em;
-        background-color: #088080;
+        background-color: #223f22;
         margin-top: .3em;
     }
 
@@ -1161,6 +1164,7 @@ footer{
 
     span.infoGif{
         width: 90%;
+        font-size: 1.8em;
     }
 
     span.imgGif img{
@@ -1168,26 +1172,60 @@ footer{
     }
 
 
-    #Cell{
-        display: none; /* cell no tamanho menor*/
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color: red;
-        height: 100vh;
-        font-weight: bolder;
-        font-size: large;
-        font-family: 'Bungee Spice', sans-serif;
-        font-family: 'Rubik Maps', system-ui;
-        font-family: 'Rubik Scribble', system-ui;
+    .Registration_Area > p.input-btn{
+        width:40%;
+        text-align: center;  /*div atrás do botão*/
+        margin-top: .5em;
     }
 
-    #Cell > p > em{
-        color:green;
-        font-weight: 100;
-        font-size: small;
-        font-family: cursive;
+    .main-view-venues{
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
+
+    .map-julsBar{
+        width: 90%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map-julsBar iframe{
+        width: 80vw;
+        display: block;
+        margin: auto;
+        margin-left: .5em;
+    }
+
+    .venues-description{
+        width: 75.5vw;
+        margin-left: 2.1em;
+        font-size: 2.5vw;
+    }
+    
+
+    .venues{
+        width: 90%;
+    }
+
+    .main-venues-title{
+        font-size: 4vw;
+        padding: 0em 1em;
+    }
+
+    .Julsbar-fotoProdutos span{
+        margin: .2em
+    }
+
+    .Julsbar-fotoProdutos img{
+        width: 16vw;
+        height: 10vh;
+     }
+
     #Container{
         /*Area de occultar o mobile phone*/
         display: flex;
