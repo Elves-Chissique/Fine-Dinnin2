@@ -354,12 +354,6 @@ span.h3{
     margin-bottom: 1em;
 }
 
-.x{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(21, 214, 214);
-}
-
 .Event_Title{
     color: green;
     font-family: "Black Ops One", system-ui;
@@ -1062,6 +1056,9 @@ footer{
 }
 
 @media(max-width: 600px){
+    .Image_Fixed > article#cabecalho > h1{
+        font-size: 5vw;
+    }
     #central{
         display: none;
     }
@@ -1103,6 +1100,29 @@ footer{
 
     .contact-title{
         font-size: 6.5vw;
+    }
+
+    .service-intro{
+        font-size: 3.3vw;
+    }
+
+    .paragraph-gif{
+        display: block;
+        background-color: red;
+        padding: 0em 1.5em;
+    }
+
+    span.imgGif{
+        display: block;
+        width:100%;
+    }
+
+    span.infoGif{
+        width: 90%;
+    }
+
+    span.imgGif img{
+        width: 100%;
     }
 
 
