@@ -60,6 +60,7 @@ setInterval(() => {
 let menu_humburguer = window.document.querySelector('#menu-humburguer')
 let mobileCentral = window.document.querySelector('#mobileCentral')
 let menu_fechar = window.document.querySelector('#menu-fechar')
+let logo_mobile = window.document.querySelector('.logo-mobile')
 
 menu_humburguer.addEventListener('click', chamarMenuFechar)
 menu_fechar.addEventListener('click', chamarMenuHumbuguer)
@@ -70,12 +71,17 @@ function chamarMenuFechar(){ /*função para Abrir menu*/
     mobileCentral.style.marginTop = '2.5em'
     mobileCentral.style.position = 'fixed'
     mobileCentral.style.transition = '1s'
+    logo_mobile.style.display = 'none'
 }
 function chamarMenuHumbuguer(){ /*função para fechar menu*/
     menu_fechar.style.display = 'none'
     menu_humburguer.style.display = 'block'
     mobileCentral.style.marginTop = '-100%'
     mobileCentral.style.transition = '1s'
+
+    logo_mobile.style.display = 'flex'
+    
+    logo_mobile.style.marginTop = '.5em'
 }
 
 let formBusinessRegist = window.document.getElementById("formBusinessRegist")
@@ -129,7 +135,7 @@ contactInitialMobile.addEventListener('click', showInitialMobile)
 function showInitialMobile(){
     contactInitial.style.width = "100%"
     contactInitial.style.marginLeft = '0%'
-    contactInitial.style.marginTop = '-4.1em'
+    contactInitial.style.marginTop = '2.5em'
     contactInitial.style.height = "100vh"
     contactInitial.style.transition = '.3s'
     closeInitial.style.display = 'inline-block'
