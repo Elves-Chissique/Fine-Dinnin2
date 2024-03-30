@@ -136,7 +136,7 @@
   
 
 .contact > p{
-    padding: 1em;
+    padding: 0em 1em;
     display: none;
 }
 
@@ -156,7 +156,8 @@
     border: 1px solid #fff;
     background-color: rgb(102, 41, 41);
     display: block;
-    border-radius: 80px 0px
+    border-radius: 80px 0px;
+    padding: 1.5em;
 }
 .about-us-t{
     display: block;
@@ -283,6 +284,8 @@ p.service{
 
 .service-intro{
     margin: auto;
+    font-size: 1.6vw;
+    text-align: center;
 }
 
 .service-intro > p{
@@ -290,7 +293,6 @@ p.service{
     margin:auto ;
     line-height: 1.6em;
     font-family: cursive;
-    font-size: large;
     letter-spacing: .1em;
     color: #088080;
 }
@@ -1096,9 +1098,12 @@ footer{
         display: none;
     }
     .contact{
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
 
+    .contact-title{
+        font-size: 6.5vw;
+    }
 
 
     #Cell{
