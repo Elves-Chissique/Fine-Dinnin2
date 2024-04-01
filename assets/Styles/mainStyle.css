@@ -523,18 +523,22 @@ span.pintada{
   }
 
   .slideshow-container figcaption{
-    font-size: 1.8vw;
-    width:86.5%;
+    height: auto;
+    width:94.99%;
     margin: auto;
-    padding: 0em 1em;
+    padding: 0em .5em;
     color: #000;
     text-align: center;
     border: 2px solid #000;
     border-radius: 0px 0px 10px 10px;
   }
-  .slideshow-container figcaption > span{
-    font-size: 1vw;
-    line-height: .2em;
+  .slideshow-container figcaption > span.fig-title{
+    font-size: 2em;
+  }
+
+  .slideshow-container figcaption > span.fig-txt{
+    font-size: 1.1em;
+    line-height: .9em;
     text-align: center;
     
   }
@@ -1180,19 +1184,15 @@ footer{
         height: auto;
     }
 
-    figure img{
+    .slideshow-container figure img{
         width: 100%;
-        height: 30vh;
+        height: 28vh;
     }
-    figcaption{
-        font-size: 3.8vw;
-        width: 87.8%;
-        height: 15vh;
+    .slideshow-container figcaption{
+        width:98.5%;
+        height: auto;
+        padding: 0;
     }
-
-    figcaption > span{
-        font-size: 2.4vw;
-      }
     .contact{
         font-size: 3.3vw;
     }
