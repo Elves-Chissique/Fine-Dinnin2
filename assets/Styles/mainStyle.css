@@ -692,6 +692,7 @@ span.pintada{
 
 
 .foto-legendada{
+    padding: 1em 0em;
     display: flex;
     flex-direction: row;
     justify-content: center;
