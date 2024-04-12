@@ -436,6 +436,10 @@ span.h3{
     
   }
 
+  #figDelay{
+    transition-delay: 600ms;
+  }
+
   .sub-container{
     width: 70%;
     margin: auto;
@@ -567,7 +571,7 @@ span.pintada{
 
 .normal-view{
     opacity: 1;
-    transition: 5s;
+    transition: 3s;
 }
 .fried img{
     width: 75%;
