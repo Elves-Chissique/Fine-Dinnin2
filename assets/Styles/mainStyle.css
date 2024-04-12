@@ -252,21 +252,19 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
 
 
 
-p.service{
+.service{
+    display:flex;
     width: 80%;
     margin: auto;
     font-size: 13pt;
-    margin-bottom: 2em;
     color:rgba(44, 43, 43, 0.76);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     text-align: center;
-    
 }
 
-.Event_content2  > h1{
+
+.Event_content2  > .service-Disc{
     text-align: center;
     letter-spacing: 0.5em;
     font-size: 256%;
@@ -286,6 +284,7 @@ p.service{
     margin: auto;
     font-size: 1.6vw;
     text-align: center;
+    position: relative;
 }
 
 .service-intro > p{
@@ -297,41 +296,56 @@ p.service{
     color: #088080;
 }
 
-span.catering{
-    display:block;
+.catering{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 90%;
     font-family:  sans-serif;
     cursor: pointer;
-    height: 15em;
+    height: 17em;
     padding: .2em;
     overflow: hidden;
     position: relative;
     background-color:#d6d1d16e;
     margin: 1em;
-    align-items: center;
-    line-height: 50,50;
     border-radius: 1em;
-    
-    
 }
-span.catering-foto img{
-    width: 290px;
+
+span.h3{
+    font-weight: bolder;
+    font-family: 'Ephesis', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.6em;
+    color: #4b4848;
+    transition: .3s;
+    position:absolute;
+    top: 0;
+}
+
+.catering-foto img{
+    width: 300px;
     height: 200px;
-    margin: auto;
     transition: 2s ease;
     display: block;
     border-radius: 5px;
     box-shadow: rgba(0, 128, 0, 0.450) -2px -2px 5px;
+    margin-bottom: 1em;
+    position: absolute;
+    margin-left: -8.6em;
+    top: 5em;
 }
 
 .catering-text{
-    display:table;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 290px;
-    height: 0px;
-    text-align: left;
-    opacity: 0;
-    margin: auto;
-    color: #000;
+    height: 180px;
+    opacity: 1;
+    margin-top: -100%;
+    color:#000;
     font-size: 0px;
     padding: .3em;
     line-height: 1.5em;
@@ -339,20 +353,11 @@ span.catering-foto img{
     border-radius: 5px;
     box-shadow: rgba(0, 128, 0, 1) -2px -2px 11px;
     font-style: italic;
+    font-family: cursive;
+    position: absolute;
+    top: 5.5em;
 }
 
-
-
-
-span.h3{
-    font-weight: bolder;
-    font-family: 'Ephesis', cursive;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1.6aem;
-    color: #4b4848;
-    transition: .3s;
-    margin-bottom: 1em;
-}
 
 .Registration_Area{
     color: green;
@@ -431,14 +436,10 @@ span.h3{
   }
 
   .shown-fig{
-    margin-left: 0%;
+    margin-left:0;
     transition: all 1s;
-    
   }
 
-  #figDelay{
-    transition-delay: 600ms;
-  }
 
   .sub-container{
     width: 70%;
@@ -1225,8 +1226,39 @@ footer{
         
     }
 
+    .service{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
     .service-intro{
         font-size: 3.3vw;
+    }
+
+    span.h3{
+        font-weight: bolder;
+        font-family: 'Ephesis', cursive;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 1.1em;
+        color: #4b4848;
+        transition: .3s;
+    }
+
+    .catering-foto img{
+        width: 390px;
+        margin-left: -11.2em;
+        margin-top: -2em;
+        height: 190px;
+        transition: 2s ease;
+        display: block;
+        border-radius: 5px;
+        box-shadow: rgba(0, 128, 0, 0.450) -2px -2px 5px;
+    }
+
+    .catering-text{
+        width: 390px;
+        top: 3.7em;
     }
 
     .foto-legendada{
@@ -1368,12 +1400,6 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    p.service{
-        grid-template-columns:repeat(1,1fr) ;
-        width: 100vw;
-        
     }
 
     .Image_Fixed > article{

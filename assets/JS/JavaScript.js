@@ -162,6 +162,62 @@ function fecharInicial(){
     contactText.style.display = 'none'
 }
 
+/*Configuração de fotos e textos de catering ou serviços*/
+var catering1 = window.document.querySelector('#catering1')
+var catering2 = window.document.querySelector('#catering2')
+var catering3 = window.document.querySelector('#catering3')
+
+var foto1 = window.document.querySelector('.foto1')
+var foto2 = window.document.querySelector('.foto2')
+var foto3 = window.document.querySelector('.foto3')
+
+var texto1 = window.document.querySelector('.texto1')
+var texto2 = window.document.querySelector('.texto2')
+var texto3 = window.document.querySelector('.texto3')
+
+catering1.addEventListener('mouseover', (mostrar)=>{
+    foto1.style.opacity = '0'
+    texto1.style.margin = 'auto'
+    texto1.style.fontSize = '.9em'
+    texto1.style.height = '180px'
+    texto1.style.transition = '.3s'
+})
+
+catering2.addEventListener('mouseover', (mostrar2)=>{
+    foto2.style.opacity = '0'
+    texto2.style.margin = 'auto'
+    texto2.style.fontSize = '.9em'
+    texto2.style.height = '180px'
+    texto2.style.transition = '.3s'
+    
+})
+
+catering3.addEventListener('mouseover', (mostrar3)=>{
+    foto3.style.opacity = '0'
+    texto3.style.margin = 'auto'
+    texto3.style.fontSize = '.9em'
+    texto3.style.height = '180px'
+    texto3.style.transition = '.3s'
+})
+
+catering1.addEventListener('mouseout', voltarNormal), catering2.addEventListener('mouseout', voltarNormal), catering3.addEventListener('mouseout', voltarNormal)
+
+function voltarNormal(){
+    foto1.style.opacity = '1'
+    foto2.style.opacity = '1'
+    foto3.style.opacity = '1'
+
+    texto1.style.height = '0px'
+    texto2.style.height = '0px'
+    texto3.style.height = '0px'
+
+    texto1.style.fontSize = '0em'
+    texto2.style.fontSize = '0em'
+    texto3.style.fontSize = '0em'
+}
+
+
+
 /*----------Selecionamento de categoria de restaurantes, caterings e tableBookings------*/
 
 function escutar(){
