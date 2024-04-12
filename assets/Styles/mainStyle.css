@@ -693,7 +693,7 @@ span.pintada{
     width: 40px;
 }
 
-
+/*Configuração da area da foto legendada com marquee*/
 .foto-legendada{
     padding: 1em 0em;
     display: flex;
@@ -1205,31 +1205,41 @@ footer{
         font-size: 3.3vw;
     }
 
-    .paragraph-gif{
-        display: block;
-
-        padding: 0em 1.5em;
+    .foto-legendada{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
     }
 
-    span.imgGif{
-        height: 45.7vh;
-        display: block;
-        width:100%;
+    .ft-Left{
+        width: 95%;
+        height: 48vh;
     }
-
-    span.infoGif{
-        width: 79%;
-        height: 45.7vh;
-        font-size: 1.5em;
-        margin-top: -.5em;
-        margin-bottom: 1em;
-    }
-
-    span.imgGif img{
+    
+    .ft-Left img{
+        height: 47vh;
         width: 100%;
-        height: 44.7vh;
+        margin: auto;
     }
 
+    .ready-message{
+        font-size: 1.5em;
+        margin-top: -12em;
+        width: 70%;
+    }
+    
+    .ft-right{
+        width: 95%;
+        font-size: 1.2em;
+        
+    }
+
+    .ft-right:hover{
+        background-color: #fff;
+        
+    }
+    
 
     .Registration_Area > p.input-btn{
         width:40%;
