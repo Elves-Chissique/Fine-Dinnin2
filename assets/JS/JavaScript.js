@@ -209,3 +209,33 @@ function escutar(){
 
 /* --------------configuração de modal for business registration---------------------- */
 
+
+/*configuração de animação de imagens e letras do site */
+
+let elements = window.document.querySelectorAll('.hidden-fig')
+let fried = window.document.querySelectorAll('.opacity-style')
+
+let myobserver = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('shown-fig')
+        }
+        else{
+            entry.target.classList.remove('shown-fig') 
+        }
+    })
+})
+elements.forEach((element)=>myobserver.observe(element))
+
+let myOtherObs = new IntersectionObserver((entradas)=>{
+    entradas.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('normal-view')
+        }
+        else{
+            entry.target.classList.remove('normal-view')
+        }
+    })
+})
+
+fried.forEach((element)=> myOtherObs.observe(element))

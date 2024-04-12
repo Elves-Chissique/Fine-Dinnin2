@@ -426,6 +426,16 @@ span.h3{
     padding: 2em 0em;
   }
 
+  .hidden-fig{
+    margin-left:-100%;
+  }
+
+  .shown-fig{
+    margin-left: 0%;
+    transition: all 1s;
+    
+  }
+
   .sub-container{
     width: 70%;
     margin: auto;
@@ -548,6 +558,16 @@ span.pintada{
     justify-content: center;
     width: 100%;
     border-radius: 20px;
+    transition: 4s;
+}
+
+.opacity-style{
+    opacity: 0;
+}
+
+.normal-view{
+    opacity: 1;
+    transition: 5s;
 }
 .fried img{
     width: 75%;
