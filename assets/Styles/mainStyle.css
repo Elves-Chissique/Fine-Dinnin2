@@ -265,7 +265,7 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
 
 .Event_content2{
     background-image: linear-gradient(to right,
-     #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
+    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
 }
 
 .Event_content2  > .service-Disc{
@@ -322,7 +322,7 @@ span.h3{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 120%;
-    color:#ffffffbe;
+    color:#ffffffdc;
     transition: .3s;
     position:absolute;
     top: 0;
@@ -528,7 +528,7 @@ span.pintada{
 }
 
 .sub-container img{  
-    background: #223f22;
+    background-color:#161616ec;
     border-radius: 10px 10px 0px 0px;
     
 }
@@ -554,21 +554,21 @@ span.pintada{
     margin: auto;
     margin-top: -.3em;
     padding: 0em .5em;
-    color: #000;
     text-align: center;
     border: 2px solid #223f22;
     border-radius: 0px 0px 10px 10px;
+    background-color:#16161652;
   }
   .slideshow-container figcaption > span.fig-title{
     font-size: 1.7em;
-    color:rgb(150, 16, 16);
+    color:#fff;
   }
 
   .slideshow-container figcaption > span.fig-txt{
     font-size: 1em;
     line-height: .9em;
     text-align: center;
-    color: #223f22;
+    color: #ffffffb9;
     font-family: 'Times New Roman', Times, serif;
     
   }
@@ -804,20 +804,23 @@ span.pintada{
 #restaurantes{
     display: flex;
     justify-content: center;
-    background-color: #def0f0 ;
 }
 
 #tableBookings{
     display: flex;
     justify-content: center;
-    background-color: #def0f0 ;
 }
 
 #caterings{
     display: flex;
     justify-content: center;
-    background-color: #def0f0 ;
 }
+
+.bg-venues{
+    background-image: linear-gradient(to right,
+    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
+}
+
 
 .main-view-venues{
     width: 80%;
@@ -828,6 +831,7 @@ span.pintada{
     padding:0em 2em;
     margin:2em 0em;
     padding: 2em 0em;
+
 }
 
 
@@ -937,13 +941,15 @@ span.pintada{
 
 
 .BTNII{
-    font-family: cursive;
+   font-family: 'Times New Roman', Times, serif;
    outline: none;
    width: 100%; 
    border: 2px solid #0000003d; 
    padding: .4em 2em;
    border-radius: 15px;
    transition: .5s;
+   background-image: linear-gradient(to right,
+    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
   
 
 }
@@ -1213,6 +1219,10 @@ footer{
         width: 60%;
     }
 
+    .info-carossel{
+        font-size: 1.1em;
+    }
+
     .sub-container{
         display: flex;
         align-items: center;
@@ -1277,8 +1287,14 @@ footer{
         width: 95%;
     }
 
-    .service-intro{
-        font-size: 3.3vw;
+    .service-intro > p{
+        width: 80%;
+        margin:auto ;
+        line-height: 1.6em;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 4.3vw;
+        letter-spacing: .1em;
+        color: #313030;
     }
 
     span.h3{
@@ -1286,7 +1302,7 @@ footer{
         font-family: 'Ephesis', cursive;
         font-family: 'PT Sans Narrow', sans-serif;
         font-size: 1.1em;
-        color: #4b4848;
+        color:#ffffffdc;
         transition: .3s;
     }
 
