@@ -1232,9 +1232,13 @@ footer{
     }
 
     .slideshow-container figcaption > span.fig-title{
-        font-size: 1.4em;
+        font-size: 1.2em;
         color:rgb(150, 16, 16);
-      }
+    }
+
+    .slideshow-container figcaption > span.fig-txt{
+        font-size: .8em;
+    }
 
     .fried{
         width: 100%;
