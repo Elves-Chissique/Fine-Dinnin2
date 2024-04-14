@@ -111,14 +111,79 @@ function backHome(){
     window.location= "index.html"
 }
 
-function goPhoneA(){
-    window.location = '#contactA'
+
+function goPhoneA() {
+    phoneA.style.transition = 'opacity 6s linear'; // Transition for opacity property over 6 seconds with linear timing
+
+    var newTargetElement = document.getElementById('contactA');
+    
+    var newTargetY = newTargetElement.getBoundingClientRect().top + window.pageYOffset;
+    var newScrollDuration = 1000; // Increase scroll duration to 4 seconds (4000 milliseconds)
+
+    var newStartTime = null;
+    function scrollToNewElement(timestamp) {
+        if (!newStartTime) newStartTime = timestamp;
+        var newElapsed = timestamp - newStartTime;
+        var newProgress = Math.min(newElapsed / newScrollDuration, 1);
+        var newLinearProgress = newLinearEaseInOut(newProgress);
+        window.scrollTo(0, window.pageYOffset + (newTargetY - window.pageYOffset) * newLinearProgress);
+        if (newProgress < 1) requestAnimationFrame(scrollToNewElement);
+    }
+
+    requestAnimationFrame(scrollToNewElement);
 }
 
-function goRestaurant(){
-    window.location = '#resttt'
-    RestButton.style.transition = '2s'
+function newLinearEaseInOut(p) {
+    // Linear easing function for consistent speed throughout the animation
+    return p;
 }
+
+ // Call the function to initiate the scroll animation
+
+
+
+
+
+
+
+function goRestaurant() {
+    // Apply transition to the element with ID "RestButton"
+    RestButton.style.transition = 'opacity 6s linear'; // Transition for opacity property over 6 seconds with linear timing
+
+    // Get the target element to scroll to
+    var targetElement = document.getElementById('resttt');
+    
+    // Get the current scroll position
+    var startY = window.scrollY || window.pageYOffset;
+    
+    // Calculate the distance to scroll
+    var targetY = targetElement.getBoundingClientRect().top + startY;
+    
+    // Calculate the duration of the scroll animation
+    var scrollDuration = 1600; // Duration in milliseconds
+    var currentTime = 0;
+    var increment = 20; // Time increment in milliseconds
+
+    // Define the scroll function
+    var animateScroll = function() {
+        currentTime += increment;
+        var easing = linearEaseInOut(currentTime, startY, targetY - startY, scrollDuration);
+        window.scrollTo(0, easing);
+        if (currentTime < scrollDuration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    
+    // Start the scroll animation
+    animateScroll();
+}
+
+// Linear easing function for smooth scrolling
+function linearEaseInOut(t, b, c, d) {
+    return c * t / d + b;
+}
+
+
 
 /*---------------- configuração de offcanva lateral-------------------------- */
 let contactInitial = window.document.getElementById('contacntInitial')
