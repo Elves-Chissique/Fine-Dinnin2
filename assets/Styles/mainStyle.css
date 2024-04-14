@@ -948,8 +948,6 @@ span.pintada{
    padding: .4em 2em;
    border-radius: 15px;
    transition: .5s;
-   background-image: linear-gradient(to right,
-    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
   
 
 }
@@ -985,6 +983,8 @@ span.pintada{
 
 #contactA{
     height: 5vh;
+    background-image: linear-gradient(to right,
+    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
 }
 
 
@@ -1096,6 +1096,14 @@ footer{
     background-color: rgba(0, 128, 0, 0.322);
     border-top: 5px solid rgba(0, 128, 0, 0.322);
     border-bottom: 5px solid rgba(0, 128, 0, 0.322);
+}
+
+.ft-screenshort{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,
+    #0f172a, #feb47b, rgba(0, 0, 255, 0.226), #ffcc88, #0f172a);
 }
 
 .srceenshort img{
