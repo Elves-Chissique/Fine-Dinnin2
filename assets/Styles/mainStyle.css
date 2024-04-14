@@ -1231,6 +1231,11 @@ footer{
         padding: 0;
     }
 
+    .slideshow-container figcaption > span.fig-title{
+        font-size: 1.4em;
+        color:rgb(150, 16, 16);
+      }
+
     .fried{
         width: 100%;
     }
