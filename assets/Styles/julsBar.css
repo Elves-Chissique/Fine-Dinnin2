@@ -155,7 +155,6 @@
 
 
 #mainViewInfo > div.info-leftRigth{
-    height: 73.5vh;
     box-shadow: 1px 1px 3px;
     background-color: #fff;
     margin-top: .2em;
@@ -165,10 +164,75 @@
 }
 
 #left{
+    height: 73.5vh;
     width: 55%;
     margin-right: .6em;
     overflow: hidden;
     display: inline-block;
+}
+
+#right{
+    height: 73.5vh;
+    width: 30%;
+    margin-left: .6em;
+    overflow: hidden;
+    display: inline-block;
+}
+#mainViewInfo > div > span.span-view{
+    font-size: 4vw;
+}
+
+#mainViewInfo p.general-p{
+    text-align: justify;
+    font-size: 1.3vw;
+    padding:0em 1.5em;
+    font-weight: 700;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Josefin Slab', serif;
+    color: #069f88;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+#mainViewInfo > div > p > span{
+    display: inline-block;
+    margin-top:1.2em;
+    margin-bottom:1.2em;
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 1vw;
+    box-shadow: 1px 1px 5px #372297;
+    padding: 0px .5em;
+    border-radius: 5px;
+    margin-left: 1em;
+    cursor: default;
+    color: rgb(4, 156, 115);
+}
+
+#mainViewInfo > div > p > span img.menor{
+    width: 1vw;
+    margin-bottom: -3px;
+}
+
+img#maior{
+    width: 1vw;
+}
+
+#mainViewInfo p.tag{
+    display: inline-block;
+    padding: .3em 1em;
+    font-family: cursive;
+    margin-bottom: .5em;
+    font-size: 1vw;
+    border-radius: 20px;
+    border-bottom: 2px solid #372297;
+    transition: all .5s;
+    cursor:default;
+    color: rgb(4, 156, 115);
+}
+
+#mainViewInfo p.tag:hover{
+    background-color: #3722971d;
 }
 
 #leftOther{
@@ -308,68 +372,6 @@
     border: none;
 }
 
-#right{
-    width: 30%;
-    margin-left: .6em;
-    overflow: hidden;
-    display: inline-block;
-}
-#mainViewInfo > div > span.span-view{
-    font-size: 4vw;
-}
-
-#mainViewInfo p.general-p{
-    text-align: justify;
-    font-size: 1.3vw;
-    padding:0em 1.5em;
-    font-weight: 700;
-    font-family: 'Bad Script', cursive;
-    font-family: 'Josefin Slab', serif;
-    color: #069f88;
-    line-height: 1.5;
-    font-style: italic;
-}
-
-#mainViewInfo > div > p > span{
-    display: inline-block;
-    margin-top:1.2em;
-    margin-bottom:1.2em;
-    font-family: cursive;
-    font-weight: 100;
-    font-size: 1vw;
-    box-shadow: 1px 1px 5px #372297;
-    padding: 0px .5em;
-    border-radius: 5px;
-    margin-left: 1em;
-    cursor: default;
-    color: rgb(4, 156, 115);
-}
-
-#mainViewInfo > div > p > span img.menor{
-    width: 1vw;
-    margin-bottom: -3px;
-}
-
-img#maior{
-    width: 1vw;
-}
-
-#mainViewInfo p.tag{
-    display: inline-block;
-    padding: .3em 1em;
-    font-family: cursive;
-    margin-bottom: .5em;
-    font-size: 1vw;
-    border-radius: 20px;
-    border-bottom: 2px solid #372297;
-    transition: all .5s;
-    cursor:default;
-    color: rgb(4, 156, 115);
-}
-
-#mainViewInfo p.tag:hover{
-    background-color: #3722971d;
-}
 
 #divLogo{
     border-top: 2px solid rgb(187, 187, 5);
@@ -871,4 +873,107 @@ input#comentarioForm2{
 
 #cancelBtnF2:hover{
     background-color: rgba(255, 0, 0, 0.9);
+}
+
+
+/*Configuração de mobile phone*/
+
+@media screen and (max-width: 600px) {
+    .Image_Fixed{
+        position: fixed;
+        text-align: center;
+        overflow-y: auto;
+    }
+
+
+    #julsBar{
+        width: 90%;
+    } 
+
+    #mainViewInfo{
+        width: 86%;
+        margin-top: -7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items:normal;
+    }
+
+    #mainViewInfo > div.info-leftRigth{
+        box-shadow: 1px 1px 3px;
+        background-color: #fff;
+        margin-top: 1.5em;
+        border-radius: 5px;
+        padding: 5px;
+    
+    }
+    #left{
+        height: 40vh;
+        width: 90%;
+        font-size: 1em;
+    }
+    #right{
+        height: 50vh; 
+        font-size: 1em;
+        margin-top: 1.5em; 
+        width: 90%;
+        display: block;
+    }
+    
+    #mainViewInfo > div > span.span-view{
+        font-size: 1.5em;
+    }
+    
+    #mainViewInfo p.general-p{
+        text-align: justify;
+        font-size: .6em;
+        padding:0em 1.5em;
+        font-weight: 700;
+        font-family: 'Bad Script', cursive;
+        font-family: 'Josefin Slab', serif;
+        color: #069f88;
+        line-height: 1.5;
+        font-style: italic;
+    }
+    
+    #mainViewInfo > div > p > span{
+        display: inline-block;
+        margin-top:1.2em;
+        margin-bottom:1.2em;
+        font-family: cursive;
+        font-weight: 100;
+        font-size: .5em;
+        box-shadow: 1px 1px 5px #372297;
+        padding: 0px .5em;
+        border-radius: 5px;
+        margin-left: 1em;
+        cursor: default;
+        color: rgb(4, 156, 115);
+    }
+    
+    #mainViewInfo > div > p > span img.menor{
+        width: 1em;
+        margin-bottom: -3px;
+    }
+    
+    img#maior{
+        width: 1em;
+    }
+    
+    #mainViewInfo p.tag{
+        display: inline-block;
+        padding: .3em 1em;
+        font-family: cursive;
+        margin-bottom: .5em;
+        font-size: .8em;
+        border-radius: 20px;
+        border-bottom: 2px solid #372297;
+        transition: all .5s;
+        cursor:default;
+        color: rgb(4, 156, 115);
+    }
+    
+    #mainViewInfo p.tag:hover{
+        background-color: #3722971d;
+    }
 }

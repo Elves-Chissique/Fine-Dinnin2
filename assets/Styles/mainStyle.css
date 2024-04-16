@@ -1483,5 +1483,126 @@ footer{
     .Image_Fixed > article > img{
         display: block;
     }
+
+    /*Formulário de Registros de novos membros*/
+    #formBusinessRegist{
+        display: none;
+        position: fixed;
+        background-color: #000000;
+        color: #fff;
+        width: 90vw;
+        height: 100vh;
+        padding:1em;
+        border-radius: 10px;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #formBusinessRegist > p{
+        background-color: black;
+        width: 100%;
+        height: 79%;
+        border-radius: 20px;
+        padding: 1.3em;
+        text-align: center;
+        margin-top: -11em;
+        
+    }
+    #formBusinessRegist > p > span{
+        border-bottom: 1px solid #ffffff77;
+        font-size: 1em;
+        
+    }
+    
+    .Form{
+        position: inherit;
+        width: 100vw;
+        margin-top: 20px;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    .Form input{
+        width: 85%;
+        height: 1.5em;
+        border-radius: 15px;
+        background-color:rgba(255, 255, 255, 0.158);
+        outline: none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color:#fff;
+        padding: .6em;
+        margin-bottom: 2em;
+        text-align: center;
+        
+    }
+    
+    .Form input:hover{
+        background-color:rgba(255, 255, 255, 0.123);
+        line-height: none;
+    }
+
+    .Form fieldset{
+        display: flex;
+        margin: auto;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .Form textarea{
+        position: relative;
+        height: 6em;
+        padding: .5em;
+        margin-right: 0px;
+        margin-bottom: .5em;
+        width:90%;
+        text-align: center;
+        background-color:rgba(255, 255, 255, 0);
+        outline: none;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .Form select{
+        position: relative;
+        padding: .3em;
+        margin-left: 0px;
+        width: 90%;
+        outline: none;
+        background-color: rgb(14, 13, 13);
+        border-radius: 10px;
+        color: #fff;
+    }
+    
+    .Form textarea:hover{
+        background-color:rgba(255, 255, 255, 0.123);
+    }
+    
+    
+    .Form label{
+        color: red;
+    }
+    
+    .Form ::placeholder{
+        color: #ffffffad;
+    }
+    
+    #SecondFormBTN, #SecondFormBtn{
+        width: 45%;
+        height: 3em;
+        border: 1px solid #fff;
+        font-style: italic;
+    }
+
+    #SecondFormBtn{
+        margin-top: -2em;
+        margin-bottom: .5em;
+    }
+    
 }
 
