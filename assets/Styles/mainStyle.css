@@ -321,18 +321,14 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
 span.h3{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    font-size: 120%;
+    font-size: 110%;
     color:#ffffffdc;
     transition: .3s;
     position:absolute;
     top: 0;
 }
 
-.diferent-one{
-    border: 1px solid rgba(255, 255, 255, 0.253);
-    width: 90%;
-    margin: auto;
-}
+
 
 .catering-foto img{
     width: 300px;

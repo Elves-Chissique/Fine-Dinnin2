@@ -12,6 +12,7 @@
     justify-content: center;
     gap: 2em;
     margin-top: .9em;
+    background-color: black;
 }
 
 #julsBar{
@@ -26,7 +27,6 @@
 
 
 @media screen and (max-width: 1600px){
-   
     #julsBar{
         width: 86%;
     } 
@@ -40,7 +40,7 @@
     }
     #right{
         height: 34vw; 
-        font-size: 1vw; 
+        font-size: 1em; 
     }
 }
 
@@ -132,7 +132,6 @@
 }
 
 #mainView{
-    
     width: 100%;
     text-align: center;
 }
@@ -155,7 +154,6 @@
 
 
 #mainViewInfo > div.info-leftRigth{
-    box-shadow: 1px 1px 3px;
     background-color: #fff;
     margin-top: .2em;
     border-radius: 5px;
@@ -386,7 +384,6 @@ img#logo{
 
 
 /*Configuração de ABA  de order*/
-
 .span-order{
     font-size: 2vw;
 }
@@ -885,18 +882,22 @@ input#comentarioForm2{
         overflow-y: auto;
     }
 
-
     #julsBar{
-        width: 90%;
+        width: 100%;
+        display: block;
     } 
 
+    #ulsBarBtn{
+        display: none;
+    }
+
     #mainViewInfo{
-        width: 86%;
+        width: 100%;
         margin-top: -7vw;
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items:normal;
+        align-items:center;
     }
 
     #mainViewInfo > div.info-leftRigth{
@@ -911,13 +912,16 @@ input#comentarioForm2{
         height: 40vh;
         width: 90%;
         font-size: 1em;
+        margin-right: .0em;
+        
     }
     #right{
         height: 50vh; 
-        font-size: 1em;
+        font-size: .7em;
         margin-top: 1.5em; 
         width: 90%;
         display: block;
+        margin-left: 0em;
     }
     
     #mainViewInfo > div > span.span-view{
@@ -942,7 +946,7 @@ input#comentarioForm2{
         margin-bottom:1.2em;
         font-family: cursive;
         font-weight: 100;
-        font-size: .5em;
+        font-size: .7em;
         box-shadow: 1px 1px 5px #372297;
         padding: 0px .5em;
         border-radius: 5px;
@@ -975,5 +979,226 @@ input#comentarioForm2{
     
     #mainViewInfo p.tag:hover{
         background-color: #3722971d;
+    }
+/*Configurando elementos de left-/right*/
+    .span-order{
+        font-size: 2.5em;
+    }
+    p.dataTime{
+        margin: .5em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+    }
+    
+    p.dataTime > span{
+        border-bottom:  2px solid rgba(255, 0, 0, 0.500);
+        background-color: #08d2b43c;
+        padding: .3em 2em;
+        border-radius: 8px;
+        font-size: 1.3em;
+        margin: 0em 0.5em;
+    }
+    
+    img#svgData{
+        width: 1.3em;
+    }
+    img#svgHora{
+        width: 1.3em;
+    }
+    
+    p.dataTime > span > output{
+        border: none;
+        outline: none;
+        background-color: #00000000;
+        font-size: 1.3em;
+        color:red;
+    }
+    
+    p.typ-Order{
+        display: flex;
+        margin-top: 1em;
+        justify-content: space-around;
+        background-color: #08d2b43c;
+        padding: .5em ;
+        color: rgba(0, 0, 0, 0.600);
+    }
+    
+    .other-txt{
+        display: none;
+    }
+    
+    .food-selection{
+        font-size: 1em;
+        justify-content: space-between;
+        display: flex;
+        padding: .3em .2em;
+    }
+
+    .food-selection select{
+        width: 50%;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        margin: .4em 0em;
+        display: none;
+        padding: .4em;
+        font-size: .9em;
+        color:rgba(0, 0, 0, 0.600);
+        right:0px;
+        background-color: green;
+    }
+    
+    p.food-selection input{
+        font-size:1.3em;
+        display: none;
+        width: 95%;
+        padding: .5em;    /*Ainda por se observar*/
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 2px solid rgba(255, 0, 0, 0.35);
+        outline: none;
+        color:rgba(0, 0, 0, 0.600);
+    }
+
+    .beverages-select label, .food-selection label{
+        display: none;
+    }
+    
+    .beverages-select{
+        font-size: 1em;
+        justify-content: space-between;
+        display: flex;
+        padding: .3em .2em;
+    }
+    
+    .beverages-select select{
+        width: 50%;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        margin: .4em 0em;
+        display: none;
+        padding: .4em;
+        font-size: .9em;
+        color:rgba(0, 0, 0, 0.600);
+        right:0px;
+        background-color: green;
+    }
+
+    
+    .contact-info{
+        padding: .8em 0em;
+        background-color: rgb(0, 0, 0,.5); 
+        margin-top: .5vw;
+    }
+    
+    .contact-info label{
+        display: none;
+    }
+    
+    .contact-info input{
+        width: 94%;
+        padding: .5em;
+        border: none;
+        border-bottom: 2px solid rgba(255, 0, 0, 0.644);
+        outline: none;
+        transition: all .5s;
+        font-size: .8vw;
+    }
+    
+    .Qty, .bQty{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        padding: .3em .8em;
+        /*background-color:#08d2b42a ;*/
+    }
+    
+    .Qty span.valor, .bQty span.valor{
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.500);
+        border-top: 1px solid rgba(0, 0, 0, 0.500);
+        border-radius: 15px;
+        font-size: 1em;
+    }
+    
+    .Qty button, .bQty button{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        font-weight: bolder;
+        font-size: 1em;
+        border: none;
+        background-color: #fff;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
+        transition: all .5s;
+    }
+    
+    .bQty label, .Qty label{
+        color: rgba(0, 0, 0, 0.600);
+        font-family: cursive;
+        font-size: 1.9vw;
+    }
+    
+    
+    .Qty button:hover, .bQty button:hover{
+        box-shadow: 1px 1px 7px red;
+    }
+    
+    .Qty input, .bQty input{
+        width: 2emem;
+        color: #fff;
+        text-align: center;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1em;
+    }
+    
+    .contact-info input:hover{
+        background-color: #08d2b42a;
+        border-radius: 5px;
+    }
+    
+    .deliver_options{
+        font-weight: 700;
+        margin-top:1em;
+        background-color: rgb(0, 0, 0,.5) ;
+        padding-bottom: .5em;
+    }
+    
+    .deliver_options label{
+        color: #fff;
+        font-weight: 100;
+    }
+    
+    label#no{
+        color: #07356b;
+    }
+    
+    .deliver_options fieldset{
+        width: 97%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .3em 0em;
+        margin: auto;
+    }
+    
+    #submit input{
+        padding:.2em .5em;
+        margin-top: 1em;
+        width: 65%;
+        border-radius: 5em;
+        transition: all .5s;
+        cursor: pointer;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        font-family: cursive;
+        font-size: 1.1vw;
+    }
+    #submit input:hover{
+        border: 2px solid rgba(255, 0, 0, 0.585);
     }
 }
