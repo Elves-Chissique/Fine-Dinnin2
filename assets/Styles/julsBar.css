@@ -1102,14 +1102,15 @@ input#comentarioForm2{
     
     .contact-info input{
         width: 94%;
-        height: 8em;
+        height: 2em;
         padding: .5em 0em;
         border: none;
         border-bottom: 2px solid rgba(255, 0, 0, 0.644);
         outline: none;
         transition: all .5s;
-        font-size: .8vw;
+        font-size:.9em;
     }
+
     
     .Qty, .bQty{
         width: 35%;
