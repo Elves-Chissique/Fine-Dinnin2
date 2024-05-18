@@ -1102,7 +1102,8 @@ input#comentarioForm2{
     
     .contact-info input{
         width: 94%;
-        padding: 3em 0em;
+        height: 8em;
+        padding: .5em 0em;
         border: none;
         border-bottom: 2px solid rgba(255, 0, 0, 0.644);
         outline: none;
