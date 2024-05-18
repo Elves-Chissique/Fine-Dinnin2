@@ -601,7 +601,7 @@ label#no{
     border: 2px solid rgba(255, 0, 0, 0.585);
 }
 
-/*-------------------------------Estilização da ABA photos*-------------------------------------------------------------*/
+/*-------------------------------Estilização ABA photos*----------------------------------------*/
 #mensagemPhotos{
     background-color: #fff;
     width: 99%;
@@ -1205,4 +1205,110 @@ input#comentarioForm2{
     #submit input:hover{
         border: 2px solid rgba(255, 0, 0, 0.585);
     }
+
+
+    /*Entrada da ABA FOTOS*/
+
+    #photosMain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        height: 100vh;
+        
+    }
+
+    Div#photo{
+        width: 92.5%;
+        height: auto;
+        background-image:linear-gradient(to right, #000, blue, #000) ;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 3em;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: red;
+    }
+
+    #mensagemPhotos{
+        margin-top: 10em;
+        background-color: #fff;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        text-shadow: 1px 1px 3px red;
+        color:#000;
+        
+    }
+    
+    
+    .conteiner p{
+        width: 100%;
+        background-color: #069f88;
+        border: 1px solid #fff;
+        overflow: hidden;
+    }
+    
+    .conteiner p img{
+        width: 100%;
+        height: auto;
+        transition: all .5s;
+    }
+    
+    .conteiner p img:hover{
+        transform: scale(1.5);
+    }
+    
+    #photoShowMainFrame{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2em;
+        width: 86%;
+        background-color: rgba(255, 255, 255, 0.9400);
+        color:#fff ;
+        height: 100vh;
+        z-index: 0;
+    }
+    
+    #photoShow{
+        width: 40%;
+        background-color: #fff;
+        height: 70vh;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    #photoShow span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:8vw;
+        margin-left: 1em;
+        background-color: #000000b0;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        transition: all .5s;
+        border: 2px solid rgba(255, 0, 0, 0);
+        cursor: pointer;
+    }
+    
+    #photoShow span:hover{
+        border: 2px solid red;
+    }
+    
+    #photoShow img{
+        width: 100%;
+        height: 100%;
+    }
+    
 }
