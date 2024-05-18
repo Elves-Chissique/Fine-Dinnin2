@@ -1199,7 +1199,7 @@ input#comentarioForm2{
         transition: all .5s;
         cursor: pointer;
         border: 2px solid rgba(0, 0, 0, 0.5);
-        font-family: cursive;
+        font-family: 'Times New Roman', Times, serif;
         font-size:1.3em;
     }
     #submit input:hover{
