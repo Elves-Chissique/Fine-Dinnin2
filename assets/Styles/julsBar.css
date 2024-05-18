@@ -916,7 +916,7 @@ input#comentarioForm2{
         
     }
     #right{
-        height: 50vh; 
+        height: auto; 
         font-size: .7em;
         margin-top: 1.5em; 
         width: 90%;
@@ -1108,7 +1108,7 @@ input#comentarioForm2{
         border-bottom: 2px solid rgba(255, 0, 0, 0.644);
         outline: none;
         transition: all .5s;
-        font-size:.9em;
+        font-size:1em;
     }
 
     
@@ -1194,13 +1194,13 @@ input#comentarioForm2{
     #submit input{
         padding:.2em .5em;
         margin-top: 1em;
-        width: 65%;
+        width: 40%;
         border-radius: 5em;
         transition: all .5s;
         cursor: pointer;
         border: 2px solid rgba(0, 0, 0, 0.5);
         font-family: cursive;
-        font-size: 1.1vw;
+        font-size:1.3em;
     }
     #submit input:hover{
         border: 2px solid rgba(255, 0, 0, 0.585);
