@@ -1401,6 +1401,7 @@ input#comentarioForm2{
         width: 100%;
         position: absolute;
         display: none;
+        overflow: hidden;
         
        
     }
@@ -1408,7 +1409,7 @@ input#comentarioForm2{
     .fondo-comentario div{
         display: flex;
         width: 92.5%;
-        height: 100vh;
+        height: 95vh;
         color: white;
         margin: auto;
         z-index: 1;
@@ -1421,7 +1422,6 @@ input#comentarioForm2{
         width: 96%;
         padding: .5em;
         display: block;
-        background-color:black;
     }
     
     .fondo-comentario > div > form > p{
