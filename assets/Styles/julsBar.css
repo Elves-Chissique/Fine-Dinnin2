@@ -1339,7 +1339,7 @@ input#comentarioForm2{
     #ReviewsFrame > div{
         margin: 1.5em;
         color:#fff;
-        height:17.5vw;
+        height:auto;
         background-color: rgba(0, 0, 0, 0.5);
         width: 35%;
         border: 1px solid #00000000;
@@ -1396,20 +1396,20 @@ input#comentarioForm2{
     }
     
     .fondo-comentario{
+        top: 0;
         left: 0em;
-        height: 100vh;
+        height: 111vh;
         width: 100%;
         position: absolute;
         display: none;
-        overflow: hidden;
-        
-       
+        overflow: hidden; 
+        padding: 1em 0em;
     }
 
     .fondo-comentario div{
         display: flex;
         width: 92.5%;
-        height: 95vh;
+        height: 110vh;
         color: white;
         margin: auto;
         z-index: 1;

@@ -374,7 +374,7 @@ abrirComentarios.addEventListener('click', abrirCampoComentario)
 cancelBtnF2.addEventListener('click', fecharCampoComentario)
 
 function abrirCampoComentario(){
-    fundoComentario.style.display = 'flex'
+    fundoComentario.style.display = 'block'
 }
 
 function fecharCampoComentario(){
