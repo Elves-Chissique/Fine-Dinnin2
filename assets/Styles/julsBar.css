@@ -995,9 +995,11 @@ input#comentarioForm2{
         border-bottom:  2px solid rgba(255, 0, 0, 0.500);
         background-color: #08d2b43c;
         padding: .3em 2em;
+        width: 45%;
         border-radius: 8px;
-        font-size: 1.3em;
+        font-size: .93em;
         margin: 0em 0.5em;
+        
     }
     
     img#svgData{
@@ -1011,7 +1013,7 @@ input#comentarioForm2{
         border: none;
         outline: none;
         background-color: #00000000;
-        font-size: 1.3em;
+        font-size: 1em;
         color:red;
     }
     
@@ -1125,8 +1127,8 @@ input#comentarioForm2{
     }
     
     .Qty button, .bQty button{
-        width: 3em;
-        height: 3em;
+        width: 2.5em;
+        height: 2.5em;
         border-radius: 50%;
         font-weight: bolder;
         font-size: 1em;
