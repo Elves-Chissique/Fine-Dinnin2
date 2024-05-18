@@ -1317,6 +1317,8 @@ input#comentarioForm2{
         width: 100%;
         z-index: -1;
         margin-top: 1.5em;
+        overflow-y: hidden;
+
     }
     
     #ReviewsFrame{
@@ -1349,6 +1351,7 @@ input#comentarioForm2{
         flex-direction: column;
         padding:0 1.6em;
         border-radius: 15px;
+        overflow: hidden; 
     }
     
     #nomeOfComment{
@@ -1402,20 +1405,21 @@ input#comentarioForm2{
         width: 100%;
         position: absolute;
         display: none;
-        overflow: hidden; 
         padding: 1em 0em;
+        overflow-y: hidden;
     }
 
     .fondo-comentario div{
         display: flex;
         width: 92.5%;
-        height: 110vh;
+        height: 105.5vh;
         color: white;
         margin: auto;
         z-index: 1;
         background-color: #ece9e998;
         justify-content: center;
         flex-direction: column;
+        overflow-y: hidden;
     }
     
     .fondo-comentario > div > form{
