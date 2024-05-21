@@ -1512,6 +1512,7 @@ input#comentarioForm2{
     justify-content: center;
     align-items: center;
     z-index: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .orderPrevision{
@@ -1553,6 +1554,7 @@ input#comentarioForm2{
     background-color:rgba(255, 0, 0, 0.479);
     border-radius: 0px 0px 15px 15px;
     font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #precoOrder, #precoOrderB{
@@ -1612,15 +1614,15 @@ input#comentarioForm2{
 #multiplicadorResultado{
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    width: 84%;
     z-index: 1;
     position:absolute;
-    bottom: .8em;
+    bottom: 31em;
     background-color: rgba(53, 2, 2, 0.493);
     color: #000;
 }
 #totalN{
-    font-size: 2vw;
+    font-size: 2em;
     font-weight: bolder; 
 }
 
