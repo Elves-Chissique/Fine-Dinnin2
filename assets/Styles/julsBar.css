@@ -1600,7 +1600,7 @@ input#comentarioForm2{
     width: auto;
     position: absolute;
     color:#fff;
-    font-size: 1.3vw;
+    font-size: 4em;
 }
 
 .p2{
@@ -1622,7 +1622,7 @@ input#comentarioForm2{
     color: #000;
 }
 #totalN{
-    font-size: 2em;
+    font-size: 5em;
     font-weight: bolder; 
 }
 
