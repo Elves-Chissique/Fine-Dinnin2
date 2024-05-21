@@ -432,7 +432,7 @@ function valorSeleacionado(){
     else{
         var previsionComidas = window.document.getElementById('previsionComidas')
         previsionComidas.style.display = 'flex'
-        leftOther.style.display = "inline-block" 
+        leftOther.style.display = "flex" 
         left.style.display = 'none' 
     }
 
