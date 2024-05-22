@@ -171,9 +171,9 @@
 
 #right{
     height: 73.5vh;
-    width: 30%;
+    width: 36%;
     margin-left: .6em;
-    overflow: hidden;
+    overflow: auto;
     display: inline-block;
 }
 #mainViewInfo > div > span.span-view{
