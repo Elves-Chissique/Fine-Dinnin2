@@ -859,8 +859,25 @@ span.pintada{
 }
 
 #venue-1{
-    background-image: url('../Images/Bar-1.jpg');
+    background-image: url('../Images/Bar-2.jpg');
     background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 41.5vh;
+}
+
+#venue-2{
+    background-image: url('../Images/bar-1.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 41.5vh;
+}
+
+#venue-3{
+    background-image: url('../Images/catering.jpeg');
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 41.5vh;
 }
@@ -1415,9 +1432,14 @@ footer{
     }
 
     #venue-1{
-        background-image: url('../Images/Bar-1.jpg');
-        background-position: center;
-        width: 100%;
+        height: 29.5vh;
+    }
+
+    #venue-2{
+        height: 29.5vh;
+    }
+
+    #venue-3{
         height: 29.5vh;
     }
 
