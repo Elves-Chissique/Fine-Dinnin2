@@ -742,6 +742,7 @@ span.pintada{
     width: 55vw;
     height: 48vh;
     position: relative;
+    overflow: hidden;
 }
 
 .ft-Left img{
