@@ -217,20 +217,24 @@ img#maior{
 }
 
 #mainViewInfo .tag-div{
+    width: 100%;
     display: flex;
+    align-items: center;
+    gap: 0em;
 }
 
 #mainViewInfo p.tag{
-    display: inline-block;
+    display: block;
     padding: .3em 1em;
     font-family: cursive;
-    margin-bottom: .5em;
     font-size: 1vw;
     border-radius: 20px;
     border-bottom: 2px solid #372297;
     transition: all .5s;
     cursor:default;
     color: rgb(4, 156, 115);
+    background-color: rgba(0, 0, 0, 0.075);
+    margin: auto;
 }
 
 #mainViewInfo p.tag:hover{
