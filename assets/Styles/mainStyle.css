@@ -240,7 +240,7 @@ Aqui termina a configuaração de offcanva-Lateral ---------------*/
 
 .Image_Fixed-2{
     background-color:black;
-    background-image: url('../Images/Flile_de_Frango.jpg');
+    background-image: url('../Images/bng3.jpg');
     background-repeat: no-repeat;
     background-position: 60% 40%;
     background-size:cover;
@@ -978,8 +978,15 @@ span.pintada{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 6em;
-    margin: auto;
+    bottom: 9em;
+    
+}
+
+@media(max-width: 1200px){
+    .Abtn{
+        bottom: 9em;
+        
+    }
 }
 
 

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     gap: 2em;
-    margin-top: 2.9em;
+    margin-top: 2.09em;
 }
 
 #julsBar{
@@ -45,7 +45,7 @@
 
 
 #julsBar svg{
-    top: 5em;
+    top: 2.6em;
     position: fixed;
     margin-left:-45vw;
     color: #fff;
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 1600px) {
     #julsBarBtn{
-        right: 10em;
+        right: 0vw;
     }
     
 }
@@ -146,7 +146,7 @@
 .escola{
     position: absolute;
     margin: auto;
-    margin-top: -8.5em;
+    margin-top: -2.5em;
     z-index: 0;
     width: 75%;
 }
@@ -154,7 +154,7 @@
 
 #mainViewInfo > div.info-leftRigth{
     background-color: #fff;
-    margin-top: 0em;
+    margin-top: 2em;
     border-radius: 5px;
     padding: 5px;
 
@@ -176,7 +176,7 @@
     display: inline-block;
 }
 #mainViewInfo > div > span.span-view{
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 #mainViewInfo p.general-p{

@@ -38,7 +38,7 @@
                 <article id="cabecalho">
                     <img id="Home" src="../Images/home.png" alt="">
                     <h1>
-                        Juls Bar & Restaurants
+                        Poropos Catering & Events
                     </h1>
                     <img class="esconder" src="../Images/home.png" alt="">
                 </article>
@@ -202,7 +202,7 @@
                                     </div>
                                     <div id="right" class="info-leftRigth">
                                         <span class="span-order">
-                                            Make your order
+                                            Book your Next Event
                                         </span>
                                         <hr>
                                         <form action="">
@@ -210,130 +210,78 @@
                                                 <span>
                                                     <label for="iData">
                                                         <img id="svgData" src="../Images/calendar-check.svg" alt="">
-                                                        Data
+                                                        Event Date
                                                     </label> <br>
-                                                    <output name="nData" id="iData">
+                                                    <label for="iEvent-date">*</label>
+                                                    <input type="date" name="nEvent-date" id="iEvent-date">
                                                 </span>
 
                                                 <span>
                                                     <label for="iTime">
                                                         <img id="svgHora" src="../Images/clock.svg" alt="">
-                                                        Time
+                                                        Event Time
                                                     </label> <br>
-                                                    <output name="nTime" id="iTime">
+                                                    <input type="time">
                                                 </span>
                                             </p>
-                                            <p class="typ-Order">
-                                                <span>
-                                                    <label for="iFood">Food</label>
-                                                    <input type="checkbox" name="nTyp" id="iFood" checked>
-                                                </span>
-
-                                                <span>
-                                                    <label for="iBeverages">Beverages</label>
-                                                    <input type="checkbox" name="nTyp" id="iBeverages" checked>
-                                                </span>
-
-                                                <span>
-                                                    <label for="iOther">Other</label>
-                                                    <input type="checkbox" name="nOther" id="iOther">
-                                                </span>
-                                            </p>
+                                            <fieldset class="main-typ-Order">
+                                                <legend>Ocasion</legend>
+                                                <input type="text" >
+                                            </fieldset>
                                             <!--ATT-->
                                             <div class="other-txt">
                                                 <label for="iOtherWrite">Other</label>
                                                 <input type="text" name="" id="iOtherWrite" placeholder="Write here your request">
                                             </div>
                                             <!--ATT-->
-                                            <div class="food-selection nova-food">
-                                                <p class="Qty"> <!--area de Mudança-->
-                                                    <span>
-                                                        <label for="iFQty">Food - qty</label>
-                                                    </span>
-    
-                                                    <span class="valor">
-                                                        <button onclick="diminuirNumero(), exibirValor(), calcular()" onclick="exibirValor()" type="button" name="nSubtrair" id="iFSubtrair">-</button>
-    
-                                                        <input oninput="exibirValor()"  type="number" name="nQty" id="iFQty" min="0" value="1"  readonly>
-                                                        <!--Hello, World!-->
-    
-                                                        <button onclick="aumentarNumero(), exibirValor(), calcular()" type="button" ame="nAdiconar" id="iFAdicionar">+</button>
-                                                    </span>
-                                                </p> <!--Area de mudança-->
+                                            <fieldset>
+                                                <legend>Event Description</legend>
+                                                <div class="food-selection">
+                                                    <p class="Qty"> <!--area de Mudança-->
+                                                        <span>
+                                                            <label for="iFQty">Food - qty</label>
+                                                        </span>
+                                                        <span class="Nr-guest">
+                                                            N° of Guest/participantes
+                                                        </span>
+                                                        <span class="valor">
+                                                            <button onclick="diminuirNumero(), exibirValor(), calcular()" onclick="exibirValor()" type="button" name="nSubtrair" id="iFSubtrair">-</button>
+                                                            <input oninput="exibirValor()"  type="number" name="nQty" id="iFQty" min="0" value="1"  readonly>
+                                                            <!--Hello, World!-->
+                                                            <button onclick="aumentarNumero(), exibirValor(), calcular()" type="button" ame="nAdiconar" id="iFAdicionar">+</button>
+                                                        </span>
+                                                    </p> <!--Area de mudança-->
+                                                    <textarea name="" id="EventDiscMessages" cols="10" rows="10" placeholder="Write your description event and other details here"></textarea>
+                                                </div>
+                                            </fieldset>
 
-                                                <label for="iFoodSelection">Select Food</Select></label>
-                                                <select onchange="valorSeleacionado(), calcular(), exibirValor()" id="iFoodSelection">
-                                                    <option value="selecting">Select your Food</option>
-                                                    <option value="humburguer">Humburguer</option>
-                                                    <option value="Sandes">Sandes</option>
-                                                    <option value="Pizza Hut">Pizza Hut</option>
-                                                    <option value="Burger King">Burger King</option>
-                                                    <option value="Panda Expressr">Panda Express</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="beverages-select">
-                                                <p class="bQty">
-                                                    <span>
-                                                        <label for="iBQty">Drink - qty</label>
-                                                    </span>
-                                                    <span class="valor">
-                                                        <button onclick="diminuirSegundoNumero(), exibirValor2(), calcular()"  type="button" name="nSubtrair" id="iBSubtrair">-</button>
-    
-                                                        <input type="number" name="nQty" id="iBQty" value="1" min="0" readonly>
-    
-                                                        <button onclick="aumentarSegundoNumero(), exibirValor2(), calcular()" type="button" ame="nAdiconar" id="iBAdicionar">+</button>
-                                                    </span>
-                                                </p>
-                                                <label for="iBeverageSelection">Select Drinks</label>
-                                                <select onchange="visualizarBebida(), calcular()" id="iBeverageSelection">
-                                                    <option value="selecting Drinks">Select your drinks</option>
-                                                    <option value="coffee">Coffee</option>
-                                                    <option value="champagne">Champagne</option>
-                                                    <option value="Chamomile Tea">Chamomile Tea</option>
-                                                    <option value="soda">Soda-woter</option>
-                                                    <option value="water">still-Water</option>
-                                                    <option value="juice">Lemon-Juice</option>
-                                                    <option value="smoothie">Smoothie</option>
-                                                    <option value="milk">Milk</option>
-                                                    <option value="iced-tea">Iced Tea</option>
-                                                    <option value="lemonade">Lemonade</option>
-                                                    <option value="hot-chocolate">Hot Chocolate</option>
-                                                    <option value="energy-drink">Energy Drink</option>
-                                                    <option value="iced-coffee">Iced Coffee</option>
-                                                    <option value="fruit-infused-water">Fruit Infused Water</option>
-                                                    <option value="beer">Beer</option>
-                                                    <option value="wine">Wine</option>
-                                                    <option value="cocktail">Cocktail</option>
-                                                    <option value="mocktail">Mocktail</option>
-                                                    <option value="iced-latte">Iced Latte</option>
-                                                    <option value="iced-matcha">Iced Matcha</option>
-                                                </select>
+                                            <div class="">
+                                               
                                             </div>
 
                                             
 
-                                            <p class="contact-info">
-                                                <span>
-                                                    <label for="iEmail">Email</label>
-                                                    <input type="email" name="nEmail" id="iEmail" placeholder="Email" required>
-                                                </span>
+                                            <fieldset>
+                                                <legend>Personal Info</legend>
+                                                <p class="contact-info">
+                                                    <span>
+                                                        <label for="iEmail">Email</label>
+                                                        <input type="email" name="nEmail" id="iEmail" placeholder="Email" required>
+                                                    </span>
                                                 
-                                                <br> <br>
-
-                                                <span>
-                                                    <label for="iNumber">Number</label>
-                                                    <input type="number" name="nNumber" id="iNumber" placeholder="Number" required>
-                                                </span> 
+                                                    <br> <br>
+                                                    <span>
+                                                        <label for="iNumber">Number</label>
+                                                        <input type="number" name="nNumber" id="iNumber" placeholder="Number" required>
+                                                    </span>
                                                 
-                                                <br> <br>
-
-                                                <span>
-                                                    <label for="iName">Name</label>
-                                                    <input type="text" name="nName" id="iName" placeholder="Full Name" required>
-                                                </span>
-
-                                            </p>
+                                                    <br> <br>
+                                                    <span>
+                                                        <label for="iName">Name</label>
+                                                        <input type="text" name="nName" id="iName" placeholder="Full Name" required>
+                                                    </span>
+                                                </p>
+                                            </fieldset>
 
                                             <div  class="deliver_options">
                                                 <fieldset>
