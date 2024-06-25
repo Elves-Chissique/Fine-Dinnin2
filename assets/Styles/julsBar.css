@@ -245,6 +245,7 @@ img#maior{
     margin-right: .6em;
     overflow: hidden;
     display: none;
+    flex-direction: column;
 }
 
 #mainOrderPrevision{
