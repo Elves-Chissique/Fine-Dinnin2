@@ -6,6 +6,19 @@
     overflow-y: hidden;
 }
 
+#cartIcon{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cartList{
+    background-color: red;
+    height: 2em;
+    width: 10em;
+    color:#fff;
+}
+
+
 #juls{
     width: 100%;
     display: flex;
@@ -598,20 +611,43 @@ label#no{
     margin: auto;
 }
 
+#submit{
+    display: flex;
+    justify-content: space-around;
+}
+
 #submit input{
     padding:.2em .5em;
     margin-top: 1em;
-    width: 65%;
-    border-radius: 5em;
+    width: 35%;
     transition: all .5s;
     cursor: pointer;
-    border: 2px solid rgba(0, 0, 0, 0.5);
     font-family: cursive;
     font-size: 1.1vw;
+    box-sizing: border-box;
 }
-#submit input:hover{
-    border: 2px solid rgba(255, 0, 0, 0.585);
+#submit input.submit{
+    background-color: rgb(133, 129, 129);
+    border: none;
+    box-sizing: border-box;
 }
+#submit input.submit:hover{
+    border:1px solid rgb(133, 129, 129);
+    background-color: rgba(133, 129, 129, 0);
+    
+}
+
+#submit input.cart{
+    border:1px solid rgb(133, 129, 129);
+    box-sizing: border-box;
+    
+    
+}
+#submit input.cart:hover{
+    background-color: rgb(133, 129, 129);
+    border:1px solid rgba(133, 129, 129, 0);
+}
+
 
 /*-------------------------------Estilização ABA photos*----------------------------------------*/
 #mensagemPhotos{

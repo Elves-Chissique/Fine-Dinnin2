@@ -481,6 +481,7 @@ function calcular(){
 }
 
 
+
 //configurar area de bebidas
 function visualizarBebida(){
     var iBeverageSelection = window.document.getElementById('iBeverageSelection').value
@@ -536,9 +537,33 @@ function visualizarBebida(){
         window.document.getElementById('nameOrderB').innerHTML = iBeverageSelection
         precoNumerarioB.innerHTML = 430
     }
-    
+       
+    /* Configuração de Adicionar ao carinho*/
+    let AddToCart = window.document.querySelector('.cart')
+    let cartIcon = window.document.querySelector('#cartIcon')
+    let cartList = window.document.querySelector('.cartList')
+    AddToCart.addEventListener('click', Addicionar)
+    cartIcon.addEventListener('click', showItemsAdded)
+    let myCart = [] 
+
+    function Addicionar(){
+    myCart.push(iBeverageSelection)
+    alert('Items added')
+    }
+
+    cartList.innerHTML = 'foi selecionado algo'
+
+    function showItemsAdded(){
+    alert()
+    }
+    /*Fim de Adicionar ao carinho*/
 
 }
+
+ 
+
+
+
 
 
 
