@@ -560,6 +560,11 @@ function visualizarBebida(){
             cartList.appendChild(listItem)
         })
     }
+
+    function showItemsAdded(){
+        let items = myCart.join(',')
+        alert('itens no carrinho: '+ items)
+    }
     
     /*Fim de Adicionar ao carinho*/
 
