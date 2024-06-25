@@ -547,15 +547,20 @@ function visualizarBebida(){
     let myCart = [] 
 
     function Addicionar(){
-    myCart.push(iBeverageSelection)
-    alert('Items added')
+        myCart.push(iBeverageSelection)
+        alert('Items added')
+        updateCartist()
     }
 
-    cartList.innerHTML = 'foi selecionado algo'
-
-    function showItemsAdded(){
-    alert()
+    function updateCartist(){
+        cartList.innerHTML = ''
+        myCart.forEach((item, index) =>{
+            let listItem = document.createElement(li)
+            listItem.textContent = item
+            cartList.appendChild(listItem)
+        })
     }
+    
     /*Fim de Adicionar ao carinho*/
 
 }
