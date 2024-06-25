@@ -498,7 +498,7 @@ function visualizarBebida(){
     }
     else{
         previsionBebidas.style.display = "flex";
-        leftOther.style.display = "inline-block" ; 
+        leftOther.style.display = "block" ; 
         left.style.display = 'none';
     };
 
