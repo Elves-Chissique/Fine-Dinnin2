@@ -17,7 +17,7 @@
 
 }
 
-.show-cart-main{
+.show-cartList-main{
     width: 100%;
     display: flex;
     z-index: 2;
@@ -77,13 +77,29 @@
     padding: .5em;
     position: absolute;
     bottom: 1em;
-    left: 48%;
+    left: 40%;
     color:green;
     border-radius:.8em ;
     border: none;
     cursor: pointer;
     background-color: #000;
     box-shadow: 0px 0px 3px ;
+}
+    .purchase-btn:hover{
+        box-shadow: 0px 0px 8px green;
+    }
+
+.cancel-p-btn{
+    padding: .5em 1em;
+    position: absolute;
+    bottom: 1em;
+    left: 55%;
+    color:green;
+    border-radius:.8em ;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    box-shadow: 0px 0px 3px red; 
 }
 
 .purchase-btn:hover{

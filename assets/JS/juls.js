@@ -574,8 +574,9 @@ let cartMain = window.document.querySelector('.cartList-main')
 cartIcon.addEventListener('click', showCartList)
 
 function showCartList() {
-    cartMain.classList.add(show-cart-main)
-    cartMain.classList.remove(cart-main)
+    //cartMain.classList.add(show-cartList-main)
+    //cartMain.classList.remove(cartList-main)
+    cartMain.style.display = "flex"
 }
 
  
