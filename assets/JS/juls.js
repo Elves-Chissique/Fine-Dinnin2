@@ -581,7 +581,9 @@ function showCartList() {
     cartMain.style.display = "flex"
 }
 
-fu
+function hideCarlist(){
+    cartMain.style.display = 'none'
+}
 
  
 
