@@ -569,12 +569,13 @@ function visualizarBebida(){
 }
 
 let cartIcon = window.document.getElementById('cartIcon')
-let cartMain = widnow.document.querySelector('.cartList-main')
+let cartMain = window.document.querySelector('.cartList-main')
 
 cartIcon.addEventListener('click', showCartList)
 
 function showCartList() {
-    alert("hello, world")
+    cartMain.classList.add(show-cart-main)
+    cartMain.classList.remove(cart-main)
 }
 
  
