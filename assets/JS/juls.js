@@ -439,10 +439,8 @@ function valorSeleacionado(){
 
     /* Configuração de Adicionar ao carinho para comidas*/
     let AddToCart = window.document.querySelector('.cart')
-    let cartIcon = window.document.querySelector('#cartIcon')
     let cartList = window.document.querySelector('.cartList-items')
     AddToCart.addEventListener('click', Adicionar)
-    cartIcon.addEventListener('click', showItemsAdded)
 
     function Adicionar() {
         if (!cartList.innerText.includes(selectedThing)) {
@@ -450,9 +448,6 @@ function valorSeleacionado(){
         }
     }
     
-    function showItemsAdded() {
-        alert(cartList.innerText);
-    }
     /*Fim de Adicionar ao carinho*/
 
 
@@ -568,17 +563,17 @@ function visualizarBebida(){
             cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
         }
     }
-    
    
     /*Fim de Adicionar ao carinho*/
 
 }
 
-let cartIcon = window.document.querySelector('#cartIcon')
+let cartIcon = window.document.getElementById('cartIcon')
 let cartMain = widnow.document.querySelector('.cartList-main')
-cartIcon.addEventListener('click', showItemsAdded)
 
-function showItemsAdded() {
+cartIcon.addEventListener('click', showCartList)
+
+function showCartList() {
     alert("hello, world")
 }
 
