@@ -437,6 +437,25 @@ function valorSeleacionado(){
     }
 
 
+    /* Configuração de Adicionar ao carinho para comidas*/
+    let AddToCart = window.document.querySelector('.cart')
+    let cartIcon = window.document.querySelector('#cartIcon')
+    let cartList = window.document.querySelector('.cartList-items')
+    AddToCart.addEventListener('click', Adicionar)
+    cartIcon.addEventListener('click', showItemsAdded)
+
+    function Adicionar() {
+        if (!cartList.innerText.includes(selectedThing)) {
+            cartList.innerHTML += `<li>${selectedThing}</li>`;
+        }
+    }
+    
+    function showItemsAdded() {
+        alert(cartList.innerText);
+    }
+    /*Fim de Adicionar ao carinho*/
+
+
 }
 
 
@@ -538,12 +557,11 @@ function visualizarBebida(){
         precoNumerarioB.innerHTML = 430
     }
        
-    /* Configuração de Adicionar ao carinho*/
+    /* Configuração de Adicionar ao carinho Bebidas*/
     let AddToCart = window.document.querySelector('.cart')
-    let cartIcon = window.document.querySelector('#cartIcon')
     let cartList = window.document.querySelector('.cartList-items')
     AddToCart.addEventListener('click', Adicionar)
-    cartIcon.addEventListener('click', showItemsAdded)
+    
 
     function Adicionar() {
         if (!cartList.innerText.includes(iBeverageSelection)) {
@@ -551,11 +569,17 @@ function visualizarBebida(){
         }
     }
     
-    function showItemsAdded() {
-        alert(cartList.innerText);
-    }
+   
     /*Fim de Adicionar ao carinho*/
 
+}
+
+let cartIcon = window.document.querySelector('#cartIcon')
+let cartMain = widnow.document.querySelector('.cartList-main')
+cartIcon.addEventListener('click', showItemsAdded)
+
+function showItemsAdded() {
+    alert("hello, world")
 }
 
  
