@@ -570,14 +570,18 @@ function visualizarBebida(){
 
 let cartIcon = window.document.getElementById('cartIcon')
 let cartMain = window.document.querySelector('.cartList-main')
+let cancelpBtn = window.document.querySelector('.cancel-p-btn')
 
 cartIcon.addEventListener('click', showCartList)
+cancelpBtn.addEventListener('click', hideCarlist)
 
 function showCartList() {
     //cartMain.classList.add(show-cartList-main)
     //cartMain.classList.remove(cartList-main)
     cartMain.style.display = "flex"
 }
+
+fu
 
  
 
