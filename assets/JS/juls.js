@@ -561,6 +561,8 @@ function visualizarBebida(){
     function Adicionar() {
         if (!cartList.innerText.includes(iBeverageSelection)) {
             cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
+
+            alert('Item added')
         }
     }
    
