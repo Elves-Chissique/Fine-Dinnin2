@@ -17,13 +17,14 @@
     z-index: 2;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .cartList-main > hr{
     z-index: 3;
-    width: 100%;
+    width: 40%;
     color: red;
-    border: ;
+    border: 2px solid red;
 }
 
 
@@ -57,6 +58,13 @@
 #shoppingBags{
     width:95%;
     height: 95%;
+}
+
+.cart-total{
+    color: green;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
 }
 
 
