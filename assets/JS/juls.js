@@ -440,12 +440,15 @@ function valorSeleacionado(){
     /* Configuração de Adicionar ao carinho para comidas*/
     let AddToCart = window.document.querySelector('.cart')
     let cartList = window.document.querySelector('.cartList-items')
+    let cartMain = window.document.querySelector('.cartList-main')
     AddToCart.addEventListener('click', Adicionar)
 
     function Adicionar() {
         if (!cartList.innerText.includes(selectedThing)) {
             cartList.innerHTML += `<li>${selectedThing}</li>`;
+            alert('Item added')
         }
+        cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
     }
     
     /*Fim de Adicionar ao carinho*/
@@ -555,13 +558,14 @@ function visualizarBebida(){
     /* Configuração de Adicionar ao carinho Bebidas*/
     let AddToCart = window.document.querySelector('.cart')
     let cartList = window.document.querySelector('.cartList-items')
+    let cartMain = window.document.querySelector('.cartList-main')
     AddToCart.addEventListener('click', Adicionar)
     
 
     function Adicionar() {
         if (!cartList.innerText.includes(iBeverageSelection)) {
             cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
-
+            cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
             alert('Item added')
         }
     }
@@ -570,26 +574,29 @@ function visualizarBebida(){
 
 }
 
-let cartIcon = window.document.getElementById('cartIcon')
-let cartMain = window.document.querySelector('.cartList-main')
-let cancelpBtn = window.document.querySelector('.cancel-p-btn')
 
-cartIcon.addEventListener('click', showCartList)
-cancelpBtn.addEventListener('click', hideCarlist)
 
-function showCartList() {
-    //cartMain.classList.add(show-cartList-main)
-    //cartMain.classList.remove(cartList-main)
-    cartMain.style.display = "flex"
-}
+document.addEventListener('DOMContentLoaded', () => {
+    let cartIcon = window.document.getElementById('cartIcon')
+    let cartMain = window.document.querySelector('.cartList-main')
+    cartIcon.addEventListener('click', () => {
+        let backgroundC = window.getComputedStyle(cartMain).backgroundColor
+        if (backgroundC === "rgb(255, 255, 255)") {
+            alert('Cart empty');
+        } else {
+            cartMain.style.display = "flex";
+        }
+    });
 
-function hideCarlist(){
+
+    let cancelpBtn = window.document.querySelector('.cancel-p-btn')
+    cancelpBtn.addEventListener('click', hideCarlist)
+    function hideCarlist(){
     cartMain.style.display = 'none'
-}
-
- 
-
-
+    window.location = "../Restaurants/julsbar.html"
+    }
+    
+});
 
 
 

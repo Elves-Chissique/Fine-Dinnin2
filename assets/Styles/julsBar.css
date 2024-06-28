@@ -30,7 +30,7 @@
 }
 
 .cartList-container{
-    background-color: black;
+    background-color: #fff;
     height: 45vh;
     width: 40%;
     color:#fff;
@@ -53,6 +53,7 @@
 
 .cartList-items{
     padding-top: 1em;
+    display: block;
 }
 
 
@@ -86,7 +87,7 @@
     border-radius:.8em ;
     border: none;
     cursor: pointer;
-    background-color: #000;
+    background-color: #fff;
     box-shadow: 0px 0px 3px ;
     z-index: 99;
 }
@@ -103,7 +104,7 @@
     border-radius:.8em ;
     border: none;
     cursor: pointer;
-    background-color: #000;
+    background-color: #fff;
     box-shadow: 0px 0px 3px red; 
 }
 
