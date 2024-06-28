@@ -541,31 +541,19 @@ function visualizarBebida(){
     /* Configuração de Adicionar ao carinho*/
     let AddToCart = window.document.querySelector('.cart')
     let cartIcon = window.document.querySelector('#cartIcon')
-    let cartList = window.document.querySelector('.cartList')
-    AddToCart.addEventListener('click', Addicionar)
+    let cartList = window.document.querySelector('.cartList-items')
+    AddToCart.addEventListener('click', Adicionar)
     cartIcon.addEventListener('click', showItemsAdded)
-    let myCart = [] 
 
-    function Addicionar(){
-        myCart.push(iBeverageSelection)
-        alert('Items added')
-        updateCartist()
-    }
-
-    function updateCartist(){
-        cartList.innerHTML = ''
-        myCart.forEach((item, index) =>{
-            let listItem = document.createElement(li)
-            listItem.textContent = item
-            cartList.appendChild(listItem)
-        })
-    }
-
-    function showItemsAdded(){
-        let items = myCart.join(',')
-        alert('itens no carrinho: '+ items)
+    function Adicionar() {
+        if (!cartList.innerText.includes(iBeverageSelection)) {
+            cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
+        }
     }
     
+    function showItemsAdded() {
+        alert(cartList.innerText);
+    }
     /*Fim de Adicionar ao carinho*/
 
 }
