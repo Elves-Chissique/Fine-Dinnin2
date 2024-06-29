@@ -494,7 +494,7 @@ function calcular(){
     }
     var somaGeral = (somaComidas+somaBebidas)
     var totalN = window.document.getElementById('totalN')
-    totalN.innerHTML = somaGeral+',00'
+    totalN.innerHTML = somaGeral
 }
 
 
@@ -593,11 +593,26 @@ document.addEventListener('DOMContentLoaded', () => {
     cancelpBtn.addEventListener('click', hideCarlist)
     function hideCarlist(){
     cartMain.style.display = 'none'
-    window.location = "../Restaurants/julsbar.html"
+    //window.location = "../Restaurants/julsbar.html"
     }
     
-});
+    // configurando a parte da soma de dinheiro
+    let AddToCart2 = window.document.querySelector('.cart')
+    AddToCart2.addEventListener('click', Adicionar2)
+   
+    
+    function Adicionar2(){
+        let multComidas = window.document.getElementById('iFQty').value
+        let precoComidas = window.document.getElementById('precoNumerario').value
+        let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
 
+        alert(pResulta)
+        let product = window.document.getElementById('totalN')
+        let cartMoney = window.document.getElementById('cartM')
+
+        cartMoney.innerHTML = product.innerHTML
+    }
+});
 
 
 
@@ -632,5 +647,4 @@ function notIncluedService(){
         lab_no.style.color = '#0f4380'
         lab_yes.style.color = 'white'
     }
-    
 }

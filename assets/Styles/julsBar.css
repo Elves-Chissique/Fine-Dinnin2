@@ -12,7 +12,7 @@
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
-    display: none;
+    display:none;
     z-index: 2;
     flex-direction: column;
     align-items: center;
@@ -64,10 +64,11 @@
 
 .cart-total{
     color: green;
+    border-top: 2px solid ;
     z-index: 3;
     position: absolute;
     top: 10em;
-    background-color: rgb(32, 32, 32);
+    background-color: rgba(32, 32, 32, 0);
     width: 40%;
     height: 10vh;
     font-weight: bolder;
@@ -75,6 +76,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: .5em;
+}
+
+#cartM{
+    color:red;
+    z-index:1000;
+    width: 100%;
 }
 
 
