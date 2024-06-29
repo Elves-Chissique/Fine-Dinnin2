@@ -444,6 +444,16 @@ function valorSeleacionado(){
     AddToCart.addEventListener('click', Adicionar)
 
     function Adicionar() {
+        let multComidas1 = window.document.getElementById('iBQty').value
+        let precoComidas1 = window.document.getElementById('precoNumerarioB').value
+
+        let  pResulta1 = Number(precoComidas1*multComidas1) //valor do produto selecionado 
+        let cartMoney = window.document.getElementById('cartM')
+
+        cartMoney.innerHTML += pResulta1
+
+
+
         if (!cartList.innerText.includes(selectedThing)) {
             cartList.innerHTML += `<li>${selectedThing}</li>`;
             alert('Item added')
@@ -560,9 +570,19 @@ function visualizarBebida(){
     let cartList = window.document.querySelector('.cartList-items')
     let cartMain = window.document.querySelector('.cartList-main')
     AddToCart.addEventListener('click', Adicionar)
-    
 
+   
+    
     function Adicionar() {
+        let multComidas = window.document.getElementById('iFQty').value
+        let precoComidas = window.document.getElementById('precoNumerario').value
+
+        let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
+        let cartMoney = window.document.getElementById('cartM')
+
+        cartMoney.innerHTML += pResulta
+
+
         if (!cartList.innerText.includes(iBeverageSelection)) {
             cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
             cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
@@ -594,23 +614,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function hideCarlist(){
     cartMain.style.display = 'none'
     //window.location = "../Restaurants/julsbar.html"
-    }
-    
-    // configurando a parte da soma de dinheiro
-    let AddToCart2 = window.document.querySelector('.cart')
-    AddToCart2.addEventListener('click', Adicionar2)
-   
-    
-    function Adicionar2(){
-        let multComidas = window.document.getElementById('iFQty').value
-        let precoComidas = window.document.getElementById('precoNumerario').value
-        let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
-
-        alert(pResulta)
-        let product = window.document.getElementById('totalN')
-        let cartMoney = window.document.getElementById('cartM')
-
-        cartMoney.innerHTML = product.innerHTML
     }
 });
 
