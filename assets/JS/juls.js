@@ -437,7 +437,7 @@ function valorSeleacionado(){
     }
 
 
-    /* Configuração de Adicionar ao carinho para comidas*/
+    /* Configuração de Adicionar ao carinho para comidas
     let AddToCart = window.document.querySelector('.cart')
     let cartList = window.document.querySelector('.cartList-items')
     let cartMain = window.document.querySelector('.cartList-main')
@@ -450,8 +450,7 @@ function valorSeleacionado(){
         let  pResulta1 = Number(precoComidas1*multComidas1) //valor do produto selecionado 
         let cartMoney = window.document.getElementById('cartM')
 
-        cartMoney.innerHTML += pResulta1
-
+        //cartMoney.innerHTML = pResulta1
 
 
         if (!cartList.innerText.includes(selectedThing)) {
@@ -461,7 +460,7 @@ function valorSeleacionado(){
         cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
     }
     
-    /*Fim de Adicionar ao carinho*/
+    Fim de Adicionar ao carinho*/ 
 
 
 }
@@ -574,13 +573,14 @@ function visualizarBebida(){
    
     
     function Adicionar() {
-        let multComidas = window.document.getElementById('iFQty').value
+        let multComidas = window.document.getElementById('iBQtyy').value
         let precoComidas = window.document.getElementById('precoNumerario').value
 
         let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
+
         let cartMoney = window.document.getElementById('cartM')
 
-        cartMoney.innerHTML += pResulta
+        cartMoney.innerHTML = pResulta
 
 
         if (!cartList.innerText.includes(iBeverageSelection)) {
