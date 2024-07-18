@@ -452,13 +452,30 @@ function valorSeleacionado(){
         let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
 
         if(!valoresPareAdicionados.innerText.includes(pResulta1)){
-            valoresPareAdicionados.innerHTML += `${pResulta1} <br/>`
+            valoresPareAdicionados.innerHTML += `<p>${pResulta1}</p>`
         }
         if (!cartList.innerText.includes(selectedThing)) {
             cartList.innerHTML += `<li>${selectedThing}</li>`;
             alert('Item added')
         }
         cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
+
+
+            // Seleciona a div que contém os valores
+            const valoresContainer = document.getElementById('valoresPareAdicionados');
+            // Seleciona todos os elementos dentro da div
+            const valores = valoresContainer.querySelectorAll('p');
+            let soma = 0;
+        
+            // Itera sobre os elementos e soma os valores
+            valores.forEach(elemento => {
+                soma += parseFloat(elemento.textContent) || 0;
+            });
+        
+            // Exibe o resultado na div de resultado
+            cartMoney.innerHTML = soma
+
+          
     }
     
     /*Fim de Adicionar ao carinho*/
@@ -582,7 +599,7 @@ function visualizarBebida(){
         let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
 
         if(!valoresPareAdicionados.innerText.includes(pResulta)){
-            valoresPareAdicionados.innerHTML += `${pResulta} <br/>`
+            valoresPareAdicionados.innerHTML += `<p> ${pResulta} </p>`
         }
 
 
@@ -591,6 +608,21 @@ function visualizarBebida(){
             cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
             alert('Item added')
         }
+
+            // Seleciona a div que contém os valores
+            const valoresContainer = document.getElementById('valoresPareAdicionados');
+            // Seleciona todos os elementos dentro da div
+            const valores = valoresContainer.querySelectorAll('p');
+            let soma = 0;
+        
+            // Itera sobre os elementos e soma os valores
+            valores.forEach(elemento => {
+                soma += parseFloat(elemento.textContent) || 0;
+            });
+        
+            // Exibe o resultado na div de resultado
+            cartMoney.innerHTML = soma
+
     }
    
     /*Fim de Adicionar ao carinho*/
