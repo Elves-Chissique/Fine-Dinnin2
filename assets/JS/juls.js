@@ -444,16 +444,16 @@ function valorSeleacionado(){
     AddToCart.addEventListener('click', Adicionar)
 
     function Adicionar() {
-        let multComidas1 = window.document.getElementById('iBQty').value
-        let precoComidas1 = window.document.getElementById('precoNumerarioB').value
+        let multComidas1 = window.document.getElementById('iFQty').value
+        let precoComidas1 = window.document.getElementById('precoNumerario').value
 
         let  pResulta1 = Number(precoComidas1*multComidas1) //valor do produto selecionado 
         let cartMoney = window.document.getElementById('cartM')
+        let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
 
-        cartMoney.innerHTML += pResulta1
-
-
-
+        if(!valoresPareAdicionados.innerText.includes(pResulta1)){
+            valoresPareAdicionados.innerHTML += `${pResulta1} <br/>`
+        }
         if (!cartList.innerText.includes(selectedThing)) {
             cartList.innerHTML += `<li>${selectedThing}</li>`;
             alert('Item added')
@@ -574,13 +574,16 @@ function visualizarBebida(){
    
     
     function Adicionar() {
-        let multComidas = window.document.getElementById('iFQty').value
-        let precoComidas = window.document.getElementById('precoNumerario').value
+        let multComidas = window.document.getElementById('iBQty').value
+        let precoComidas = window.document.getElementById('precoNumerarioB').value
 
         let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
         let cartMoney = window.document.getElementById('cartM')
+        let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
 
-        cartMoney.innerHTML += `${pResulta} <br/>`
+        if(!valoresPareAdicionados.innerText.includes(pResulta)){
+            valoresPareAdicionados.innerHTML += `${pResulta} <br/>`
+        }
 
 
         if (!cartList.innerText.includes(iBeverageSelection)) {
@@ -593,6 +596,8 @@ function visualizarBebida(){
     /*Fim de Adicionar ao carinho*/
 
 }
+
+
 
 
 
