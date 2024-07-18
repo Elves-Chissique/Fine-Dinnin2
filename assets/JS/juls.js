@@ -441,9 +441,11 @@ function valorSeleacionado(){
     let AddToCart = window.document.querySelector('.cart')
     let cartList = window.document.querySelector('.cartList-items')
     let cartMain = window.document.querySelector('.cartList-main')
+    let cartIcon2 = window.document.getElementById('cartIcon')
     AddToCart.addEventListener('click', Adicionar)
 
     function Adicionar() {
+        cartIcon2.src = '../Images/online-store-cart-withContent.png'
         let multComidas1 = window.document.getElementById('iFQty').value
         let precoComidas1 = window.document.getElementById('precoNumerario').value
 
@@ -586,6 +588,7 @@ function visualizarBebida(){
     let AddToCart = window.document.querySelector('.cart')
     let cartList = window.document.querySelector('.cartList-items')
     let cartMain = window.document.querySelector('.cartList-main')
+    let cartIcon2 = window.document.getElementById('cartIcon')
     AddToCart.addEventListener('click', Adicionar)
 
    
@@ -597,7 +600,7 @@ function visualizarBebida(){
         let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
         let cartMoney = window.document.getElementById('cartM')
         let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
-
+        cartIcon2.src = '../Images/online-store-cart-withContent.png'
         if(!valoresPareAdicionados.innerText.includes(pResulta)){
             valoresPareAdicionados.innerHTML += `<p> ${pResulta} </p>`
         }
@@ -642,7 +645,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Cart empty');
         } else {
             cartMain.style.display = "flex";
-            alert(cartMoney)
         }
     });
 
