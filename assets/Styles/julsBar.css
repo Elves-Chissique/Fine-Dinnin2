@@ -1793,3 +1793,29 @@ input#comentarioForm2{
 }
     
 }
+
+/*-----------------Estilizando a pagina Delivery------------------*/
+.delivery_show{
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery_show > .content{
+    margin-top: 1em;
+    width: 75vw;
+    height: 75vh;
+    background-color: rgba(255,255,255,.7);
+    padding: 2em;
+}
+
+#localizacao{
+    background-color: brown;
+    height: 15vh;
+    color: #fff;
+}
