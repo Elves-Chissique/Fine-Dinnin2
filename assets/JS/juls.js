@@ -436,55 +436,11 @@ function valorSeleacionado(){
         left.style.display = 'none' 
     }
 
-
-    /* Configuração de Adicionar ao carinho para comidas*/
-    let AddToCart = window.document.querySelector('.cart')
-    let cartList = window.document.querySelector('.cartList-items')
-    let cartMain = window.document.querySelector('.cartList-main')
-    let cartIcon2 = window.document.getElementById('cartIcon')
-    AddToCart.addEventListener('click', Adicionar)
-
-    function Adicionar() {
-        cartIcon2.src = '../Images/online-store-cart-withContent.png'
-        let multComidas1 = window.document.getElementById('iFQty').value
-        let precoComidas1 = window.document.getElementById('precoNumerario').value
-
-        let  pResulta1 = Number(precoComidas1*multComidas1) //valor do produto selecionado 
-        let cartMoney = window.document.getElementById('cartM')
-        let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
-
-        if(!valoresPareAdicionados.innerText.includes(pResulta1)){
-            valoresPareAdicionados.innerHTML += `<p>${pResulta1}</p>`
-        }
-        if (!cartList.innerText.includes(selectedThing)) {
-            cartList.innerHTML += `<li>${selectedThing}</li>`;
-            alert('Item added')
-        }
-        cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
-
-
-            // Seleciona a div que contém os valores
-            const valoresContainer = document.getElementById('valoresPareAdicionados');
-            // Seleciona todos os elementos dentro da div
-            const valores = valoresContainer.querySelectorAll('p');
-            let soma = 0;
-        
-            // Itera sobre os elementos e soma os valores
-            valores.forEach(elemento => {
-                soma += parseFloat(elemento.textContent) || 0;
-            });
-        
-            // Exibe o resultado na div de resultado
-            cartMoney.innerHTML = soma
-
-          
-    }
     
     /*Fim de Adicionar ao carinho*/
 
 
 }
-
 
 function exibirValor(){
     var numeroProdutoMultip = window.document.getElementById('numeroProdutoMultip')
@@ -584,55 +540,94 @@ function visualizarBebida(){
         precoNumerarioB.innerHTML = 430
     }
        
-    /* Configuração de Adicionar ao carinho Bebidas*/
-    let AddToCart = window.document.querySelector('.cart')
+}
+
+/*-----------------Configuração de Adicionar ao carinho para comidas-------------------------------------*/
+let AddToCart2 = window.document.querySelector('.cart')
+AddToCart2.addEventListener('click', Adicionar2)
+
+function Adicionar2() {
     let cartList = window.document.querySelector('.cartList-items')
     let cartMain = window.document.querySelector('.cartList-main')
     let cartIcon2 = window.document.getElementById('cartIcon')
-    AddToCart.addEventListener('click', Adicionar)
 
-   
-    
-    function Adicionar() {
-        let multComidas = window.document.getElementById('iBQty').value
-        let precoComidas = window.document.getElementById('precoNumerarioB').value
+    let multComidas1 = window.document.getElementById('iFQty').value
+    let precoComidas1 = window.document.getElementById('precoNumerario').value
+    let selectedThing2 = window.document.getElementById('iFoodSelection').value
 
-        let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
-        let cartMoney = window.document.getElementById('cartM')
-        let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
-        cartIcon2.src = '../Images/online-store-cart-withContent.png'
-        if(!valoresPareAdicionados.innerText.includes(pResulta)){
-            valoresPareAdicionados.innerHTML += `<p> ${pResulta} </p>`
-        }
+    let  pResulta1 = Number(precoComidas1*multComidas1) //valor do produto selecionado 
+    let cartMoney = window.document.getElementById('cartM')
+    let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
 
-
-        if (!cartList.innerText.includes(iBeverageSelection)) {
-            cartList.innerHTML += `<li>${iBeverageSelection}</li>`;
-            cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
-            alert('Item added')
-        }
-
-            // Seleciona a div que contém os valores
-            const valoresContainer = document.getElementById('valoresPareAdicionados');
-            // Seleciona todos os elementos dentro da div
-            const valores = valoresContainer.querySelectorAll('p');
-            let soma = 0;
-        
-            // Itera sobre os elementos e soma os valores
-            valores.forEach(elemento => {
-                soma += parseFloat(elemento.textContent) || 0;
-            });
-        
-            // Exibe o resultado na div de resultado
-            cartMoney.innerHTML = soma
-
+    if(!valoresPareAdicionados.innerText.includes(pResulta1) && pResulta1 != 0){
+        valoresPareAdicionados.innerHTML += `<p>${pResulta1}</p>`
     }
-   
-    /*Fim de Adicionar ao carinho*/
+    if (!cartList.innerText.includes(selectedThing2) && selectedThing2 != 'selecting') {
+        cartIcon2.src = '../Images/online-store-cart-withContent.png'
+        cartList.innerHTML += `<li> ${multComidas1} x  ${selectedThing2}</li>`;
+        alert('Item added')
+        cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
+    }
+
+        // Seleciona a div que contém os valores
+        const valoresContainer = document.getElementById('valoresPareAdicionados');
+        // Seleciona todos os elementos dentro da div
+        const valores = valoresContainer.querySelectorAll('p');
+        let soma = 0;
+    
+        // Itera sobre os elementos e soma os valores
+        valores.forEach(elemento => {
+            soma += parseFloat(elemento.textContent) || 0;
+        });
+    
+        // Exibe o resultado na div de resultado
+        cartMoney.innerHTML = soma+",00"     
+}/*Fim da função Adicionar ao carinho para ala de bebidas*/
+
+
+/*---------------------Configuração de Adicionar ao carinho Bebidas-----------------------------*/
+let AddToCart = window.document.querySelector('.cart')
+let cartList = window.document.querySelector('.cartList-items')
+let cartMain = window.document.querySelector('.cartList-main')
+let cartIcon2 = window.document.getElementById('cartIcon')
+AddToCart.addEventListener('click', Adicionar)
+
+function Adicionar() {
+    let multComidas = window.document.getElementById('iBQty').value
+    let precoComidas = window.document.getElementById('precoNumerarioB').value
+    let iBeverageSelection2 = window.document.getElementById('iBeverageSelection').value
+
+    let  pResulta = Number(precoComidas*multComidas) //valor do produto selecionado 
+    let cartMoney = window.document.getElementById('cartM')
+    let valoresPareAdicionados = window.document.getElementById('valoresPareAdicionados')
+    if(!valoresPareAdicionados.innerText.includes(pResulta)&& pResulta != 0){
+        valoresPareAdicionados.innerHTML += `<p> ${pResulta} </p>`
+    }
+
+
+    if (!cartList.innerText.includes(iBeverageSelection2) && iBeverageSelection2 != 'selecting Drinks') {
+        cartIcon2.src = '../Images/online-store-cart-withContent.png'
+        cartList.innerHTML += `<li>${multComidas} x ${iBeverageSelection2}</li>`;
+        cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
+        alert('Item added')
+    }
+
+        // Seleciona a div que contém os valores
+        const valoresContainer = document.getElementById('valoresPareAdicionados');
+        // Seleciona todos os elementos dentro da div
+        const valores = valoresContainer.querySelectorAll('p');
+        let soma = 0;
+    
+        // Itera sobre os elementos e soma os valores
+        valores.forEach(elemento => {
+            soma += parseFloat(elemento.textContent) || 0;
+        });
+    
+        // Exibe o resultado na div de resultado
+        cartMoney.innerHTML = soma+',00'
 
 }
-
-
+/*Fim da função Adicionar ao carinho para ala de bebidas*/
 
 
 
@@ -681,6 +676,7 @@ function incluedService(){
     if(yes.checked){
         lab_yes.style.color = '#0f4380'
         lab_no.style.color = 'white'
+        window.location = '/assets/Restaurants/delivery.html'
     }
     
 }
