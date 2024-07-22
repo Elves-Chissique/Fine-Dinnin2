@@ -668,6 +668,8 @@ var yes = window.document.getElementById('yes')
 var no = window.document.getElementById('no')
 var lab_yes = window.document.getElementById('lab_yes')
 var lab_no = window.document.getElementById('lab_no')
+let selfPickUp = window.document.querySelector('.Self-pick-up')
+let localizacao = window.document.querySelector('.localizacao')
 
 yes.addEventListener('click', incluedService,)
 no.addEventListener('click', notIncluedService,)

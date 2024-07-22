@@ -1814,8 +1814,34 @@ input#comentarioForm2{
     padding: 2em;
 }
 
-#localizacao{
-    background-color: blue;
-    height: 7vh;
+.localizacao{
+    background-color: rgba(0, 0, 255, 0.795);
+    height: 5vh;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+.not-called{
+    display: none;
+}
+
+.Self-pick-up{
+    background-color: rgba(255, 0, 0, 0.658);
+    height: 5vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 8px;
+    display: none;
+    font-size: 1.1em;
+}
+
+.called{
+    display: flex;
 }
