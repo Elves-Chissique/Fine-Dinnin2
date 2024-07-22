@@ -669,13 +669,13 @@ var no = window.document.getElementById('no')
 var lab_yes = window.document.getElementById('lab_yes')
 var lab_no = window.document.getElementById('lab_no')
 let selfPickUp = window.document.querySelector('.Self-pick-up')
-let localizacao = window.document.querySelector('.localizacao')
 
 yes.addEventListener('click', incluedService,)
 no.addEventListener('click', notIncluedService,)
 
 function incluedService(){
     if(yes.checked){
+        let Local = window.document.querySelector('.local')
         lab_yes.style.color = '#0f4380'
         lab_no.style.color = 'white'
     }
@@ -689,9 +689,8 @@ function notIncluedService(){
 }
 
 let subm = window.document.getElementById('subm')
-subm.addEventListener('mouseover', redicionar)
+subm.addEventListener('click', redicionar)
 
 function redicionar(){
-    alert('Hello, World')
     window.location = '../Restaurants/delivery.html'
 }
