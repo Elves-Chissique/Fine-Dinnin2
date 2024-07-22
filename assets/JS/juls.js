@@ -676,9 +676,7 @@ function incluedService(){
     if(yes.checked){
         lab_yes.style.color = '#0f4380'
         lab_no.style.color = 'white'
-        window.location = '/assets/Restaurants/delivery.html'
     }
-    
 }
 
 function notIncluedService(){
@@ -686,4 +684,12 @@ function notIncluedService(){
         lab_no.style.color = '#0f4380'
         lab_yes.style.color = 'white'
     }
+}
+
+let subm = window.document.getElementById('subm')
+subm.addEventListener('mouseover', redicionar)
+
+function redicionar(){
+    alert('Hello, World')
+    window.location = '../Restaurants/delivery.html'
 }
