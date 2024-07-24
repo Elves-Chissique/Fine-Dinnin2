@@ -78,6 +78,15 @@ function ondeEstou() {
     if (computedStyle.backgroundColor === 'rgb(0, 0, 0)') {
         btnMain.style.backgroundColor = 'rgb(0,128,0)';
         btnMain.style.justifyContent = 'right'; // Alterado para textAlign
+
+        let local = window.document.querySelector('.local');
+        let digitLocal = window.document.querySelector('.digit-local');
+        let deliveryForm = window.document.querySelector('.delivery-form');
+        let deliveryForm = window.document.querySelector('.delivery-form');
+
+        local.style.display = 'flex'
+        digitLocal.style.style = 'flex'
+        deliveryForm.style.width = '100%'
     }
     else{
         btnMain.style.backgroundColor = 'rgb(0,0,0)';

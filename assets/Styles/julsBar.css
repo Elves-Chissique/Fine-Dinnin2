@@ -1817,6 +1817,13 @@ input#comentarioForm2{
     
 }
 
+
+/*Form style*/
+.delivery-form{
+    padding: 1em;
+    width: 50%;
+}
+
 .delivery_show{
     background-color: transparent;
     height: 100vh;
@@ -1836,11 +1843,22 @@ input#comentarioForm2{
     padding: 2em;
 }
 
+.main-local{
+    display: flex;
+    margin-bottom: 1em;
+    gap: 2em;
+}
+
+.main-local ::placeholder{
+    color: #ffffff83;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .local{
     background-color: rgba(0, 0, 255, 0.795);
     height: 5vh;
     color: #fff;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 47%;
@@ -1856,33 +1874,22 @@ input#comentarioForm2{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 47%;
+    width: 97%;
     border-radius: 8px;
-    display: none;
-    font-size: 1.1em;
-}
-
-.main-local{
     display: flex;
-    margin-bottom: 1em;
-    gap: 2em;
+    font-size: 1.1em;
 }
 
 .digit-local{
     background-color: rgba(255, 0, 0, 0.658);
     height: 5vh;
     color: #fff;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: right;
     width: 47%;
     border-radius: 8px;
     font-size: 1.1em;
-}
-
-.main-local ::placeholder{
-    color: #ffffff83;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .digit-local input{
@@ -1894,9 +1901,6 @@ input#comentarioForm2{
 
 }
 
-
-
-
-.delivery-form{
-    padding: 1em;
+.text-area-delivery{
+    display: none;
 }
