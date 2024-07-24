@@ -83,15 +83,30 @@ function ondeEstou() {
         let digitLocal = window.document.querySelector('.digit-local');
         let deliveryForm = window.document.querySelector('.delivery-form');
         let SelfPickUp = window.document.querySelector('.Self-pick-up');
+        let textAreaDelivery = window.document.querySelector('.text-area-delivery')
 
         local.style.display = 'flex'
-        SelfPickUp.display = 'none'
-        digitLocal.style.style = 'flex'
-        deliveryForm.style.width = '100%'
+        SelfPickUp.style.display = 'none'
+        digitLocal.style.display = 'flex'
+        textAreaDelivery.style.display = 'flex'
+        deliveryForm.style.width = '95%'
+        deliveryForm.style.transition = '.5s'
     }
     else{
         btnMain.style.backgroundColor = 'rgb(0,0,0)';
         btnMain.style.justifyContent = 'left'; // Alterado para textAlign
+
+
+        let local = window.document.querySelector('.local');
+        let digitLocal = window.document.querySelector('.digit-local');
+        let deliveryForm = window.document.querySelector('.delivery-form');
+        let SelfPickUp = window.document.querySelector('.Self-pick-up');
+        let textAreaDelivery = window.document.querySelector('.text-area-delivery')
+
+        local.style.display = 'none'
+        SelfPickUp.style.display = 'flex'
+        digitLocal.style.display = 'none'
+        deliveryForm.style.width = '50%'
     }
 }
 
