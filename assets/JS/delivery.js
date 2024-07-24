@@ -82,9 +82,10 @@ function ondeEstou() {
         let local = window.document.querySelector('.local');
         let digitLocal = window.document.querySelector('.digit-local');
         let deliveryForm = window.document.querySelector('.delivery-form');
-        let deliveryForm = window.document.querySelector('.delivery-form');
+        let SelfPickUp = window.document.querySelector('.Self-pick-up');
 
         local.style.display = 'flex'
+        SelfPickUp.display = 'none'
         digitLocal.style.style = 'flex'
         deliveryForm.style.width = '100%'
     }
