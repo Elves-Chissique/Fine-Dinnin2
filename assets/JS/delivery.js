@@ -106,6 +106,7 @@ function ondeEstou() {
         local.style.display = 'none'
         SelfPickUp.style.display = 'flex'
         digitLocal.style.display = 'none'
+        
         deliveryForm.style.width = '50%'
     }
 }
