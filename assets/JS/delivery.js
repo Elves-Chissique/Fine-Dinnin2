@@ -68,19 +68,20 @@ function showError(error) {
 let btnMain = window.document.querySelector('.btn-main');
 let btnChild = window.document.querySelector('.btn-child');
 
+btnMain.addEventListener('click', ondeEstou);
+
 // Função que será chamada quando o botão principal for clicado
 function ondeEstou() {
-    btnMain.style.textAlign = 'right'; // Alterado para textAlign
-    btnMain.style.backgroundColor = 'rgb(255,255,255)';
-    btnChild.style.backgroundColor = 'rgb(0,0,0)';
-
     // Obtém os estilos computados do btnMain após as mudanças
     let computedStyle = window.getComputedStyle(btnMain);
 
-    if (computedStyle.backgroundColor === 'rgb(255, 255, 255)') {
-        alert('branco');
+    if (computedStyle.backgroundColor === 'rgb(0, 0, 0)') {
+        btnMain.style.backgroundColor = 'rgb(0,128,0)';
+        btnMain.style.justifyContent = 'right'; // Alterado para textAlign
+    }
+    else{
+        btnMain.style.backgroundColor = 'rgb(0,0,0)';
+        btnMain.style.justifyContent = 'left'; // Alterado para textAlign
     }
 }
-
-btnMain.addEventListener('click', ondeEstou);
 
