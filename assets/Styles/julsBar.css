@@ -1804,6 +1804,8 @@ input#comentarioForm2{
     border:2px solid brown;
     margin-bottom: 2em;
     cursor: pointer;
+    display: flex;
+    justify-content: left;
 }
 
 
@@ -1811,7 +1813,8 @@ input#comentarioForm2{
     background-color: #fff;
     height: 1.5em;
     width: 1.5em;
-    border-radius:50% ;
+    border-radius:50%;
+    
 }
 
 .delivery_show{

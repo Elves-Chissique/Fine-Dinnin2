@@ -1,17 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var deliverySelected = document.querySelector('#yes');
-    
-    if (deliverySelected) {
-        console.log("Elemento com ID #yes encontrado.");
-        deliverySelected.addEventListener('change', function() {
-            if (deliverySelected.checked) {
-                getLocation();
-            }
-        });
-    } else {
-        console.error("Elemento com ID #yes não encontrado.");
-    }
-});
 
 function getLocation() {
     console.log("Função getLocation chamada.");
@@ -75,3 +61,26 @@ function showError(error) {
     document.getElementById('localizacao').textContent = mensagemErro;
     console.error(mensagemErro);
 }
+
+
+/*---------------------------------Configuraçãoa de BATN de delivery------------------------------------*/
+
+let btnMain = window.document.querySelector('.btn-main');
+let btnChild = window.document.querySelector('.btn-child');
+
+// Função que será chamada quando o botão principal for clicado
+function ondeEstou() {
+    btnMain.style.textAlign = 'right'; // Alterado para textAlign
+    btnMain.style.backgroundColor = 'rgb(255,255,255)';
+    btnChild.style.backgroundColor = 'rgb(0,0,0)';
+
+    // Obtém os estilos computados do btnMain após as mudanças
+    let computedStyle = window.getComputedStyle(btnMain);
+
+    if (computedStyle.backgroundColor === 'rgb(255, 255, 255)') {
+        alert('branco');
+    }
+}
+
+btnMain.addEventListener('click', ondeEstou);
+

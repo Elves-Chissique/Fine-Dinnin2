@@ -142,10 +142,6 @@ function newLinearEaseInOut(p) {
 
 
 
-
-
-
-
 function goRestaurant() {
     // Apply transition to the element with ID "RestButton"
     RestButton.style.transition = 'opacity 6s linear'; // Transition for opacity property over 6 seconds with linear timing
