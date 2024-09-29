@@ -18,6 +18,7 @@
     align-items: center;
     position: fixed;
     left: 0;
+    top: 3em;
 
 }
 
@@ -92,6 +93,11 @@
     width: 100%;
 }
 
+#containerOnly{
+    display: none;
+    width: 100%;
+}
+
 
 .purchase-btn{
     padding: .5em;
@@ -124,11 +130,11 @@
 }
 
 .cancel-p-btn:hover{
- box-shadow: 0px 0px 8px red;
+ box-shadow: 0px 0px 8px red; /*Terimina a configuracao de carinho/cart*/
 }
 
 
-#juls{
+#juls{ /*Comecando a configuracao de corpo da pagina Juls*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1796,6 +1802,13 @@ input#comentarioForm2{
 
 /*-----------------Estilizando a pagina Delivery------------------*/
 
+.delivery-container{ /*Este e' a div principal do button que activa delivery service*/
+    color:#fff;
+    position: absolute;
+    top: 4em;
+    left: 10em;
+}
+
 .btn-main{
     background-color: black;
     height: 1.5em;
@@ -1817,12 +1830,100 @@ input#comentarioForm2{
     
 }
 
-
 /*Form style*/
 .delivery-form{
     padding: 1em;
     width: 50%;
 }
+
+.delivery-form2{
+    width: 30%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-top: 0;
+    position: relative;
+}
+
+.delivery-form2 legend{
+   text-align: center;
+}
+
+.seta-de-escolha{
+    width: 100%;
+    margin-top: -.2em;
+    height: auto;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.659);
+}
+.seta-de-escolha img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.seta_cima{
+    display: inline;
+    transition: 4s;
+}
+.Ocultar_Cima{
+    display: none;
+    transition: 4s;
+}
+
+.seta_baixo{
+    display: none;
+    transition: 4s;
+}
+.mostrar_baixo{
+    display: inline;
+    transition: 4s;
+}
+
+.show-payment-methods{
+    width: 100%;
+    height: 0px;
+    transition: 0.5s;
+}
+
+.show-payment-methods-after{
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    border: 1px solid rgba(255, 0, 0, 0.659);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    transition: 0.5s;
+}
+
+
+article.pay{
+    border: 1px solid rgba(255, 0, 0, 0.659);
+    padding: .5em 1em;
+    width: 40%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+article.pay:hover{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+article.pay  img{
+    width: 35px;
+    height: 35px;
+}
+
+
 
 .delivery_show{
     background-color: transparent;
@@ -1836,12 +1937,18 @@ input#comentarioForm2{
 }
 
 .delivery_show > .content{
+    display: flex;
+    justify-content: center;
     margin-top: 1em;
     width: 75vw;
     height: 75vh;
     background-color: rgba(255,255,255,.7);
     padding: 2em;
+    gap: 1.5em;
+    font-size: .899em;
 }
+
+
 
 .main-local{
     display: flex;
@@ -1903,4 +2010,6 @@ input#comentarioForm2{
 
 .text-area-delivery{
     display: none;
+    width: 97%;
 }
+

@@ -436,9 +436,6 @@ function valorSeleacionado(){
         left.style.display = 'none' 
     }
 
-    
-    /*Fim de Adicionar ao carinho*/
-
 
 }
 
@@ -481,6 +478,7 @@ function calcular(){
     var totalN = window.document.getElementById('totalN')
     totalN.innerHTML = somaGeral
 }
+
 
 
 
@@ -569,20 +567,31 @@ function Adicionar2() {
         cartMain.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'
     }
 
-        // Seleciona a div que contém os valores
-        const valoresContainer = document.getElementById('valoresPareAdicionados');
-        // Seleciona todos os elementos dentro da div
-        const valores = valoresContainer.querySelectorAll('p');
-        let soma = 0;
+    // Seleciona a div que contém os valores
+    const valoresContainer = document.getElementById('valoresPareAdicionados');
+    // Seleciona todos os elementos dentro da div
+    const valores = valoresContainer.querySelectorAll('p');
+    let soma = 0;
     
-        // Itera sobre os elementos e soma os valores
-        valores.forEach(elemento => {
-            soma += parseFloat(elemento.textContent) || 0;
-        });
+    // Itera sobre os elementos e soma os valores
+    valores.forEach(elemento => {
+        soma += parseFloat(elemento.textContent) || 0;
+    });
     
-        // Exibe o resultado na div de resultado
-        cartMoney.innerHTML = soma+",00"     
-}/*Fim da função Adicionar ao carinho para ala de bebidas*/
+    // Exibe o resultado na div de resultado
+    cartMoney.innerHTML = soma+",00"     
+    
+
+    /*Configuracao de input de container only input oculto*/
+    let containerOnly = window.document.getElementById('containerOnly');
+    if(!containerOnly.value.includes(selectedThing2) && selectedThing2!="selecting"){
+        containerOnly.value += selectedThing2+" x "+multComidas1+",  " 
+    }
+
+    alert('hello')
+
+
+}/*Fim da função Adicionar ao carinho para ala de comidas*/
 
 
 /*---------------------Configuração de Adicionar ao carinho Bebidas-----------------------------*/
@@ -624,7 +633,13 @@ function Adicionar() {
         });
     
         // Exibe o resultado na div de resultado
-        cartMoney.innerHTML = soma+',00'
+        cartMoney.innerHTML = soma+',00';
+
+    let containerOnly = window.document.getElementById('containerOnly');
+
+    if(!containerOnly.value.includes(iBeverageSelection2) && iBeverageSelection2 != "selecting Drinks"){
+        containerOnly.value += iBeverageSelection2+" x "+multComidas+",  ";
+    }
 
 }
 /*Fim da função Adicionar ao carinho para ala de bebidas*/
@@ -694,3 +709,4 @@ subm.addEventListener('click', redicionar)
 function redicionar(){
     window.location = '../Restaurants/delivery.html'
 }
+

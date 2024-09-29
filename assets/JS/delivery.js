@@ -111,3 +111,33 @@ function ondeEstou() {
     }
 }
 
+//configuracao metodo payment
+let seta_cima = window.document.querySelector('.seta_cima')
+let seta_baixo = window.document.querySelector('.seta_baixo')
+let show_payment_methods = window.document.querySelector('.show-payment-methods')
+seta_cima.addEventListener('click', cimaBaixo)
+seta_baixo.addEventListener('click', baixoCima)
+
+function cimaBaixo(){
+    seta_cima.classList.add('Ocultar_Cima');
+    seta_cima.classList.remove('seta_cima')
+
+    seta_baixo.classList.add('mostrar_baixo');
+    seta_baixo.classList.remove('seta_baixo')
+
+    show_payment_methods.classList.add('show-payment-methods-after')
+    show_payment_methods.classList.remove('show-payment-methods')
+}
+
+function baixoCima(){
+    seta_cima.classList.remove('Ocultar_Cima');
+    seta_cima.classList.add('seta_cima')
+
+    seta_baixo.classList.remove('mostrar_baixo')
+    seta_baixo.classList.add('seta_baixo')
+
+    show_payment_methods.classList.remove('show-payment-methods-after')
+    show_payment_methods.classList.add('show-payment-methods')
+    
+}
+

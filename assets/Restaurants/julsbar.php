@@ -1,3 +1,23 @@
+<?php
+    include_once('config.php');
+    if(isset($_POST['submit'])){
+        $Email = $_POST['nEmail'];
+        $Number = $_POST['nNumber'];
+        $Name = $_POST['nName'];
+        $items = $_POST['nitems'];
+        $valorReadOnly = $_POST['valorReadOnly'];
+        $Data = $_POST['nDate'];
+
+
+        $results = mysqli_query($conexao, "INSERT INTO dados(Email, Numero, Nome, Itens, Valor, Data) VALUES('$Email','$Number','$Name', '$items', '$valorReadOnly', 'Data')");
+
+        if($results){
+            header("Location: delivery.php");
+            exit();
+        }
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,31 +104,7 @@
 
                         <div>
                             <div id="mainView">
-                                <article class="cartList-main"> <!--Entrada de Div Carinho ou Cart-->
-                                    <div class="cartList-container">
-                                        <div class="cartList-items">
-                                          
-                                        </div><!--Artigos Adicionados carrinho aparecem aqui-->
-
-                                        <div id="valoresPareAdicionados">
-
-                                        </div><!--Preço dos artigos Adicionados carrinho aparecem aqui-->
-
-                                        <div class="cartList-image">
-                                            <img id="shoppingBags" src="../Images/shopping bags.png" alt="">
-                                        </div>
-                                       
-                                        <button onclick="redicionar()" id="purchase" class="purchase-btn">purchase</button>
-                                        <button class="cancel-p-btn">Cancel</button>
-                                      
-                                    </div> 
-                                    <div class="cart-total">
-                                        <p>Total</p>
-                                        <div id="cartM">
-                                         
-                                        </div>
-                                    </div>
-                                </article> <!--Fim carrinho ou cart-->
+                                
                                 <img src="MObileBar/MainView.webp" alt="">
                                 <div id="mainViewInfo" class="escola">
                                     <div id="left" class="info-leftRigth">
@@ -232,14 +228,43 @@
                                             Make your order
                                         </span>
                                         <hr>
-                                        <form action="">
+                                        <form action="julsbar.php" method="post">
+                                            <!--Area de integrar carinho de compras-->
+                                                <input id="containerOnly" type="text" name="nitems" readonly>
+                                                <input id="valorReadOnly" type="text" name="valorReadOnly" readonly>
+                                                <article class="cartList-main"> <!--Entrada de Div Carinho ou Cart-->
+                                                    <div class="cartList-container">
+                                                        <div id="adicionados" class="cartList-items" >
+                                                            <!--Artigos Adicionados carrinho aparecem aqui-->
+                                                        </div>
+                
+                                                        <div id="valoresPareAdicionados">
+                
+                                                        </div><!--Preço dos artigos Adicionados carrinho aparecem aqui-->
+                
+                                                        <div class="cartList-image">
+                                                            <img id="shoppingBags" src="../Images/shopping bags.png" alt="">
+                                                        </div>
+                                                    
+                                                        <button onclick="redicionar()" id="purchase" class="purchase-btn">purchase</button>
+                                                        <button class="cancel-p-btn">Cancel</button>
+                                                    
+                                                    </div> 
+                                                    <div class="cart-total">
+                                                        <p>Total</p>
+                                                        <div id="cartM">
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </article> <!--Fim carrinho ou cart-->
+                                            <!--Fim area de integrar carinho de compras-->
                                             <p class="dataTime">
                                                 <span>
                                                     <label for="iData">
                                                         <img id="svgData" src="../Images/calendar-check.svg" alt="">
-                                                        Data
+                                                        Date
                                                     </label> <br>
-                                                    <output name="nData" id="iData">
+                                                    <output name="nDate" id="iData">
                                                 </span>
 
                                                 <span>
@@ -361,7 +386,7 @@
                                                 </span>
 
                                             </p>
-                                        <!--
+                                            <!--
                                             <div  class="deliver_options">
                                                 <fieldset>
                                                     <legend>Delivery service inclueded?</legend>
@@ -376,11 +401,12 @@
                                                     </divn>
                                                 </fieldset>
                                             </div>
-                                        -->
+                                            -->
 
                                             <p id="submit">
                                                 <input class="cart" type="button" value="Add to cart">
-                                                <input class="submit" type="submit" value="submit" id="subm">
+
+                                                <input class="submit" type="submit" value="submit" id="subm" name="submit">
                                             </p>
 
                                             <br>
