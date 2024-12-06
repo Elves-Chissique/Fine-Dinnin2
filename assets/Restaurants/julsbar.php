@@ -9,7 +9,7 @@
         $Data = $_POST['nDate'];
 
 
-        $results = mysqli_query($conexao, "INSERT INTO dados(Email, Numero, Nome, Itens, Valor, Data) VALUES('$Email','$Number','$Name', '$items', '$valorReadOnly', 'Data')");
+        $results = mysqli_query($conexao, "INSERT INTO dados(Email, Numero, Nome, Itens, Valor, Datas) VALUES('$Email','$Number','$Name', '$items', '$valorReadOnly', 'Data')");
 
         if($results){
             header("Location: delivery.php");
