@@ -44,17 +44,6 @@
         width: 86%;
     } 
 
-    #mainViewInfo{
-        width: 86%;
-        margin-top: -14vw;
-    }
-    #left{
-        height: 34vw;
-    }
-    #right{
-        height: 34vw; 
-        font-size: 1em; 
-    }
 }
 
 
@@ -143,512 +132,161 @@
     border-radius: 5px;
 }
 
-#mainView{
-    width: 100%;
-    text-align: center;
-    margin-top: 0em;
-}
-
-#mainView img{
-    width: 100%;
-    z-index: 1;
-    
-    
-}
-
-
-.escola{
-    position: absolute;
+/*Configuração de slides*/
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 70vh;
     overflow: hidden;
-   
-    z-index: 0;
+    background-color: #333;
+  }
+
+.slide {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .slide span{
+    position: absolute;
+    font-size: 3em;
+    color: #fff;
+    background-color:rgba(0,0,0,.7);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fontIncrease 2s infinite alternate;
+  }
+
+  @keyframes fontIncrease{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1); 
+    }
+  }
+
+  .slide img{
+    width: 100%;
+  }
+
+  /*Estilizando Description Area*/
+  .descript-main{
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    padding: 0 2em;
+    margin-bottom: 15em;
+  }
+  .descript{
+    width: 65%;
+    padding: 0 1em 5em 1em;
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  ul{
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desc-line li{
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: .5em;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.2em;
+    font-family: cursive;
+    color:#07356b;
+  }
+
+  .desc-line li:hover{
+    color: red;
+  }
+
+  .table-book{
+    width: 30%;
+    box-shadow: 0px 0px 2px #000;
+    padding: 1em;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .table-book > p{
+    border-bottom: 2px solid black;
+    padding-bottom: .5em;
+    font-family: cursive;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    margin-top: -.6em; 
+}
+
+.table-book > form > div.book-type, .people{
+    display: flex;
+    gap:.2em;
+    color:rgb(3, 46, 95);
+    font-size: 1.8em;
+
+}
+
+.table-book > form > div > select{
+    width: 100%;
+    padding: .3em;
+    color:#fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgba(3, 46, 95, 0.76);
+}
+
+.table-book > form > div.dateTime{
+    display: flex;
+    gap: 1em;
+
+}
+
+.table-book > form > div > div.book-date, div.book-time{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    gap: .1em;
+    color:rgb(3, 46, 95);
+    font-size: 1.8em;
+    float: left;
+}
+
+.table-book > form > div > div.book-date > input{
+    background-color:rgba(3, 46, 95, 0.76);
+    color: #fff;
+    padding: .3em;
+    border: none;
     width: 75%;
 }
 
-
-#mainViewInfo > div.info-leftRigth{
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 5px;
-
-}
-
-#left{
-    height: 73.5vh;
-    width: 55%;
-    margin-right: .6em;
-    overflow: hidden;
-    display: block;
-}
-
-#right{
-    height: 73.5vh;
-    width: 40%;
-    right: 0;
-    overflow: auto;
-    position: absolute;
-    display: block;
-    float: right;
-    top: 0em;
-}
-#mainViewInfo > div > span.span-view{
-    font-size: 4vw;
-}
-
-#mainViewInfo p.general-p{
-    text-align: justify;
-    font-size: 1.3vw;
-    padding:0em 1.5em;
-    font-weight: 700;
-    font-family: 'Bad Script', cursive;
-    font-family: 'Josefin Slab', serif;
-    color: #069f88;
-    line-height: 1.5;
-    font-style: italic;
-}
-
-#mainViewInfo > div > p > span{
-    display: inline-block;
-    margin-top:1.2em;
-    margin-bottom:1.2em;
-    font-family: cursive;
-    font-weight: 100;
-    font-size: 1vw;
-    box-shadow: 1px 1px 5px #372297;
-    padding: 0px .5em;
-    border-radius: 5px;
-    margin-left: 1em;
-    cursor: default;
-    color: rgb(4, 156, 115);
-}
-
-#mainViewInfo > div > p > span img.menor{
-    width: 1vw;
-    margin-bottom: -3px;
-}
-
-img#maior{
-    width: 1vw;
-}
-
-#mainViewInfo .tag-div{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0em;
-}
-
-#mainViewInfo p.tag{
-    display: block;
-    padding: .3em 1em;
-    font-family: cursive;
-    font-size: 1vw;
-    border-radius: 20px;
-    border-bottom: 2px solid #372297;
-    transition: all .5s;
-    cursor:default;
-    color: rgb(4, 156, 115);
-    background-color: rgba(0, 0, 0, 0.075);
-    margin: auto;
-}
-
-#mainViewInfo p.tag:hover{
-    background-color: #3722971d;
-}
-
-#leftOther{
-    width: 55%;
-    margin-right: .6em;
-    overflow: hidden;
-    display: none;
-    flex-direction: column;
-}
-
-#mainOrderPrevision{
-    background-color:  rgb(5, 70, 5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-    height: 60vh;
-
-}
-
-.orderPrevision{
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.5vw;
-    height: auto;
-    background-color: rgb(5, 70, 5);
-    color:#fff;
-}
-
-#previsionComidas{
-    display: none;
-}
-
-#previsionBebidas{
-    display: none;
-}
-
-
-.orderPrevision > div{
-    height: auto;
+.table-book > form > div > div.book-time > input{
+    background-color:rgba(3, 46, 95, 0.76);
     color: #fff;
-    width: 20vw;
-}
-
-#photoOrder, #photoOrderB{
-    background-color: #fff;
-    border-radius: 15px 15px 0px 0px;
-}
-
-#photoOrder > P, #photoOrderB > P{
-    background-color: rgb(133, 129, 129);
-}
-
-#nameOrder, #nameOrderB{
-    background-color:rgba(255, 0, 0, 0.479);
-    border-radius: 0px 0px 15px 15px;
-    font-family: cursive;
-}
-
-#precoOrder, #precoOrderB{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25vw;
-    background-color: rgb(5, 70, 5);
-    height: 55vh;
-}
-
-#precoOrder div{
-    box-shadow: 1px 1px 10px #fff;
-    width: 20vw;
-    height: 35vh; 
-    border-radius:15px ;
-    padding: 10px 0px;
-    color: #fff;
-}
-
-#valorTotal{
-    width: 50%;
-    background-color: rgb(56, 1, 1);
-    border-radius: 8px;
-}
-
-#multiplicador{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    font-size: .9vw;
-    color:#fff;
-    width: 50%;
-    text-align: center;
+    padding: .3em;
     border: none;
-
+    width: 75%;
 }
-
-.p1, .p2{
-    display: block;
-    width: auto;
-    position: absolute;
-    color:#fff;
-    font-size: 1.3vw;
-}
-
-.p2{
-    right: 5px;
-}
-
-.p1{
-    left: 5px;
-}
-
-#multiplicadorResultado{
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    z-index: 1;
-    position:absolute;
-    bottom: .8em;
-    background-color: rgba(53, 2, 2, 0.493);
-    color: #000;
-}
-#totalN{
-    font-size: 2vw;
-    font-weight: bolder; 
-}
-
-
-.batnNOne{
-    margin-top: 1em;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50%;
-    background-color: rgba(255, 0, 0, 0.521);
-    color: rgba(255, 0, 0, 0);
-    border: none;
-}
-
-
-#divLogo{
-    border-top: 2px solid rgb(187, 187, 5);
-    border-bottom: 2px solid rgb(187, 187, 5);
-}
-
-img#logo{
-    width: 12vw;
-
-}
-
-
-
-/*Configuração de ABA  de order*/
-.span-order{
-    font-size: 2vw;
-}
-p.dataTime{
-    margin-top: .5em;
-    display: flex;
-    justify-content: space-between;
-}
-
-p.dataTime > span{
-    border-bottom:  2px solid rgba(255, 0, 0, 0.500);
-    background-color: #08d2b43c;
-    padding: .3em 2em;
-    border-radius: 8px;
-}
-
-img#svgData{
-    width: .8vw;
-}
-img#svgHora{
-    width: .8vw;
-}
-
-p.dataTime > span > output{
-    border: none;
-    outline: none;
-    background-color: #00000000;
-    font-size: 1vw;
-    color:red;
-}
-
-p.typ-Order{
-    display: flex;
-    margin-top: 1em;
-    justify-content: space-around;
-    background-color: #08d2b43c;
-    padding: .5em ;
-    font-size: .9vw;
-    color: rgba(0, 0, 0, 0.600);
-}
-
-p.food-selection{
-    background-color: #08d2b43c;
-    font-size: .8vw;
-}
-
-.beverages-select label, .food-selection label{
-    display: none;
-}
-
-.other-txt{
-    display: none;
-}
-
-
-.food-selection{
-    background-color: rgb(0, 0, 0,.5);
-    display: flex;
-    padding: .3em 0em;
-}
-
-.beverages-select{
-    margin-top: .5em;
-    background-color: rgb(0, 0, 0,.5);
-    display: flex;
-    padding: .3em 0em;
-}
-
-.beverages-select select{
-    width: 60%;
-    border: none;
-    border-radius: 15px;
-    outline: none;
-    margin: .4em 0em;
-    display: none;
-    padding: .4em;
-    font-size: .8vw;
-    color:rgba(0, 0, 0, 0.600);
-    right:0px;
-}
-.food-selection select{
-    width: 60%;
-    border: none;
-    border-radius: 15px;
-    outline: none;
-    margin: .4em 0em;
-    display: none;
-    padding: .4em;
-    font-size: .8vw;
-    color:rgba(0, 0, 0, 0.600);
-    right:0px;
-}
-
-p.food-selection input{
-    font-size: .8vw;
-    display: none;
-    width: 95%;
-    padding: .5em;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.35);
-    outline: none;
-    color:rgba(0, 0, 0, 0.600);
-}
-
-.contact-info{
-    padding: .8em 0em;
-    background-color: rgb(0, 0, 0,.5); 
-    margin-top: .5vw;
-}
-
-.contact-info label{
-    display: none;
-}
-
-.contact-info input{
-    width: 94%;
-    padding: .5em;
-    border: none;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.644);
-    outline: none;
-    transition: all .5s;
-    font-size: .8vw;
-}
-
-.Qty, .bQty{
-    display: flex;
-    justify-content: space-between;
-    padding: .3em .8em;
-    /*background-color:#08d2b42a ;*/
-}
-
-.Qty span.valor, .bQty span.valor{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.500);
-    border-top: 1px solid rgba(0, 0, 0, 0.500);
-    border-radius: 15px;
-    font-size: 1vw;
-}
-
-.Qty button, .bQty button{
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    font-weight: bolder;
-    font-size: .9vw;
-    border: none;
-    background-color: #fff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
-    transition: all .5s;
-}
-
-.bQty label, .Qty label{
-    color: rgba(0, 0, 0, 0.600);
-    font-family: cursive;
-    font-size: .9vw;
-}
-
-
-.Qty button:hover, .bQty button:hover{
-    box-shadow: 1px 1px 7px red;
-}
-
-.Qty input, .bQty input{
-    width: 50px;
-    text-align: center;
-    border: none;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: .7vw;
-}
-
-.contact-info input:hover{
-    background-color: #08d2b42a;
-    border-radius: 5px;
-}
-
-.deliver_options{
-    font-weight: 700;
-    margin-top:1em;
-    background-color: rgb(0, 0, 0,.5) ;
-    padding-bottom: .5em;
-}
-
-.deliver_options label{
-    color: #fff;
-    font-weight: 100;
-}
-
-label#no{
-    color: #07356b;
-}
-
-.deliver_options fieldset{
-    width: 97%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: .3em 0em;
-    margin: auto;
-}
-
-#submit{
-    display: flex;
-    justify-content: space-around;
-}
-
-#submit input{
-    padding:.2em .5em;
-    margin-top: 1em;
-    width: 35%;
-    transition: all .5s;
-    cursor: pointer;
-    font-family: cursive;
-    font-size: 1.1vw;
-    box-sizing: border-box;
-}
-#submit input.submit{
-    background-color: rgb(133, 129, 129);
-    border: none;
-    box-sizing: border-box;
-}
-#submit input.submit:hover{
-    border:1px solid rgb(133, 129, 129);
-    background-color: rgba(133, 129, 129, 0);
-    
-}
-
-#submit input.cart{
-    border:1px solid rgb(133, 129, 129);
-    box-sizing: border-box;
-    
-    
-}
-#submit input.cart:hover{
-    background-color: rgb(133, 129, 129);
-    border:1px solid rgba(133, 129, 129, 0);
-}
-
 
 /*-------------------------------Estilização ABA photos*----------------------------------------*/
 #mensagemPhotos{

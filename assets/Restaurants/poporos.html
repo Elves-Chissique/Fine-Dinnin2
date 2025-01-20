@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.css">
 
 </head>
 <body>
@@ -38,7 +39,7 @@
                 <article id="cabecalho">
                     <img id="Home" src="../Images/home.png" alt="">
                     <h1>
-                        Poropos Catering & Events
+                        Poporos Catering & Events
                     </h1>
                     <img class="esconder" src="../Images/home.png" alt="">
                 </article>
@@ -80,234 +81,99 @@
                                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
                               </svg>
                         </p>
+                        <!--Entrado Slides-->
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <img src="../Images/mesa-slide.jpg" alt="">
+                                <span>
+                                    Book your table now and dine in style!
+                                </span>
 
-                        <div>
-                            <div id="mainView">
-                                <img src="Poporos Iguarias/background-2.webp" alt="">
-                                <div id="mainViewInfo" class="escola">
-                                    <div id="left" class="info-leftRigth">
-                                        <Span class="span-view">
-                                            Take Away & Catering Service 
-                                        </Span>
-                                        <hr>
-                                        <p>
-                                            <span>
-                                                <img src="../Images/star.png" alt="" id="maior">
-                                                <img src="../Images/star.png" alt="" id="maior">
-                                                <img src="../Images/star.png" alt="" id="maior">
-                                                <img src="../Images/star.png" alt="" id="maior">
-                                                <img src="../Images/star-social-favorite-middle-full.png" alt="" id="maior">
-                                                4,5 
-                                            </span>
-                                            <span>
-                                                <img class="menor" src="../Images/chat-right-dots.svg" alt="">
-                                                02  review
-                                            </span>
-                                            <span>
-                                                <img class="menor"  src="../Images/toast.png" alt="">
-                                                Cocktails 
-                                            </span>
-                                            <div class="tag-div">
-                                                <p class="tag">Culinary Artistry</p>
-                                                <p class="tag">Distinctive Libations</p>
-                                                <p class="tag">Unforgettable Moments</p>
-                                            </div>
-                                            <br>
-
-                                            <p class="general-p">
-                                               Refresh, enjoy and recharge <br>
-                                               Cockitails made with organic ingredients and methods, while having JulsBar cocktails you will be connected to inhambane and tofo Beach community
-                                            </p>
-                                            <p id="divLogo">
-                                                <img id="logo" src="MObileBar/Logo.jpg" alt="">
-                                            </p>
-                                        </p>
-                                    </div>
-                                    <div id="leftOther" class="info-leftRigth">
-                                        <Span class="span-view">
-                                            Order Preview 
-                                        </Span>
-                                        <hr>
-                                        <div id="mainOrderPrevision">
-                                            <div class="orderPrevision" id="previsionComidas"> <!--div photo e preço-->
-                                                <div id="photoOrder">
-                                                    <p>
-                                                        <span id="precoletras">
-                                                            Preço:
-                                                            &nbsp;
-                                                        </span>
-                                                        
-                                                        <output id="precoNumerario">00</output>
-                                                    </p>
-                                                    
-                                                    <img src="../Images/humburger.png" alt="" id="photoForOrder">
-                                                </div>
-                                                <div id="nameOrder">
-                                                    nome Food
-                                                </div>
-                                            </div>
-
-
-                                            <div class="orderPrevision" id="previsionBebidas"> <!--div photo e preço-->
-                                                <div id="photoOrderB">
-                                                    <p>
-                                                        <span id="precoletrasB">
-                                                            Preço:
-                                                            &nbsp;
-                                                        </span>
-                                                        
-                                                        <output id="precoNumerarioB">00</output>
-                                                    </p>
-                                                    <img src="../Images/chá.jpg" alt="" id="photoForOrderB">
-                                                </div>
-                                                <div id="nameOrderB">
-                                                    Nome Bebidas
-                                                </div>
-                                            </div>
-                                            <div id="multiplicadorResultado">
-                                                
-                                                <div id="multiplicador">
-                                                    <p class="p1">
-                                                        <span id="numeroProdutoMultip">
-                                                            <!--Quantidade Multiplicado-->
-                                                        </span>
-                                                        <span id="nomeProdutoMultip">
-                                                            <!--Produto Multiplicado-->
-                                                            Food not selected
-                                                        </span>
-                                                    </p>
-
-                                                    <p id="valorTotal"> <!---------------------------->
-                                                        <sapn id="totalN">
-                                                            0,00
-                                                        </sapn>
-                                                        <br>
-                                                        <span id="totalT">
-                                                            Total to Pay
-                                                        </span>
-                                                    </p> <!---------------------------------------->
-
-                                                    <p class="p2">
-                                                        <span id="numeroProdutoMultipBebidas">
-                                                            <!--Quantidade Multiplicado-Bebidas -->
-                                                        </span>
-                                                        <span id="nomeProdutoMultipBebidas">
-                                                            <!--Produto Multiplicado-Bebidas -->
-                                                            Drink not selected
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="right" class="info-leftRigth">
-                                        <span class="span-order">
-                                            Book your Next Event
-                                        </span>
-                                        <hr>
-                                        <form action="">
-                                            <p class="dataTime">
-                                                <span>
-                                                    <label for="iData">
-                                                        <img id="svgData" src="../Images/calendar-check.svg" alt="">
-                                                        Event Date
-                                                    </label> <br>
-                                                    <label for="iEvent-date">*</label>
-                                                    <input type="date" name="nEvent-date" id="iEvent-date">
-                                                </span>
-
-                                                <span>
-                                                    <label for="iTime">
-                                                        <img id="svgHora" src="../Images/clock.svg" alt="">
-                                                        Event Time
-                                                    </label> <br>
-                                                    <input type="time">
-                                                </span>
-                                            </p>
-                                            <fieldset class="main-typ-Order">
-                                                <legend>Ocasion</legend>
-                                                <input type="text" >
-                                            </fieldset>
-                                            <!--ATT-->
-                                            <div class="other-txt">
-                                                <label for="iOtherWrite">Other</label>
-                                                <input type="text" name="" id="iOtherWrite" placeholder="Write here your request">
-                                            </div>
-                                            <!--ATT-->
-                                            <fieldset>
-                                                <legend>Event Description</legend>
-                                                <div class="food-selection">
-                                                    <p class="Qty"> <!--area de Mudança-->
-                                                        <span>
-                                                            <label for="iFQty">Food - qty</label>
-                                                        </span>
-                                                        <span class="Nr-guest">
-                                                            N° of Guest/participantes
-                                                        </span>
-                                                        <span class="valor">
-                                                            <button onclick="diminuirNumero(), exibirValor(), calcular()" onclick="exibirValor()" type="button" name="nSubtrair" id="iFSubtrair">-</button>
-                                                            <input oninput="exibirValor()"  type="number" name="nQty" id="iFQty" min="0" value="1"  readonly>
-                                                            <!--Hello, World!-->
-                                                            <button onclick="aumentarNumero(), exibirValor(), calcular()" type="button" ame="nAdiconar" id="iFAdicionar">+</button>
-                                                        </span>
-                                                    </p> <!--Area de mudança-->
-                                                    <textarea name="" id="EventDiscMessages" cols="10" rows="10" placeholder="Write your description event and other details here"></textarea>
-                                                </div>
-                                            </fieldset>
-
-                                            <div class="">
-                                               
-                                            </div>
-
-                                            
-
-                                            <fieldset>
-                                                <legend>Personal Info</legend>
-                                                <p class="contact-info">
-                                                    <span>
-                                                        <label for="iEmail">Email</label>
-                                                        <input type="email" name="nEmail" id="iEmail" placeholder="Email" required>
-                                                    </span>
-                                                
-                                                    <br> <br>
-                                                    <span>
-                                                        <label for="iNumber">Number</label>
-                                                        <input type="number" name="nNumber" id="iNumber" placeholder="Number" required>
-                                                    </span>
-                                                
-                                                    <br> <br>
-                                                    <span>
-                                                        <label for="iName">Name</label>
-                                                        <input type="text" name="nName" id="iName" placeholder="Full Name" required>
-                                                    </span>
-                                                </p>
-                                            </fieldset>
-
-                                            <div  class="deliver_options">
-                                                <fieldset>
-                                                    <legend>Delivery service inclueded?</legend>
-                                                    <divn>
-                                                        <label id="lab_yes" for="yes">Yes</label>
-                                                        <input type="radio" name="deliveryService" value="yes" id="yes">
-                                                    </divn>
-                    
-                                                    <divn>
-                                                        <label id="lab_no" for="no">No</label>
-                                                        <input type="radio" name="deliveryService" value="no" id="no">
-                                                    </divn>
-                                                </fieldset>
-                                            </div>
-
-                                            <p id="submit">
-                                                <input type="submit" value="submit">
-                                            </p>
-
-                                            <br>
-                                        </form>
-                                    </div>
+                            </div>
+                            <div class="slide fade">
+                                <img src="../Images/Bar-2.webp" alt="">
+                              <span>🔥 Where Taste Meets Elegance!</span>
+                            </div>
+                          </div>
+                        <!--Terminando Slides-->
+                        <article class="descript-main">
+                            <div class="descript">
+                                <div class="desc-line">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                View
+                                            </li>
+                                            <li>
+                                                Popular Dishes
+                                            </li>
+                                            <li>
+                                                Menu
+                                            </li>
+                                            <li>
+                                                Photos
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <p>
+                                        ocated in the vibrant heart of Pemba, Mozambique, Poporos is nestled in a prime corner location, offering stunning views and easy access to the city’s bustling life. Just a stone’s throw from the scenic coastline, this restaurant embodies the charm and elegance of a bygone era, combining a sophisticated ambiance with a modern touch. Designed with an intricate and ornamental style, Poporos evokes a sense of timeless beauty, bringing a unique and inviting atmosphere to Pemba’s most sought-after dining district.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
+                            <div class="table-book">
+                                <p>
+                                    📅 Reserve Your Table Today!
+                                </p>
+                                <form action="">
+                                    <div class="book-type">
+                                        <label for="principal">
+                                            <ion-icon name="newspaper-outline"></ion-icon>
+                                        </label>
+                                        
+                                        <select class="select" name="Principal" id="principal">
+                                            <option value="">Table Reservation</option>
+                                            <option value="">Event Booking</option>
+                                            <option value="">Private Dining</option>
+                                            <option value="">Private Dining</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="dateTime">
+                                        <div class="book-date">
+                                            <label for="DateInput">
+                                                <ion-icon name="calendar-outline"></ion-icon>
+                                            </label>
+                                            <input type="date" name="" id="DateInput" placeholder="." />
+                                        </div>
+                                        <div class="book-time">
+                                            <label for="TimeInput">
+                                                <ion-icon name="alarm-outline"></ion-icon>
+                                            </label>
+                                            <input type="time" name="" id="TimeInput" placeholder="." />
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                        <select class="select" name="SelecPeople" id="People">
+                                            <option value="">1 Person</option>
+                                            <option value="">2 People</option>
+                                            <option value="">3 People</option>
+                                            <option value="">4 People</option>
+                                            <option value="">5 people</option>
+                                            <option class="other" value="">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="popular-dishes">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
                     </div>
                 </article>
 
@@ -451,6 +317,8 @@
             &copy;copyright_Fine Dining Moz LDA
         </footer>
     </div>
-    <script src="../JS/juls.js"></script>
+    <script src="../JS/poporos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
