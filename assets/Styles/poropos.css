@@ -187,7 +187,7 @@
     justify-content: center;
     gap:1em;
     padding: 0 2em;
-    margin-bottom: 15em;
+    margin-bottom: 1em;
   }
   .descript{
     width: 65%;
@@ -288,32 +288,19 @@
     width: 75%;
 }
 
-/*-------------------------------Estilização ABA photos*----------------------------------------*/
-#mensagemPhotos{
-    background-color: #fff;
-    width: 99%;
-    font-family: cursive;
-    font-size: 1.8vw;
-    text-shadow: 2px 2px 5px red;
-    color:#000;
-    
+/*----------------Estilização da ABA Fotos-----------------------*/
+.popular-dishes{
+    background-color: #069f88;
 }
 
-#photosMain{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1vw;
-    height: 100vh;
-    
+.popular-dishes > div{
+    width: 60%;
 }
 
-Div#photo{
-    width: 75%;
-    height: 100vh;
-    background-image:linear-gradient(to right, #000, blue, #000) ;
-    overflow: auto;
+.popular-dishes > div > span > img{
+    width: 30%;
 }
+
 
 @media screen and (max-width: 1600px) {
     Div#photo{
