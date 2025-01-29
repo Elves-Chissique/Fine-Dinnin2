@@ -273,7 +273,7 @@
 
 }
 
-.table-book > form > div > div.book-date, div.book-time{
+.table-book > form > div > div.book-date, div.book-time, .email, .number{
     display: flex;
     align-items: center;
     width: 50%;
@@ -294,6 +294,14 @@
 }
 
 .table-book > form > div > div.book-time > input{
+    background-color:rgba(3, 46, 95, 0.76);
+    color: #fff;
+    padding: .3em;
+    border: none;
+    width: 75%;
+}
+
+.table-book > form > div > div.email > input{
     background-color:rgba(3, 46, 95, 0.76);
     color: #fff;
     padding: .3em;
