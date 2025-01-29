@@ -257,7 +257,7 @@
 
 }
 
-.table-book > form > div > select{
+.table-book > form > div > select, input{
     width: 100%;
     padding: .3em;
     color:#fff;
@@ -273,7 +273,7 @@
 
 }
 
-.table-book > form > div > div.book-date, div.book-time, .email, .number{
+.table-book > form > div > div.book-date, div.book-time{
     display: flex;
     align-items: center;
     width: 50%;
@@ -309,6 +309,10 @@
     width: 75%;
 }
 
+.table-book > form  ::placeholder{
+    color:#fff;
+    margin-left: 1em;
+}
 /*----------------Estilização da ABA Fotos-----------------------*/
 .popular-dishes{
     background-color: #0000003b;
