@@ -35,7 +35,7 @@ else{
     MinutosC = soMinutos 
 }
 
-iData.innerHTML = soData+":"+soMes+":"+soAno
+iData.innerHTML = soAno+" / "+soMes+" / "+ soData
 iTime.innerHTML = horasC + " : " + MinutosC
 
 
@@ -586,12 +586,13 @@ function Adicionar2() {
     let containerOnly = window.document.getElementById('containerOnly');
     if(!containerOnly.value.includes(selectedThing2) && selectedThing2!="selecting"){
         containerOnly.value += selectedThing2+" x "+multComidas1+",  " 
-    }
-
-    alert('hello')
-
-
+    }  
+    
+    valorReadOnly.value = soma 
+    dataReadOnly.value = iData.value
 }/*Fim da função Adicionar ao carinho para ala de comidas*/
+
+
 
 
 /*---------------------Configuração de Adicionar ao carinho Bebidas-----------------------------*/
@@ -641,6 +642,8 @@ function Adicionar() {
         containerOnly.value += iBeverageSelection2+" x "+multComidas+",  ";
     }
 
+    valorReadOnly.value = soma
+    dataReadOnly.value = iData.value
 }
 /*Fim da função Adicionar ao carinho para ala de bebidas*/
 

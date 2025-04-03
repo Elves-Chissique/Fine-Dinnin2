@@ -1,9 +1,39 @@
+ <!--
+ <?php
+    include_once("configP.php");
+    if(isset($_POST['submit'])){
+        $Tipo_Reserva = $_POST['TipoReserva'];
+        $Dia_Reserva = $_POST['BookDate'];
+        $Hora_Reserva = $_POST['BookTime'];
+        $Qty_Pessoas = $_POST['SelecPeople'];
+        $Email = $_POST['BookEmail'];
+        $Numero = $_POST['BookNumber'];
+        $Nome = $_POST['BookName'];
+
+        print_r($Tipo_Reserva);
+        echo "<br/>";
+        print_r($Dia_Reserva);
+        echo "<br/>";
+        print_r($Hora_Reserva);
+        echo "<br/>";
+        print_r($Qty_Pessoas);
+        echo "<br/>";
+        print_r($Email);
+        echo "<br/>";
+        print_r($Numero);
+        echo "<br/>";
+        print_r($Nome);
+    }
+?>
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fine_Dinning</title>
+    <title>Fine_Dinning Moz</title>
     <link rel="stylesheet" href="../Styles/mainStyle.css"/>
     <link rel="stylesheet" href="../Styles/poropos.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +41,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Maps&family=Rubik+Scribble&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Rubik+Scribble&display=swap" rel="stylesheet">
@@ -39,7 +68,7 @@
                 <article id="cabecalho">
                     <img id="Home" src="../Images/home.png" alt="">
                     <h1>
-                        Poporos Catering & Events
+                        Poporos Iguarias
                     </h1>
                     <img class="esconder" src="../Images/home.png" alt="">
                 </article>
@@ -124,64 +153,122 @@
                                 <p>
                                     📅 Reserve Your Table Today!
                                 </p>
-                                <form action="">
-                                    <div class="book-type">
-                                        <label for="principal">
-                                            <ion-icon name="newspaper-outline"></ion-icon>
-                                        </label>
+                                <form action="poporos.php" method="POST">
+                                    <div class="first-info">
+                                        <div class="book-type">
+                                            <label for="principal">
+                                                <ion-icon name="newspaper-outline"></ion-icon>
+                                            </label>
                                         
-                                        <select class="select" name="Principal" id="principal">
-                                            <option value="">Table Reservation</option>
-                                            <option value="">Event Booking</option>
-                                            <option value="">Private Dining</option>
-                                            <option value="">Private Dining</option>
-                                        </select>
+                                            <select class="select" name="TipoReserva" id="principal">
+                                                <option value="Table Reservation">Table Reservation</option>
+                                                <option value="Event Booking">Event Booking</option>
+                                                <option value="Private Dining">Special Lunch</option>
+                                                <option value="Private Dining">Private Dining</option>
+                                            </select>
+                                        </div>
+                                        <div class="dateTime">
+                                            <div class="book-date">
+                                                <label for="DateInput">
+                                                    <ion-icon name="calendar-outline"></ion-icon>
+                                                </label>
+                                                <input type="date" name="BookDate" id="DateInput" placeholder="." />
+                                            </div>
+                                            <div class="book-time">
+                                                <label for="TimeInput">
+                                                    <ion-icon name="alarm-outline"></ion-icon>
+                                                </label>
+                                                <input type="time" name="BookTime" id="TimeInput" placeholder="." />
+                                            </div>
+                                        </div>
+                                        <div class="people">
+                                            <ion-icon name="people-outline"></ion-icon>
+                                            <select class="select" name="SelecPeople" id="People">
+                                                <option value="1 Person">1 Person</option>
+                                                <option value="2 People">2 People</option>
+                                                <option value="3 People">3 People</option>
+                                                <option value="4 People">4 People</option>
+                                                <option value="5 People">5 people</option>
+                                                <option value="5 People">10 people</option>
+                                                <option value="5 People">15 people</option>
+                                                <option value="5 People">20 people</option>
+                                                <option class="other" value="">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="emailNumber">
+                                            <div class="book-date">
+                                                <label for="email">
+                                                    <ion-icon name="mail-open-outline"></ion-icon>
+                                                </label>
+                                                <input type="email" name="BookEmail" id="email" placeholder="your email" />
+                                            </div>
+                                            <div class="book-time">
+                                                <label for="number">
+                                                    <ion-icon name="call-outline"></ion-icon>
+                                                </label>
+                                                <input type="number" name="BookNumber" id="number" placeholder="your number" />
+                                            </div>
+                                        </div>
+                                        <div class="book-type">
+                                            <label for="Name">
+                                                <ion-icon name="person-outline"></ion-icon>
+                                            </label>
+                                            <input type="text" id="Name" name="BookName" placeholder="Your name">
+                                        </div>
+                                        <div class="next-btn">
+                                            <input id="nextBtn" type="button" name="next" value="next">
+                                        </div>
                                     </div>
 
-                                    <div class="dateTime">
-                                        <div class="book-date">
-                                            <label for="DateInput">
-                                                <ion-icon name="calendar-outline"></ion-icon>
-                                            </label>
-                                            <input type="date" name="" id="DateInput" placeholder="." />
+                                    <div class="second-info">
+                                        <h3>Genaral Food Allergy Care</h3>
+                                        
+                                        <p class="p1">
+                                            <span>
+                                                Any food dietary restrictions?
+                                            </span>
+                                           <label for="yes">Yes</label> 
+                                           <input type="radio" name="foodRestriction" id="yes">
+
+                                           <label for="no">No</label> 
+                                           <input type="radio" name="foodRestriction" id="no">
+                                        </p>
+                                        
+                                        <div class="if-yes">
+                                            <input type="text" name="" id="ifYes" placeholder="what restrictions?">
                                         </div>
-                                        <div class="book-time">
-                                            <label for="TimeInput">
-                                                <ion-icon name="alarm-outline"></ion-icon>
-                                            </label>
-                                            <input type="time" name="" id="TimeInput" placeholder="." />
+
+                                        <p class="p2">
+                                            <span>
+                                                Any specific die?
+                                            </span>
+                                           <label for="otherYes">Yes</label> 
+                                           <input type="radio" name="secificDie" id="otherYes">
+                                           
+                                           <label for="otherNo">No</label> 
+                                           <input type="radio" name="secificDie" id="otherNo">
+                                        </p>
+                                        <div class="if-yes2">
+                                            <p>
+                                                <label for="Vegetarina">Vegetarian</label>
+                                                <input type="checkbox" name="" id="Vegetarina">
+                                            </p>
+
+                                            <p>
+                                                <label for="Vegan">Vegan</label>
+                                                <input type="checkbox" name="" id="Vegan">
+                                            </p>
+
+                                            <p>
+                                                <label for="Vegetarina">Halal</label>
+                                                <input type="checkbox" name="" id="Halal">
+                                            </p>
+
+                                            <p>
+                                                <label for="Vegetarina">Pescatarian</label>
+                                                <input type="checkbox" name="" id="Vegetarina">
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="people">
-                                        <ion-icon name="people-outline"></ion-icon>
-                                        <select class="select" name="SelecPeople" id="People">
-                                            <option value="">1 Person</option>
-                                            <option value="">2 People</option>
-                                            <option value="">3 People</option>
-                                            <option value="">4 People</option>
-                                            <option value="">5 people</option>
-                                            <option class="other" value="">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="emailNumber">
-                                        <div class="book-date">
-                                            <label for="email">
-                                                <ion-icon name="mail-open-outline"></ion-icon>
-                                            </label>
-                                            <input type="email" name="" id="email" placeholder="your email" />
-                                        </div>
-                                        <div class="book-time">
-                                            <label for="number">
-                                                <ion-icon name="call-outline"></ion-icon>
-                                            </label>
-                                            <input type="number" name="" id="number" placeholder="your number" />
-                                        </div>
-                                    </div>
-                                    <div class="book-type">
-                                        <label for="Name">
-                                            <ion-icon name="person-outline"></ion-icon>
-                                        </label>
-                                        <input type="text" id="Name" placeholder="Your name">
                                     </div>
                                     
                                 </form>
@@ -192,41 +279,48 @@
                             <div>
                                 <p>
                                     <span>
-                                        <img src="../Images/food/comida/images 7.jpeg" alt="">
+                                        <img id="phot1" src="../Images/food/comida/images 7.jpeg" alt="">
                                     </span>
                                     <span>
-                                        <img src="../Images/food/comida/images 8.jpeg" alt="">
+                                        <img id="phot2" src="../Images/food/comida/images 8.jpeg" alt="">
                                     </span>
                                     <span>
-                                        <img src="../Images/food/comida/images 3.jpeg" alt="">
-                                    </span>
-                                </p>
-                                <p>
-                                    <span>
-                                        <img src="../Images/food/comida/images 4.jpeg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="../Images/food/comida/images 5.jpeg" alt="">
-                                    </span>
-                                    <span>
-                                        <img src="../Images/food/comida/images 6.jpeg" alt="">
+                                        <img id="phot3" src="../Images/food/comida/images 3.jpeg" alt="">
                                     </span>
                                 </p>
                                 <p>
                                     <span>
-                                        <img src="../Images/food/comida/images 4.jpeg" alt="">
+                                        <img id="phot4" src="../Images/food/comida/images 4.jpeg" alt="">
                                     </span>
                                     <span>
-                                        <img src="../Images/food/comida/images 5.jpeg" alt="">
+                                        <img id="phot5" src="../Images/food/comida/images 5.jpeg" alt="">
                                     </span>
                                     <span>
-                                        <img src="../Images/food/comida/images 6.jpeg" alt="">
+                                        <img id="phot6" src="../Images/food/comida/images 6.jpeg" alt="">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <img id="phot7" src="../Images/food/comida/images 4.jpeg" alt="">
+                                    </span>
+                                    <span>
+                                        <img id="phot8" src="../Images/food/comida/images 5.jpeg" alt="">
+                                    </span>
+                                    <span>
+                                        <img id="phot9" src="../Images/food/comida/images 6.jpeg" alt="">
                                     </span>
                                 </p>
                             </div>
                             <div class="grafico">
                                 <!--Aqui Vai entrar um Garáfio-->
-                                <img src="../Images/Typical Mozambican Food Menu 🇲🇿🍽️ - visual selection.png" alt="">
+                                <img id="photPrinc" onmousemove="outro()" src="../Images/Typical Mozambican Food Menu 🇲🇿🍽️ - visual selection.png" alt="">
+
+                                <p id="dinamicInfo">
+
+                                </p>
+                                <p id="dinamicInfo2">
+                                        <!--Aqui é entra automaticamente a informação de comidas-->
+                                </p>
                             </div>
                         </div>
                         <!--Termino de Fotos-->

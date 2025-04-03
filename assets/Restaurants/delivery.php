@@ -29,59 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
     
     <style>
-        strong{
-            color: #fff;
-        }
-
-        .itensOrdered{
-            background-color: rgba(0, 0, 0, 0.400); 
-            color: #cecece;
-            border: 1px solid red;
-            padding: .5em;
-            width: 95%;
-        }
-        
-        fieldset{
-            border: 1px solid rgba(255, 0, 0, 0.550);
-        }
-
-        fieldset legend{
-            color: #000;
-            font-weight: bolder;
-            padding: 0 0.5em;
-        }
-        .itensOrdered > div{
-            text-align: center;
-            font-weight: bolder;
-        }
-
-        .container-art{
-            display: flex;
-            justify-content: space-between;
-        }
-        .artg{
-           /* background-color: rgba(255,0,0,.500);*/
-            width: 15em;
-            padding: 1em;
-            border-radius: .2em;
-            font-family: 500;
-            font-size: .8em;
-            color: #cece;
-            border: 1px solid #555;
-        }
-
-        .delivery-form{
-            border: 1px solid rgba(255, 0, 0, 0.550);
-        }
-        .delivery-form > legend{
-            color: rgba(255, 0, 0, 0.550);
-            font-size: 1.5em;
-            text-align: center;
-        }
-
-        .delivery-form2{
-            margin-top: .3em;
-        }
+       
     </style>
 </head>
 <body onload="getLocation()">
@@ -111,6 +59,9 @@
                         <div class="btn-child">
                         </div>
                     </div>
+                    <button class="btn-del" onclick="retunDel()">Return</button>
+                    <br/> <br>
+                    <button class="btn-del" onclick="detailsPDF()">Get PDF</button>
                 </article>
                 <div class="content">
                         <fieldset class="delivery-form"> <legend>Fine Dining Moz</legend>
@@ -121,13 +72,14 @@
                                 <div class="digit-local">
                                     <input type="text" placeholder="Type More Location details here"> 
                                 </div>
+                                
                                 <div class="Self-pick-up" id="selfPickUp">
                                     <p>
                                         Self pick up hello
                                     </p>
                                 </div>
                             </article>
-                            <textarea class="text-area-delivery" name="" id="" rows="8" >
+                            <textarea class="text-area-delivery" name="" id="" rows="2" >
 
                             </textarea>
                             <table>
@@ -137,9 +89,10 @@
 
                                         echo "<strong>Order N°: </strong> &nbsp;   &nbsp; &nbsp; &nbsp; ".$info['Id'];
                                         echo "<br/> <br/> <br/>";
-                                        echo "<strong>Amount:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19/09/2024";
+                                        echo "<strong>Amount:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp;".$info['Valor']; echo " Mzn";
                                         echo "<br/> <br/> <br/>";
-                                        echo "<strong>Date:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19/09/2024";
+                                        echo "<strong>Date:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;".$info['Datas'];
                                         echo "<br/> <br/> <br/>";
                                         echo "<strong>Name:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;".$info['Nome'];
                                         echo "<br/> <br/> <br/>";
@@ -159,23 +112,44 @@
                                 <img class="seta_baixo" src="../Images/seta-baixo.png" alt="seta para baixo">
                             </div>
                             <div class="show-payment-methods">
-                                <article class="pay">
+                                <article class="pay pay1">
                                     M-pesa
                                     <img src="../Images/M-pesa-logo.png" alt="M-pesa-logo">
                                 </article>
-                                <article class="pay">
+                                <article class="pay pay2">
                                     E-mola
                                     <img src="../Images/emola-logo.png" alt="emola-logo">
                                 </article>
-                                <article class="pay">
+                                <article class="pay pay3">
                                     Visa-card
                                     <img src="../Images/Visa-Logo.png" alt=" Visa-Logo">
                                 </article>
-                                <article class="pay">
+                                <article class="pay pay4">
                                     Transfer
                                     <img src="../Images/Transferencia-icon.png" alt="Transferencia-icon">
                                 </article>
                             </div>
+                            <form action="">
+                                <div class="payment-Number">
+                                    <div class="Mpesa">
+                                        <div>
+                                            +258
+                                        </div>
+                                        <input type="Number" placeholder="type your 84">
+                                    </div>
+                                    <div class="Movitel">
+                                        <div>
+                                            +258
+                                        </div>
+                                        <input  type="Number" placeholder="type your 86">
+                                    </div>
+                                </div>
+                                <div class="payment-transfer">
+                                    <input type="file" name="proofPayment" id="proofPayment">
+                                </div>
+
+                                <input class="conclue-payment" type="submit" name="submit" value="Conclued payment">
+                            </form>
                         </fieldset>
                 </div>
             </article>
@@ -186,8 +160,7 @@
     </div>
     <script src="../JS/juls.js"></script>
     <script src="../JS/delivery.js"></script>
-    <script>
 
-    </script>
+    <script src="../JS/html2pdf.js-main"></script>
 </body>
 </html>

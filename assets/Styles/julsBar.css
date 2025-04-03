@@ -93,7 +93,11 @@
     width: 100%;
 }
 
-#containerOnly{
+/*input ocultos*/
+
+
+
+#containerOnly, #dataReadOnly, #valorReadOnly{
     display: none;
     width: 100%;
 }
@@ -1856,6 +1860,8 @@ input#comentarioForm2{
     text-align: center;
     color: rgba(255, 0, 0, 0.659);
 }
+
+/*configuracao de funcionamento de setas para mostrar methotos*/
 .seta-de-escolha img{
     width: 20px;
     height: 20px;
@@ -1880,10 +1886,13 @@ input#comentarioForm2{
     transition: 4s;
 }
 
+/*estilizacao de div payment methods*/
 .show-payment-methods{
     width: 100%;
-    height: 0px;
+    height: 0;
     transition: 0.5s;
+    border: none;
+    padding: 0;
 }
 
 .show-payment-methods-after{
@@ -1901,6 +1910,93 @@ input#comentarioForm2{
     transition: 0.5s;
 }
 
+
+/*Configuracao de butoes de pagaments Mpsea e Movitel*/
+.Mpesa, .Movitel{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: .3em;
+    gap: .3em;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    transition: .6s;
+}
+
+.Mpesa{
+    margin-left:-100%;
+}
+
+.Movitel{
+    margin-left:-100%;
+}
+
+.MM-seta{
+    margin-left:-100%;
+    transition: 0;
+}
+
+.MM{
+    display: flex;
+    margin-left: 0;
+    transition: .6s;
+    align-items: center;
+    color: #fff;
+    margin-top: .3em;
+    gap: .3em;
+    background-color: rgba(0, 0, 0, 1);
+    width: 98%;
+}
+
+.Mpesa div, .Movitel div{
+    padding: 0 .5em;
+}
+
+.MM{
+    padding: 0 .5em;
+}
+
+.Mpesa input, .Movitel input{
+    background-color: transparent;
+    padding: .4em;
+    width: 95%;
+    color: #fff;
+    background-color: rgba(255,255,255,.8);
+}
+
+.MM input{
+    background-color: transparent;
+    padding: .4em;
+    width: 84%;
+    color: #fff;
+    background-color: rgba(255,255,255,.8);
+}
+
+
+/*Configuracao de Metodo de pagamento transfer*/
+.payment-transfer{
+    border:1px solid rgba(255, 0, 0, 0.659);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    margin-top: -3.5em;
+    width: 99%;
+}
+
+
+/*confugracao de butao de pagamento final*/
+.conclue-payment{
+    width: 100%;
+    padding: .7em 0;
+    color: #fff;
+    border-radius: 1em;
+    background-color: rgba(255, 0, 0, 0.659);
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+}
 
 article.pay{
     border: 1px solid rgba(255, 0, 0, 0.659);
@@ -1951,7 +2047,7 @@ article.pay  img{
 
 
 .main-local{
-    display: flex;
+    display: block;
     margin-bottom: 1em;
     gap: 2em;
 }
@@ -1968,7 +2064,7 @@ article.pay  img{
     display: none;
     align-items: center;
     justify-content: center;
-    width: 47%;
+    width: 97%;
     border-radius: 8px;
     font-size: 1.1em;
 }
@@ -1994,9 +2090,10 @@ article.pay  img{
     display: none;
     align-items: center;
     justify-content: right;
-    width: 47%;
+    width: 97%;
     border-radius: 8px;
     font-size: 1.1em;
+    margin-top: .1em;
 }
 
 .digit-local input{
@@ -2005,7 +2102,6 @@ article.pay  img{
     background-color: transparent;
     outline: none;
     border: none;
-
 }
 
 .text-area-delivery{
@@ -2013,3 +2109,65 @@ article.pay  img{
     width: 97%;
 }
 
+
+/*configurar area do selecionamento de metodo de pagamento*/
+strong{
+    color: #fff;
+}
+
+.itensOrdered{
+    background-color: rgba(0, 0, 0, 0.400); 
+    color: #cecece;
+    border: 1px solid red;
+    padding: .5em;
+    width: 95%;
+}
+
+fieldset{
+    border: 1px solid rgba(255, 0, 0, 0.550);
+}
+
+fieldset legend{
+    color: #000;
+    font-weight: bolder;
+    padding: 0 0.5em;
+}
+.itensOrdered > div{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.container-art{
+    display: flex;
+    justify-content: space-between;
+}
+.artg{
+   /* background-color: rgba(255,0,0,.500);*/
+    width: 15em;
+    padding: 1em;
+    border-radius: .2em;
+    font-family: 500;
+    font-size: .8em;
+    color: #cece;
+    border: 1px solid #555;
+}
+
+.btn-del{
+    border: 1px solid rgba(255, 0, 0, 0.550);
+    border-radius: 3px;
+    padding: 0.1em .5em;
+    cursor: pointer;
+}
+
+.delivery-form{
+    border: 1px solid rgba(255, 0, 0, 0.550);
+}
+.delivery-form > legend{
+    color: rgba(255, 0, 0, 0.550);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.delivery-form2{
+    margin-top: .3em;
+}

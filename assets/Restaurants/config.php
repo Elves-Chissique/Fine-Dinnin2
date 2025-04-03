@@ -1,8 +1,8 @@
 <?php
-    $dbHost = "sql200.byethost9.com";
-    $dbUser = "b9_37409917";
-    $dbPassward = "Pedrosa.2";
-    $dbName = "b9_37409917_FineDining";
+    $dbHost = "localhost";
+    $dbUser = "root";
+    $dbPassward = "";
+    $dbName = "purchesing";
 
     $conexao = new mysqli($dbHost, $dbUser, $dbPassward, $dbName);
 

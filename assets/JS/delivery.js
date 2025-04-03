@@ -85,11 +85,10 @@ function ondeEstou() {
         let SelfPickUp = window.document.querySelector('.Self-pick-up');
         let textAreaDelivery = window.document.querySelector('.text-area-delivery')
 
-        local.style.display = 'flex'
+        local.style.display = 'block'
         SelfPickUp.style.display = 'none'
         digitLocal.style.display = 'flex'
         textAreaDelivery.style.display = 'flex'
-        deliveryForm.style.width = '95%'
         deliveryForm.style.transition = '.5s'
     }
     else{
@@ -115,6 +114,8 @@ function ondeEstou() {
 let seta_cima = window.document.querySelector('.seta_cima')
 let seta_baixo = window.document.querySelector('.seta_baixo')
 let show_payment_methods = window.document.querySelector('.show-payment-methods')
+let concluePayment = window.document.querySelector('.conclue-payment')
+
 seta_cima.addEventListener('click', cimaBaixo)
 seta_baixo.addEventListener('click', baixoCima)
 
@@ -127,6 +128,9 @@ function cimaBaixo(){
 
     show_payment_methods.classList.add('show-payment-methods-after')
     show_payment_methods.classList.remove('show-payment-methods')
+    
+    concluePayment.style.display = 'inline'
+
 }
 
 function baixoCima(){
@@ -138,6 +142,63 @@ function baixoCima(){
 
     show_payment_methods.classList.remove('show-payment-methods-after')
     show_payment_methods.classList.add('show-payment-methods')
-    
+
+    Movitel.classList.add('MM-seta')
+    Movitel.classList.remove('MM')
+    Mpesa.classList.remove('MM')
+    Mpesa.classList.add('MM-seta')
+
+    paymentTransfer.style.display="none"
+    concluePayment.style.display = 'none'
+     
 }
 
+
+function detailsPDF(){
+    let details = window.document.querySelector('.delivery-form')
+    htm2pdf(details)
+}
+
+function retunDel(){
+
+    window.location = "julsbar.php"
+}
+
+//configurando div de numero para o metos de pagamento Mpesa, Movitel, Credit Card e Transferencia
+var Movitel = window.document.querySelector('.Movitel')
+var Mpesa = window.document.querySelector('.Mpesa')
+var paymentTransfer = window.document.querySelector('.payment-transfer')
+
+var pay1 = window.document.querySelector('.pay1')
+var pay2 = window.document.querySelector('.pay2')
+var pay4 = window.document.querySelector('.pay4')
+
+pay1.addEventListener('click', numeroMpesa)
+pay2.addEventListener('click', numeroMovitel)
+pay4.addEventListener('click', transfer)
+
+function numeroMpesa(){
+    Mpesa.classList.remove('Mpesa')
+    Mpesa.classList.add('MM')
+    Movitel.classList.add('Movitel')
+    Movitel.classList.remove('MM')
+    paymentTransfer.style.display="none"
+}
+
+function numeroMovitel(){
+    Movitel.classList.remove('Movitel')
+    Movitel.classList.add('MM')
+    Mpesa.classList.remove('MM')
+    Mpesa.classList.add('Mpesa')
+
+    paymentTransfer.style.display="none"
+}
+
+function transfer(){
+    paymentTransfer.style.display="flex"
+
+    Movitel.classList.add('MM-seta')
+    Movitel.classList.remove('MM')
+    Mpesa.classList.remove('MM')
+    Mpesa.classList.add('MM-seta')
+}

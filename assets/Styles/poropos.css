@@ -228,13 +228,113 @@
 
   .table-book{
     width: 38%;
+    padding-top: 15em;
     box-shadow: 0px 0px 3px green;
     padding: 1em;
-    height: 50vh;
+    height: 55vh;
     margin-top: .2em;
     margin-bottom: 0em;
     transition: .4s;
+    overflow: hidden;
   }
+
+
+  .table-book > form{
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.table-book > form > div.second-info{
+    margin-top: -150%; 
+    display:flex ;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.table-book > form > div.second-info > h3{
+   width: 100%;
+}
+
+.table-book > form > div.second-info > p.p1{
+    display: flex;
+    width: 98%;
+    height: 2em;
+    border: 1px solid #07356b;
+    align-items: center;
+    gap:1.5em;
+    font-size: .8em;
+    overflow: hidden;
+}
+
+.table-book > form > div.second-info > p.p2{
+    display: flex;
+    margin-top: 3em;
+    width: 98%;
+    border: 1px solid #07356b;
+    align-items: center;
+    gap:1.5em;
+    font-size: .8em;
+}
+
+.table-book > form > div.second-info > p.p1 > span, p.p2 > span{
+    height: 2.3em;
+    font-size: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.table-book > form > div.second-info > p > span{
+    background-color:#07356b;
+    color: #fff;
+    width: 40%;
+}
+
+.table-book > form > div.second-info > p > input{
+    width: 1.5em;
+    height: 1.5em;
+    cursor:pointer;
+}
+
+.if-yes{
+    margin-top: .5em;
+    width: 99%;
+    font-size: .8em;
+}
+
+#ifYes::placeholder{
+    color: #d2d2d2;
+}
+
+.if-yes2{
+    margin-top: 1.5em;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: .5em;
+    color: #fff;
+    font-size: .8em;
+    padding: 1em 0em;
+    background-color: rgb(141, 4, 4);
+}
+
+.if-yes > input{
+    background-color: #07366b00;
+    color: #fff;
+    border-bottom: 1px solid rgba(194, 4, 4, 0.74);
+}
+
+.if-yes2 > p > input{
+    border-bottom: 1px solid #07356b;
+    width: 1em;
+    height: 1em;
+    
+}
 
   .table-book:hover{
     box-shadow: 0px 0px 10px green;
@@ -249,7 +349,7 @@
     margin-top: -.6em; 
 }
 
-.table-book > form > div.book-type, .people{
+.table-book > form > div > div.book-type, .people{
     display: flex;
     gap:.2em;
     color:rgb(3, 46, 95);
@@ -257,7 +357,7 @@
 
 }
 
-.table-book > form > div > select, input{
+.table-book > form >div > div > select, input{
     width: 100%;
     padding: .3em;
     color:#fff;
@@ -267,25 +367,25 @@
     background-color: rgba(3, 46, 95, 0.76);
 }
 
-.table-book > form > div.dateTime{
+.table-book > form > div > div.dateTime{
     display: flex;
     gap: 1em;
 
 }
 
-.table-book > form > div > div.book-date, div.book-time{
+.table-book > form > div > div > div.book-date, div.book-time{
     display: flex;
     align-items: center;
     width: 50%;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: .8em;
+    margin-bottom: .8em;
     gap: .1em;
     color:rgb(3, 46, 95);
     font-size: 1.8em;
     float: left;
 }
 
-.table-book > form > div > div.book-date > input{
+.table-book > form > div > div > div.book-date > input{
     background-color:rgba(3, 46, 95, 0.76);
     color: #fff;
     padding: .3em;
@@ -293,7 +393,7 @@
     width: 75%;
 }
 
-.table-book > form > div > div.book-time > input{
+.table-book > form > div > div > div.book-time > input{
     background-color:rgba(3, 46, 95, 0.76);
     color: #fff;
     padding: .3em;
@@ -301,7 +401,7 @@
     width: 75%;
 }
 
-.table-book > form > div > div.email > input{
+.table-book > form > div > div > div.email > input{
     background-color:rgba(3, 46, 95, 0.76);
     color: #fff;
     padding: .3em;
@@ -313,6 +413,52 @@
     color:#fff;
     margin-left: 1em;
 }
+
+.next-btn{
+    position: absolute;
+    border: 2px solid rgb(3, 46, 95);
+    background-color: rgb(3, 46, 95);
+    width: 20%;
+    margin: auto;
+    bottom: .5em;
+    padding: 0em 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s;
+    font-weight: bolder;
+    letter-spacing: .3em;
+    border-radius:15px ;
+}
+
+.next-btn:hover{
+    margin-top:1em;
+    background-color: transparent;
+    color: #000;
+    
+}
+
+.next-btn > input{
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+} 
+
+.next-btn > input:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: #000;
+}
+
+#dinamicInfo{
+    font-size:x-large;
+}
+
+#dinamicInfo2{
+    font-size:medium;
+    font-weight: 200;
+    margin-top: -3em;
+}
+
 /*----------------Estilização da ABA Fotos-----------------------*/
 .popular-dishes{
     background-color: #0000003b;

@@ -5,11 +5,11 @@
         $Number = $_POST['nNumber'];
         $Name = $_POST['nName'];
         $items = $_POST['nitems'];
+        $dataReadOnly = $_POST['dataReadOnly'];
         $valorReadOnly = $_POST['valorReadOnly'];
-        $Data = $_POST['nDate'];
 
 
-        $results = mysqli_query($conexao, "INSERT INTO dados(Email, Numero, Nome, Itens, Valor, Datas) VALUES('$Email','$Number','$Name', '$items', '$valorReadOnly', 'Data')");
+        $results = mysqli_query($conexao, "INSERT INTO dados(Email, Numero, Nome, Itens, Datas, Valor) VALUES('$Email','$Number','$Name', '$items', '$dataReadOnly', '$valorReadOnly')");
 
         if($results){
             header("Location: delivery.php");
@@ -39,8 +39,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
-    
-
 </head>
 <body>
     <div id="Container">
@@ -231,6 +229,9 @@
                                         <form action="julsbar.php" method="post">
                                             <!--Area de integrar carinho de compras-->
                                                 <input id="containerOnly" type="text" name="nitems" readonly>
+
+                                                <input  id="dataReadOnly" type="text" name="dataReadOnly" readonly>
+
                                                 <input id="valorReadOnly" type="text" name="valorReadOnly" readonly>
                                                 <article class="cartList-main"> <!--Entrada de Div Carinho ou Cart-->
                                                     <div class="cartList-container">
